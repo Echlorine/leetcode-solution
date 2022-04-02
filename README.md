@@ -1,13 +1,13 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.04.01
+Last Updated: 2022.04.02
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 [面试索引](Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
 `find_problem.sh`是一个小脚本，可以根据题号判断你是否做过这道题了。  
 
 ## Data Structures and Algorithms(持续更新)
-* DFS
+* [DFS](./Data%20Structure%20and%20Algorithm/DFS/DFS.md): 深度优先遍历，适用于找到所有可能的解。可能会遇到超时的问题，这时候可以考虑动态规划。
 * 背包问题
 * 优先队列
   
@@ -104,6 +104,9 @@ Last Updated: 2022.04.01
 208|[实现 Trie (前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)|前缀树|学习前缀树这个模型，可能会对其他字符串类型的题提供解决思路|~|[Java](./Java/208.java)
 221|[最大正方形](https://leetcode-cn.com/problems/maximal-square/)|动态规划|重点还是找到状态以及建立状态转移方程|1277|[Java](./Java/221.java)
 226|[翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)|递归|遇到二叉树最先想到的就应该是递归|101|[Java](./Java/226.java)
+234|[回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)|递归、快慢指针|这道题的递归方法可以更好的了解递归的作用机理|206|[Java](./Java/234.java)
+236|[二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)|递归、哈希|对于有一一对应关系的数据存在，就应该想到哈希表|~|[Java](./Java/236.java)
+238|[除自身以外数组的乘积](https://leetcode-cn.com/problems/product-of-array-except-self/)|左右乘积列表|学习一下这个思想|~|[Java](./Java/238.java)
 252|[会议室](https://leetcode-cn.com/problems/meeting-rooms/)|快速优先排序|快排是时间复杂度较低的排序算法|253|[Java](./Java/252.java)
 253|[会议室 II](https://leetcode-cn.com/problems/meeting-rooms-ii/)|优先队列|`Java`中`PriorityQueue`是利用二叉堆实现的[优先队列](https://blog.csdn.net/lcore/article/details/9100073)|~|[Java](./Java/253.java)
 1603|[设计停车系统](https://leetcode-cn.com/problems/design-parking-system/)|模拟|很简单的一道题|~|[Java](./Java/1603.java)
