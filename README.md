@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.04.03
+Last Updated: 2022.04.06
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 [面试索引](Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
@@ -51,7 +51,7 @@ Last Updated: 2022.04.03
 35|[搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)|二分查找|一道不错的训练二分查找的题目|33, 34|[Python](./Python/35.py)
 39|[组合总和](https://leetcode-cn.com/problems/combination-sum/)|DFS|~|~|[Java](./Java/39.java)
 42|[接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)|动态规划，双指针|模拟也能解决问题|~|[Java](./Java/42.java)
-46|[全排列](https://leetcode-cn.com/problems/permutations/)|DFS|~|17, 78, 79|[Java](./Java/46.java)
+46|[全排列](https://leetcode-cn.com/problems/permutations/)|DFS|~|17, 78, 79|[Java](./Java/46.java) [Python](./Python/46.py)
 48|[旋转图像](https://leetcode-cn.com/problems/rotate-image/)|模拟|有技巧的模拟|~|[Java](./Java/48.java)
 49|[字母异位词分组](https://leetcode-cn.com/problems/group-anagrams/)|Hash|此题需要对哈希以及哈希函数有更深的了解|1|[Java](./Java/49.java)
 53|[最大子数组和](https://leetcode-cn.com/problems/maximum-subarray/)|动态规划|这道题也可以利用线段树来做|~|[Python](./Python/53.py)
@@ -83,13 +83,13 @@ Last Updated: 2022.04.03
 105|[从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|利用先根遍历和中根遍历|配上Hash可以省去查找的时间|~|[Java](./Java/105.java)
 114|[二叉树展开为链表](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/)|先根遍历|这道题的思路有很多，个人还是喜欢递归，毕竟树的问题，一般都用递归解决|~|[Java](./Java/114.java)
 118|[杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)|模拟|根据规律计算出来即可|~|[Java](./Java/118.java)
-121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)|~|思路和`53`题还挺像的|53|[Java](./Java/53.java)
+121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)|~|思路和`53`题还挺像的|53|[Java](./Java/121.java)
 124|[二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)|递归|这道题比较巧妙的地方在于每次递归的返回值和我们最终的结果有联系，但是不是同一个东西|~|[Java](./Java/124.java)
 128|[最长连续序列](https://leetcode-cn.com/problems/longest-consecutive-sequence/)|Hash，[并查集](https://zhuanlan.zhihu.com/p/468711675)|查找型问题，利用Hash可以降低时间复杂度|1|[Java](./Java/128.java)
 136|[只出现一次的数字](https://leetcode-cn.com/problems/single-number/)|位运算|异或运算满足交换律和结合律，异或运算也是一种常见的哈希函数|49|[Java](./Java/136.java)
 139|[单词拆分](https://leetcode-cn.com/problems/word-break/)|动态规划|看到题目就会想到用动态规划来实现，不过状态转移方程不太好想|~|[Java](./Java/139.java)
 141|[环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)|(快慢)双指针|这道题也可以当成查找已经访问的结点，用Hash做|26, 27, 88|[Java](./Java/141.java)
-142|[环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)|(快慢)双指针|此处有重要的数学结论：环内相遇点到入环点的距离等于起点到入环点的距离|141|[Java](./Java/142.java)
+142|[环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)|(快慢)双指针|此处有重要的数学结论：环内相遇点到入环点的距离等于起点到入环点的距离|141, 287|[Java](./Java/142.java)
 146|[LRU 缓存](https://leetcode-cn.com/problems/lru-cache/)|Hash，链表|要求查找和更新操作都要常数时间复杂度。因此需要兼具`Hash`和`链表`的特征|~|[Java](./Java/146.java)
 152|[乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/)|动态规划|一下子维护了两个dp数组|53|[Java](./Java/152.java)
 155|[最小栈](https://leetcode-cn.com/problems/min-stack/)|辅助栈|官方题解是通过辅助栈来实现一个最小栈的结构，额外空间复杂度大，而且有点取巧的感觉，建议用所给代码解法解决，空间复杂度为常数|~|[Java](./Java/155.java)
@@ -111,5 +111,13 @@ Last Updated: 2022.04.03
 240|[搜索二维矩阵 II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii/)|二分查找、Z 字形查找|Z 字形查找比二分查找更充分的利用矩阵的特点|~|[Java](./Java/240.java)
 252|[会议室](https://leetcode-cn.com/problems/meeting-rooms/)|快速优先排序|快排是时间复杂度较低的排序算法|253|[Java](./Java/252.java)
 253|[会议室 II](https://leetcode-cn.com/problems/meeting-rooms-ii/)|优先队列|`Java`中`PriorityQueue`是利用二叉堆实现的[优先队列](https://blog.csdn.net/lcore/article/details/9100073)|~|[Java](./Java/253.java)
-279|[完全平方数](https://leetcode-cn.com/problems/perfect-squares/)|动态规划|背包问题|2212|[Java](./Java/279.java)
+279|[完全平方数](https://leetcode-cn.com/problems/perfect-squares/)|动态规划|这题属于完全背包问题|322,2212|[Java](./Java/279.java)
+283|[移动零](https://leetcode-cn.com/problems/move-zeroes/)|双指针|此题有简易解法|~|[Java](./Java/283.java)
+287|[寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)|二分查找，快慢指针|二分查找主要是问题的转化，知道自己需要找什么；快慢指针难点在于将数组转化为链表结构|142|[Java](./Java/287.java)
+300|[最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)|动态规划，贪心|~|~|[Java](./Java/300.java)
+309|[最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)|动态规划|这道题的状态也需要好好构思一下|121, 122, 123, 188, 714|[Java](./Java/309.java)
+322|[零钱兑换](https://leetcode-cn.com/problems/coin-change/)|动态规划|完全背包问题|279|[Java](./Java/322.java)
+337|[打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii/)|动态规划|树类型的动态规划和后序遍历结合起来用|~|[Java](./Java/337.java)
+338|[比特位计数](https://leetcode-cn.com/problems/counting-bits/)|动态规划|~|~|[Java](./Java/338.java)
+617|[合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees/)|递归|~|226|[Java](./Java/617.java)
 1603|[设计停车系统](https://leetcode-cn.com/problems/design-parking-system/)|模拟|很简单的一道题|~|[Java](./Java/1603.java)
