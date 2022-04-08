@@ -1,9 +1,9 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.04.06
+Last Updated: 2022.04.08
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
-[面试索引](Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
+[面试索引](./Interview/Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
 `find_problem.sh`是一个小脚本，可以根据题号判断你是否做过这道题了。  
 
 ## Data Structures and Algorithms(持续更新)
