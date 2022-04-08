@@ -32,14 +32,8 @@ class Solution337 {
         }
         else {
             // 当前结点没有被打劫
-            // 状态1: 打劫左孩子，不打劫右孩子
-            temp = Math.max(temp, child_rob(p.left, true) + child_rob(p.right, false));
-            // 状态2: 打劫右孩子，不打劫左孩子
-            temp = Math.max(temp, child_rob(p.left, false) + child_rob(p.right, true));
-            // 状态3: 左右孩子都打劫
-            temp = Math.max(temp, child_rob(p.left, true) + child_rob(p.right, true));
-            // 状态4: 左右孩子都不打劫
-            temp = Math.max(temp, child_rob(p.left, false) + child_rob(p.right, false));
+            temp = Math.max(child_rob(p.left, true), child_rob(p.left, false));
+            temp += Math.max(child_rob(p.right, true), child_rob(p.right, false));
         }
         return temp;
     }

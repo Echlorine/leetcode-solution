@@ -8,51 +8,62 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-import java.util.*;
 
 class Solution148 {
     public ListNode sortList(ListNode head) {
-        Map<Integer, ListNode> ans = new TreeMap<>();
-        ListNode p = head, temp = p;
-        int index = 0;
-        // 存放键值对
-        while (p != null)
-            {ans.put(index, p); temp = p; p = p.next; temp.next = null; index++;}
-        // 快排
-        quicksort(ans, 0, ans.size() - 1);
-        // 还原链表
-        for (int i = 0; i < index - 1; i++)
-            ans.get(i).next = ans.get(i + 1);
-        return ans.get(0); // 返回头指针
-    }
-
-    public void quicksort(Map<Integer, ListNode> ans, int begin, int end) {
-        int j = 0;
-        if (begin < end){
-            j = partion(ans, begin, end);
-            quicksort(ans, begin, j - 1);
-            quicksort(ans, j + 1, end);
+        int len = 0;
+        ListNode p = head;
+        while (p != null) {
+            len++;
+            p = p.next;
         }
-    }
-
-    public int partion(Map<Integer, ListNode> ans, int begin, int end) {
-        int s = begin, e = end + 1;
-        int k = ans.get(s).val;
-        ListNode temp;
-        while (s < e){
-            s++;
-            while (ans.get(s).val < k && s < end) s++;
-            e--;
-            while (ans.get(e).val > k) e--;
-            if (s < e) {
-                temp = ans.get(s);
-                ans.put(s, ans.get(e));
-                ans.put(e, temp);
+        ListNode res = new ListNode(0, head); // 哨兵结点
+        // 合并排序
+        int l = 1;
+        while (l < len) {
+            ListNode pre = res, curr = res.next;
+            while (curr != null) {
+                ListNode head1 = curr;
+                for (int i = 1; i < l && curr.next != null; i++)
+                    curr = curr.next;
+                ListNode head2 = curr.next;
+                curr.next = null;
+                curr = head2;
+                for (int i = 1; i < l && curr != null && curr.next != null; i++)
+                    curr = curr.next;
+                ListNode next = null;
+                if (curr != null) {
+                    next = curr.next;
+                    curr.next = null;
+                }
+                
+                ListNode merged = merge(head1, head2);
+                pre.next = merged;
+                while (pre.next != null)
+                    pre = pre.next;
+                curr = next;
             }
+            l *= 2;
         }
-        temp = ans.get(e);
-        ans.put(e, ans.get(begin));
-        ans.put(begin, temp);
-        return e;
+        return res.next;
+    }
+
+    public ListNode merge(ListNode head1, ListNode head2) {
+        ListNode Head = new ListNode(0);
+        ListNode p = Head;
+        while (head1 != null && head2 != null) {
+            if (head1.val < head2.val) {
+                p.next = head1;
+                head1 = head1.next;
+            }
+            else {
+                p.next = head2;
+                head2 = head2.next;
+            }
+            p = p.next;
+        }
+        if (head1 == null) p.next = head2;
+        if (head2 == null) p.next = head1;
+        return Head.next;
     }
 }
