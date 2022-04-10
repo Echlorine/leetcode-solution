@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.04.08
+Last Updated: 2022.04.10
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 [面试索引](./Interview/Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
@@ -123,7 +123,13 @@ Last Updated: 2022.04.08
 337|[打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii/)|动态规划|树类型的动态规划和后序遍历结合起来用|~|[Java](./Java/337.java)
 338|[比特位计数](https://leetcode-cn.com/problems/counting-bits/)|动态规划|~|~|[Java](./Java/338.java)
 347|[前 K 个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)|优先队列|要求时间复杂度优于$O(n$$\log$$n)$，不能简单进行`sort()`|253|[Java](./Java/347.java)
+406|[根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/)|排序|难点在于问题的转化|~|[Java](./Java/406.java)
+437|[路径总和 III](https://leetcode-cn.com/problems/path-sum-iii/)|前缀和|利用树的递归遍历是一个首选思路|560|[Java](./Java/437.java)
+448|[找到所有数组中消失的数字](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/)|~|~|155|[Java](./Java/448.java)
 461|[汉明距离](https://leetcode-cn.com/problems/hamming-distance/)|位运算|题目本质就是统计一个数的二进制表示其中 1 的数目|338|[Java](./Java/461.java)
+560|[和为 K 的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)|前缀和|~|437|[Java](./Java/560.java)
+581|[最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)|插入排序，双指针|无序数组中的最小值和最大值应该在的位置之间的长度即为答案|~|[Java](./Java/581.java)
 617|[合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees/)|递归|~|226|[Java](./Java/617.java)
 647|[回文子串](https://leetcode-cn.com/problems/palindromic-substrings/)|中心扩展法|Manacher 算法不要求掌握|5|[Java](./Java/647.java)
+739|[每日温度](https://leetcode-cn.com/problems/daily-temperatures/)|单调栈|如果需要找到左边或者右边第一个比当前位置的数大或者小，则可以考虑使用单调栈|84, 85|[Java](./Java/739.java)
 1603|[设计停车系统](https://leetcode-cn.com/problems/design-parking-system/)|模拟|很简单的一道题|~|[Java](./Java/1603.java)
