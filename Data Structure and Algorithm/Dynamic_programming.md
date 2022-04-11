@@ -3,6 +3,7 @@
 :--:|:-:|:-:
 221|[最大正方形](https://leetcode-cn.com/problems/maximal-square/)|[Java](../Java/221.java)
 300|[最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)|[Java](../Java/300.java)
+312|[戳气球](https://leetcode-cn.com/problems/burst-balloons/)|[Java](../Java/312.java)
 337|[打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii/)|[Java](../Java/337.java)
 
 # 具有多种状态的DP问题
@@ -24,8 +25,8 @@
 力扣相关问题:  
 题号|名称|答案
 :--:|:-:|:-:
-416|[分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)|~
-494|[目标和](https://leetcode-cn.com/problems/target-sum/)|~
+416|[分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)|[Java](../Java/416.java)
+494|[目标和](https://leetcode-cn.com/problems/target-sum/)|[Java](../Java/494.java)
 879|[盈利计划](https://leetcode-cn.com/problems/profitable-schemes/)|~
 1049|[最后一块石头的重量 II](https://leetcode-cn.com/problems/last-stone-weight-ii/)|~
 1230|[抛掷硬币](https://leetcode-cn.com/problems/toss-strange-coins/)|~
