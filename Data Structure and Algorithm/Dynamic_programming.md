@@ -29,7 +29,7 @@
 494|[目标和](https://leetcode-cn.com/problems/target-sum/)|[Java](../Java/494.java)
 879|[盈利计划](https://leetcode-cn.com/problems/profitable-schemes/)|~
 1049|[最后一块石头的重量 II](https://leetcode-cn.com/problems/last-stone-weight-ii/)|~
-1230|[抛掷硬币](https://leetcode-cn.com/problems/toss-strange-coins/)|~
+1230|[抛掷硬币](https://leetcode-cn.com/problems/toss-strange-coins/)|[Java](../Java/1230.java)
 2212|[射箭比赛中的最大得分](https://leetcode-cn.com/problems/maximum-points-in-an-archery-competition/solution/)|~
 
 ## [完全背包](https://baike.baidu.com/item/%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85/7066689)
@@ -38,5 +38,5 @@
 :--:|:-:|:-:
 279|[完全平方数](https://leetcode-cn.com/problems/perfect-squares/)|[Java](../Java/279.java)
 322|[零钱兑换](https://leetcode-cn.com/problems/coin-change/)|[Java](../Java/322.java)
-518|[零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/)|~
+518|[零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/)|[Java](../Java/518.java)
 1449|[数位成本和为目标值的最大数字](https://leetcode-cn.com/problems/form-largest-integer-with-digits-that-add-up-to-target/)|~

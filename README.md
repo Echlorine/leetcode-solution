@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.04.11
+Last Updated: 2022.04.12
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 [面试索引](./Interview/Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
@@ -53,11 +53,13 @@ Last Updated: 2022.04.11
 42|[接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)|动态规划，双指针|模拟也能解决问题|~|[Java](./Java/42.java)
 46|[全排列](https://leetcode-cn.com/problems/permutations/)|DFS|~|17, 78, 79|[Java](./Java/46.java) [Python](./Python/46.py)
 48|[旋转图像](https://leetcode-cn.com/problems/rotate-image/)|模拟|有技巧的模拟|~|[Java](./Java/48.java)
-49|[字母异位词分组](https://leetcode-cn.com/problems/group-anagrams/)|Hash|此题需要对哈希以及哈希函数有更深的了解|1|[Java](./Java/49.java)
+49|[字母异位词分组](https://leetcode-cn.com/problems/group-anagrams/)|计数，Hash|手动编写 Hash 函数的难点在于解决哈希冲突|1, 438|[Java](./Java/49.java)
+50|[Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)|快速幂算法|分治思想，同时了解迭代思想背后的数学原理|~|[Java](./Java/50.java)
 53|[最大子数组和](https://leetcode-cn.com/problems/maximum-subarray/)|动态规划|这道题也可以利用线段树来做|~|[Python](./Python/53.py)
 55|[跳跃游戏](https://leetcode-cn.com/problems/jump-game/)|贪心，动态规划|~|~|[Python](./Java/55.java)
 56|[合并区间](https://leetcode-cn.com/problems/merge-intervals/)|快速排序|~|~|[Java](./Java/56.java)
 58|[最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word/)|遍历|此题没什么难度|~|[Python](./Python/58.py)
+61|[旋转链表](https://leetcode-cn.com/problems/rotate-list/)|双指针|~|~|[Java](./Java/61.java)
 62|[不同路径](https://leetcode-cn.com/problems/unique-paths/)|DFS，动态规划|DFS会超时，用动态规划|63, 64|[Java](./Java/62.java)
 63|[不同路径 II](https://leetcode-cn.com/problems/unique-paths-ii/)|DFS，动态规划|DFS会超时，用动态规划|62, 64|[Java](./Java/63.java)
 64|[最小路径和](https://leetcode-cn.com/problems/minimum-path-sum/)|动态规划|~|62, 63|[Java](./Java/64.java)
@@ -96,6 +98,7 @@ Last Updated: 2022.04.11
 155|[最小栈](https://leetcode-cn.com/problems/min-stack/)|辅助栈|官方题解是通过辅助栈来实现一个最小栈的结构，额外空间复杂度大，而且有点取巧的感觉，建议用所给代码解法解决，空间复杂度为常数|~|[Java](./Java/155.java)
 160|[相交链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)|Hash，数学|这道题的数学没见过类似题型的话，不太好想|~|[Java](./Java/160.java)
 168|[Excel表列名称](https://leetcode-cn.com/problems/excel-sheet-column-title/)|模拟|10进制与26进制的转换，注意细节就好|~|[Java](./Java/168.java)
+169|[多数元素](https://leetcode-cn.com/problems/majority-element/)|哈希表，**Boyer-Moore 投票算法**|~|~|[Java](./Java/169.java)
 170|[两数之和 III - 数据结构设计](https://leetcode-cn.com/problems/two-sum-iii-data-structure-design/)|Hash|~|1|[Java](./Java/170.java)
 198|[打家劫舍](https://leetcode-cn.com/problems/house-robber/)|动态规划|利用**滚动数组**可以降低空间复杂度|~|[Java](./Java/198.java)
 200|[岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)|DFS，BFS|并查集也可以解决这道题目，可以好好研究研究|128|[Java](./Java/200.java)
@@ -103,6 +106,7 @@ Last Updated: 2022.04.11
 206|[反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)|递归、迭代|~|~|[Java](./Java/206.java)
 207|[课程表](https://leetcode-cn.com/problems/course-schedule/)|拓扑排序|图的相关知识，必须要会|网易笔试题考过|[Java](./Java/207.java)
 208|[实现 Trie (前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)|前缀树|学习前缀树这个模型，可能会对其他字符串类型的题提供解决思路|~|[Java](./Java/208.java)
+215|[数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)|选择排序|快速排序、堆排序|~|[Java](./Java/215.java)
 221|[最大正方形](https://leetcode-cn.com/problems/maximal-square/)|动态规划|重点还是找到状态以及建立状态转移方程|1277|[Java](./Java/221.java)
 226|[翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)|递归|遇到二叉树最先想到的就应该是递归|101|[Java](./Java/226.java)
 234|[回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)|递归、快慢指针|这道题的递归方法可以更好的了解递归的作用机理|206|[Java](./Java/234.java)
@@ -123,13 +127,16 @@ Last Updated: 2022.04.11
 337|[打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii/)|动态规划|树类型的动态规划和后序遍历结合起来用|~|[Java](./Java/337.java)
 338|[比特位计数](https://leetcode-cn.com/problems/counting-bits/)|动态规划|~|~|[Java](./Java/338.java)
 347|[前 K 个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)|优先队列|要求时间复杂度优于$O(n$$\log$$n)$，不能简单进行`sort()`|253|[Java](./Java/347.java)
+357|[统计各位数字都不同的数字个数](https://leetcode-cn.com/problems/count-numbers-with-unique-digits/)|排列组合|这是一道数学问题|~|[Java](./Java/357.java)
+394|[字符串解码](https://leetcode-cn.com/problems/decode-string/)|栈|括号匹配的问题|20|[Java](./Java/394.java)
 406|[根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/)|排序|难点在于问题的转化|~|[Java](./Java/406.java)
-416|[分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)|动态规划|0-1背包问题|494|[Java](./Java/416.java)
+416|[分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)|动态规划|0-1背包问题|494, 1230|[Java](./Java/416.java)
 437|[路径总和 III](https://leetcode-cn.com/problems/path-sum-iii/)|前缀和|利用树的递归遍历是一个首选思路|560|[Java](./Java/437.java)
-438|[找到字符串中所有字母异位词](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/)|滑动窗口|~|155, 448|[Java](./Java/438.java)
+438|[找到字符串中所有字母异位词](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/)|滑动窗口|~|49, 155, 448|[Java](./Java/438.java)
 448|[找到所有数组中消失的数字](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/)|~|~|155|[Java](./Java/448.java)
 461|[汉明距离](https://leetcode-cn.com/problems/hamming-distance/)|位运算|题目本质就是统计一个数的二进制表示其中 1 的数目|338|[Java](./Java/461.java)
-494|[目标和](https://leetcode-cn.com/problems/target-sum/)|动态规划|0-1背包问题|416|[Java](./Java/494.java)
+494|[目标和](https://leetcode-cn.com/problems/target-sum/)|动态规划|0-1背包问题|416, 1230|[Java](./Java/494.java)
+518|[零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/)|动态规划|完全背包问题|~|[Java](./Java/518.java)
 538|[把二叉搜索树转换为累加树](https://leetcode-cn.com/problems/convert-bst-to-greater-tree/)|中根遍历|转化问题，就很好解决|94|[Java](./Java/538.java)
 543|[二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)|DFS|~|~|[Java](./Java/543.java)
 560|[和为 K 的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)|前缀和|~|437|[Java](./Java/560.java)
@@ -137,4 +144,7 @@ Last Updated: 2022.04.11
 617|[合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees/)|递归|~|226|[Java](./Java/617.java)
 647|[回文子串](https://leetcode-cn.com/problems/palindromic-substrings/)|中心扩展法|Manacher 算法不要求掌握|5|[Java](./Java/647.java)
 739|[每日温度](https://leetcode-cn.com/problems/daily-temperatures/)|单调栈|如果需要找到左边或者右边第一个比当前位置的数大或者小，则可以考虑使用单调栈|84, 85|[Java](./Java/739.java)
+804|[唯一摩尔斯密码词](https://leetcode-cn.com/problems/unique-morse-code-words/)|哈希表|`Java`中直接利用数组实现 hash 比`HashMap`速度快一点点|1|[Java](./Java/804.java)
+806|[写字符串需要的行数](https://leetcode-cn.com/problems/number-of-lines-to-write-string/)|模拟|~|~|[Java](./Java/806.java)
+1230|[抛掷硬币](https://leetcode-cn.com/problems/toss-strange-coins/)|动态规划|0-1背包问题|416, 494|[Java](./Java/1230.java)
 1603|[设计停车系统](https://leetcode-cn.com/problems/design-parking-system/)|模拟|很简单的一道题|~|[Java](./Java/1603.java)
