@@ -14,7 +14,7 @@ Last Updated: 2022.04.13
 ## Shell  
 力扣上`Shell`编程题不算多，可以点击[这里](./Shell/Shell.md)查看。应对笔试/面试，更多还是要学习相应数据结构与算法的知识。 
   
-## 下面是力扣上每一道题及其考察的知识点(持续更新):  
+## 力扣题库及其考察的知识点(持续更新):  
 题号|题目名称|考察知识点|说明|关联题型|答案
 :--:|:-----:|:--------:|:---|:------|:-:
 1|[两数之和](https://leetcode-cn.com/problems/two-sum/)|哈希表|Hash的思想：将键与值匹配，实现快速查找的效果|170|[Java](./Java/1.java)
@@ -107,6 +107,7 @@ Last Updated: 2022.04.13
 207|[课程表](https://leetcode-cn.com/problems/course-schedule/)|拓扑排序|图的相关知识，必须要会|网易笔试题考过|[Java](./Java/207.java)
 208|[实现 Trie (前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)|前缀树|学习前缀树这个模型，可能会对其他字符串类型的题提供解决思路|~|[Java](./Java/208.java)
 215|[数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)|选择排序|快速排序、堆排序|~|[Java](./Java/215.java)
+217|[存在重复元素](https://leetcode-cn.com/problems/contains-duplicate/)|哈希表|此题进一步优化，只要哈希表中存在当前值即可返回真|~|[Java](./Java/217.java)
 221|[最大正方形](https://leetcode-cn.com/problems/maximal-square/)|动态规划|重点还是找到状态以及建立状态转移方程|1277|[Java](./Java/221.java)
 226|[翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)|递归|遇到二叉树最先想到的就应该是递归|101|[Java](./Java/226.java)
 234|[回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)|递归、快慢指针|这道题的递归方法可以更好的了解递归的作用机理|206|[Java](./Java/234.java)
@@ -116,6 +117,7 @@ Last Updated: 2022.04.13
 240|[搜索二维矩阵 II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii/)|二分查找、Z 字形查找|Z 字形查找比二分查找更充分的利用矩阵的特点|~|[Java](./Java/240.java)
 252|[会议室](https://leetcode-cn.com/problems/meeting-rooms/)|快速优先排序|快排是时间复杂度较低的排序算法|253|[Java](./Java/252.java)
 253|[会议室 II](https://leetcode-cn.com/problems/meeting-rooms-ii/)|优先队列|`Java`中`PriorityQueue`是利用二叉堆实现的[优先队列](https://blog.csdn.net/lcore/article/details/9100073)|~|[Java](./Java/253.java)
+278|[第一个错误的版本](https://leetcode-cn.com/problems/first-bad-version/)|二分查找|~|~|[Java](./Java/278.java)
 279|[完全平方数](https://leetcode-cn.com/problems/perfect-squares/)|动态规划|这题属于完全背包问题|322,2212|[Java](./Java/279.java)
 283|[移动零](https://leetcode-cn.com/problems/move-zeroes/)|双指针|此题有简易解法|~|[Java](./Java/283.java)
 287|[寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)|二分查找，快慢指针|二分查找主要是问题的转化，知道自己需要找什么；快慢指针难点在于将数组转化为链表结构|142|[Java](./Java/287.java)
@@ -148,3 +150,8 @@ Last Updated: 2022.04.13
 806|[写字符串需要的行数](https://leetcode-cn.com/problems/number-of-lines-to-write-string/)|模拟|~|~|[Java](./Java/806.java)
 1230|[抛掷硬币](https://leetcode-cn.com/problems/toss-strange-coins/)|动态规划|0-1背包问题|416, 494|[Java](./Java/1230.java)
 1603|[设计停车系统](https://leetcode-cn.com/problems/design-parking-system/)|模拟|很简单的一道题|~|[Java](./Java/1603.java)
+
+## 剑指 Offer（第 2 版）题库及其考察的知识点(持续更新):  
+题号|题目名称|考察知识点|说明|关联题型|答案
+:--:|:-----:|:--------:|:---|:------|:-:
+09|[用两个栈实现队列](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)|~|~|~|[Java](./Java/offer09.java)
