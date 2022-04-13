@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.04.12
+Last Updated: 2022.04.13
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 [面试索引](./Interview/Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
@@ -9,7 +9,7 @@ Last Updated: 2022.04.12
 ## Data Structures and Algorithms(持续更新)
 * [DFS](./Data%20Structure%20and%20Algorithm/DFS/DFS.md): 深度优先遍历，适用于找到所有可能的解。可能会遇到超时的问题，这时候可以考虑动态规划。
 * [DP](./Data%20Structure%20and%20Algorithm/Dynamic_programming.md): 重点在于状态的建模以及状态转移方程的建立
-* 优先队列
+* [Sort](./Data%20Structure%20and%20Algorithm/Sort/Sort.md): 总结了常见的排序算法
   
 ## Shell  
 力扣上`Shell`编程题不算多，可以点击[这里](./Shell/Shell.md)查看。应对笔试/面试，更多还是要学习相应数据结构与算法的知识。 
@@ -93,7 +93,7 @@ Last Updated: 2022.04.12
 141|[环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)|(快慢)双指针|这道题也可以当成查找已经访问的结点，用Hash做|26, 27, 88|[Java](./Java/141.java)
 142|[环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)|(快慢)双指针|此处有重要的数学结论：环内相遇点到入环点的距离等于起点到入环点的距离|141, 287|[Java](./Java/142.java)
 146|[LRU 缓存](https://leetcode-cn.com/problems/lru-cache/)|Hash，链表|要求查找和更新操作都要常数时间复杂度。因此需要兼具`Hash`和`链表`的特征|~|[Java](./Java/146.java)
-148|[排序链表](https://leetcode-cn.com/problems/sort-list/)|归并排序|时间复杂度$O(n$$\log$$n)$|~|[Java](./Java/148.java)
+148|[排序链表](https://leetcode-cn.com/problems/sort-list/)|归并排序|时间复杂度$O({n\log_2n})$|~|[Java](./Java/148.java)
 152|[乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/)|动态规划|一下子维护了两个dp数组|53|[Java](./Java/152.java)
 155|[最小栈](https://leetcode-cn.com/problems/min-stack/)|辅助栈|官方题解是通过辅助栈来实现一个最小栈的结构，额外空间复杂度大，而且有点取巧的感觉，建议用所给代码解法解决，空间复杂度为常数|~|[Java](./Java/155.java)
 160|[相交链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)|Hash，数学|这道题的数学没见过类似题型的话，不太好想|~|[Java](./Java/160.java)
@@ -126,7 +126,7 @@ Last Updated: 2022.04.12
 322|[零钱兑换](https://leetcode-cn.com/problems/coin-change/)|动态规划|完全背包问题|279|[Java](./Java/322.java)
 337|[打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii/)|动态规划|树类型的动态规划和后序遍历结合起来用|~|[Java](./Java/337.java)
 338|[比特位计数](https://leetcode-cn.com/problems/counting-bits/)|动态规划|~|~|[Java](./Java/338.java)
-347|[前 K 个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)|优先队列|要求时间复杂度优于$O(n$$\log$$n)$，不能简单进行`sort()`|253|[Java](./Java/347.java)
+347|[前 K 个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)|优先队列|要求时间复杂度优于$O({n\log_2n})$，不能简单进行`sort()`|253|[Java](./Java/347.java)
 357|[统计各位数字都不同的数字个数](https://leetcode-cn.com/problems/count-numbers-with-unique-digits/)|排列组合|这是一道数学问题|~|[Java](./Java/357.java)
 394|[字符串解码](https://leetcode-cn.com/problems/decode-string/)|栈|括号匹配的问题|20|[Java](./Java/394.java)
 406|[根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/)|排序|难点在于问题的转化|~|[Java](./Java/406.java)
