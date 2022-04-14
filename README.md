@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.04.13
+Last Updated: 2022.04.14
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 [面试索引](./Interview/Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
@@ -37,7 +37,7 @@ Last Updated: 2022.04.13
 18|[四数之和](https://leetcode-cn.com/problems/4sum/)|双指针|~|15, 16|[Java](./Java/18.java)
 19|[删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)|(前后)双指针|前后双指针的一个很巧妙的应用|~|[Java](./Java/19.java)
 20|[有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)|栈|括号匹配的一个很经典的例子，用栈来实现|22, 32|[Python](./Python/20.py)
-21|[合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)|递归、迭代|这道题的迭代也很经典|23|[Python](./Python/21.py)
+21|[合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)|递归、迭代|这道题的迭代也很经典|23|[Java](./Java/21.java) [Python](./Python/21.py)
 22|[括号生成](https://leetcode-cn.com/problems/generate-parentheses/)|DFS|~|20, 32|[Java](./Java/22.java)
 23|[合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)|分治、优先队列|**优先队列笔试挺喜欢考的**|21|[Java](./Java/23.java)
 26|[删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)|(快慢)双指针|~|27, 88, 141|[Python](./Python/26.py)
@@ -97,6 +97,7 @@ Last Updated: 2022.04.13
 152|[乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/)|动态规划|一下子维护了两个dp数组|53|[Java](./Java/152.java)
 155|[最小栈](https://leetcode-cn.com/problems/min-stack/)|辅助栈|官方题解是通过辅助栈来实现一个最小栈的结构，额外空间复杂度大，而且有点取巧的感觉，建议用所给代码解法解决，空间复杂度为常数|~|[Java](./Java/155.java)
 160|[相交链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)|Hash，数学|这道题的数学没见过类似题型的话，不太好想|~|[Java](./Java/160.java)
+163|[缺失的区间](https://leetcode-cn.com/problems/missing-ranges/)|遍历数组|模拟，注意边界即可|~|[Java](./Java/163.java)
 168|[Excel表列名称](https://leetcode-cn.com/problems/excel-sheet-column-title/)|模拟|10进制与26进制的转换，注意细节就好|~|[Java](./Java/168.java)
 169|[多数元素](https://leetcode-cn.com/problems/majority-element/)|哈希表，**Boyer-Moore 投票算法**|~|~|[Java](./Java/169.java)
 170|[两数之和 III - 数据结构设计](https://leetcode-cn.com/problems/two-sum-iii-data-structure-design/)|Hash|~|1|[Java](./Java/170.java)
@@ -144,6 +145,7 @@ Last Updated: 2022.04.13
 560|[和为 K 的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)|前缀和|~|437|[Java](./Java/560.java)
 581|[最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)|插入排序，双指针|无序数组中的最小值和最大值应该在的位置之间的长度即为答案|~|[Java](./Java/581.java)
 617|[合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees/)|递归|~|226|[Java](./Java/617.java)
+621|[任务调度器](https://leetcode-cn.com/problems/task-scheduler/)|模拟|~|~|[Java](./Java/621.java)
 647|[回文子串](https://leetcode-cn.com/problems/palindromic-substrings/)|中心扩展法|Manacher 算法不要求掌握|5|[Java](./Java/647.java)
 739|[每日温度](https://leetcode-cn.com/problems/daily-temperatures/)|单调栈|如果需要找到左边或者右边第一个比当前位置的数大或者小，则可以考虑使用单调栈|84, 85|[Java](./Java/739.java)
 804|[唯一摩尔斯密码词](https://leetcode-cn.com/problems/unique-morse-code-words/)|哈希表|`Java`中直接利用数组实现 hash 比`HashMap`速度快一点点|1|[Java](./Java/804.java)

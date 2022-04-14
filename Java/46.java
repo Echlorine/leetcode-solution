@@ -10,7 +10,7 @@ class Solution46 {
         return res;
     }
 
-    public static void dfs(int[] nums, List<List<Integer>> res, List<Integer> ans, boolean[] visited){
+    public static void dfs(int[] nums, List<List<Integer>> res, List<Integer> ans, boolean[] visited) {
         if (ans.size() == nums.length) {res.add(new ArrayList<Integer>(ans)); return;}
         for (int i = 0; i < nums.length; i++)
             if (!visited[i]){
