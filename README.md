@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.04.15
+Last Updated: 2022.04.16
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 [面试索引](./Interview/Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
@@ -54,11 +54,13 @@ Last Updated: 2022.04.15
 39|[组合总和](https://leetcode-cn.com/problems/combination-sum/)|DFS|~|~|[Java](./Java/39.java)
 40|[组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/)|DFS|需要剪枝|47|[Java](./Java/40.java)
 42|[接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)|动态规划，双指针|模拟也能解决问题|~|[Java](./Java/42.java)
-46|[全排列](https://leetcode-cn.com/problems/permutations/)|DFS|~|17, 78, 79|[Java](./Java/46.java) [Python](./Python/46.py)
+46|[全排列](https://leetcode-cn.com/problems/permutations/)|DFS|~|17, 77, 78|[Java](./Java/46.java) [Python](./Python/46.py)
 47|[全排列 II](https://leetcode-cn.com/problems/permutations-ii/)|DFS|~|40, 46|[Java](./Java/47.java)
 48|[旋转图像](https://leetcode-cn.com/problems/rotate-image/)|模拟|有技巧的模拟|~|[Java](./Java/48.java)
 49|[字母异位词分组](https://leetcode-cn.com/problems/group-anagrams/)|计数，Hash|手动编写 Hash 函数的难点在于解决哈希冲突|1, 438|[Java](./Java/49.java)
 50|[Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)|快速幂算法|分治思想，同时了解迭代思想背后的数学原理|~|[Java](./Java/50.java)
+51|[N 皇后](https://leetcode-cn.com/problems/n-queens/)|DFS|学会使用位运算剪枝|52|[Java](./Java/51.java)
+52|[N皇后 II](https://leetcode-cn.com/problems/n-queens-ii/)|DFS|~学会使用位运算剪|51|[Java](./Java/52.java)
 53|[最大子数组和](https://leetcode-cn.com/problems/maximum-subarray/)|动态规划|这道题也可以利用线段树来做|~|[Python](./Python/53.py)
 55|[跳跃游戏](https://leetcode-cn.com/problems/jump-game/)|贪心，动态规划|~|~|[Python](./Java/55.java)
 56|[合并区间](https://leetcode-cn.com/problems/merge-intervals/)|快速排序|~|~|[Java](./Java/56.java)
@@ -74,8 +76,9 @@ Last Updated: 2022.04.15
 72|[编辑距离](https://leetcode-cn.com/problems/edit-distance/)|动态规划|挺不好理解的|~|[Java](./Java/72.java)
 75|[颜色分类](https://leetcode-cn.com/problems/sort-colors/)|快速排序，模拟|用指针进行模拟更简单一些|~|[Java](./Java/75.java)
 76|[最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/)|滑动窗口|~|3|[Java](./Java/76.java)
-78|[子集](https://leetcode-cn.com/problems/subsets/)|DFS|和46题一样，是一道DFS的经典题|46, 79|[Java](./Java/78.java)
-79|[单词搜索](https://leetcode-cn.com/problems/word-search/)|DFS|~|46, 78|[Java](./Java/79.java)
+77|[组合](https://leetcode-cn.com/problems/combinations/)|DFS|有着不同的考虑问题的思路|78|[Java](./Java/77.java)
+78|[子集](https://leetcode-cn.com/problems/subsets/)|DFS|和46题一样，是一道DFS的经典题|46, 77|[Java](./Java/78.java)
+79|[单词搜索](https://leetcode-cn.com/problems/word-search/)|DFS|~|62, 63, 64, 200|[Java](./Java/79.java)
 84|[柱状图中最大的矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/)|单调栈|思路比较容易想，但是**单调栈**这种数据结构不一定会应用|85|[Java](./Java/84.java)
 85|[最大矩形](https://leetcode-cn.com/problems/maximal-rectangle/)|单调栈|本质和84题居然相同，思路不太容易想|84|[Java](./Java/85.java)
 88|[合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)|双指针|~|26, 27|[Python](./Python/88.py)
