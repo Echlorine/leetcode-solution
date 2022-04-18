@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.04.16
+Last Updated: 2022.04.18
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 [面试索引](./Interview/Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
@@ -53,6 +53,7 @@ Last Updated: 2022.04.16
 37|[解数独](https://leetcode-cn.com/problems/sudoku-solver/)|DFS|回溯|36|[Java](./Java/37.java)
 39|[组合总和](https://leetcode-cn.com/problems/combination-sum/)|DFS|~|~|[Java](./Java/39.java)
 40|[组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/)|DFS|需要剪枝|47|[Java](./Java/40.java)
+41|[缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/)|~|~|287, 442, 448|[Java](./Java/41.java)
 42|[接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)|动态规划，双指针|模拟也能解决问题|~|[Java](./Java/42.java)
 46|[全排列](https://leetcode-cn.com/problems/permutations/)|DFS|~|17, 77, 78|[Java](./Java/46.java) [Python](./Python/46.py)
 47|[全排列 II](https://leetcode-cn.com/problems/permutations-ii/)|DFS|~|40, 46|[Java](./Java/47.java)
@@ -76,20 +77,24 @@ Last Updated: 2022.04.16
 72|[编辑距离](https://leetcode-cn.com/problems/edit-distance/)|动态规划|挺不好理解的|~|[Java](./Java/72.java)
 75|[颜色分类](https://leetcode-cn.com/problems/sort-colors/)|快速排序，模拟|用指针进行模拟更简单一些|~|[Java](./Java/75.java)
 76|[最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/)|滑动窗口|~|3|[Java](./Java/76.java)
-77|[组合](https://leetcode-cn.com/problems/combinations/)|DFS|有着不同的考虑问题的思路|78|[Java](./Java/77.java)
+77|[组合](https://leetcode-cn.com/problems/combinations/)|DFS|有着不同的考虑问题的思路|78, 216|[Java](./Java/77.java)
 78|[子集](https://leetcode-cn.com/problems/subsets/)|DFS|和46题一样，是一道DFS的经典题|46, 77|[Java](./Java/78.java)
 79|[单词搜索](https://leetcode-cn.com/problems/word-search/)|DFS|~|62, 63, 64, 200|[Java](./Java/79.java)
 84|[柱状图中最大的矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/)|单调栈|思路比较容易想，但是**单调栈**这种数据结构不一定会应用|85|[Java](./Java/84.java)
 85|[最大矩形](https://leetcode-cn.com/problems/maximal-rectangle/)|单调栈|本质和84题居然相同，思路不太容易想|84|[Java](./Java/85.java)
 88|[合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)|双指针|~|26, 27|[Python](./Python/88.py)
+89|[格雷编码](https://leetcode-cn.com/problems/gray-code/)|DFS，位运算|根据生成[公式](https://baike.baidu.com/item/%E6%A0%BC%E9%9B%B7%E7%A0%81#5)也可以直接生成|~|[Java](./Java/89.java)
+90|[子集 II](https://leetcode-cn.com/problems/subsets-ii/)|DFS|掌握二进制枚举这种思路|77, 78|[Java](./Java/90.java)
 93|[复原 IP 地址](https://leetcode-cn.com/problems/restore-ip-addresses/)|回溯|利用IP特征，3层for循环是一个很朴素的思路|~|[Java](./Java/93.java)
 94|[二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)|二叉树的遍历|二叉树的先根、中根、后根遍历本质都是DFS|98, 101|[Java](./Java/94.java)
+95|[不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/)|递归|树的问题，优先选择递归|~|[Java](./Java/95.java)
 96|[不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees/)|动态规划，卡塔兰数|题目本质为知道中根遍历的结果，一共有多少种可能的二叉树。[卡塔兰数](https://baike.baidu.com/item/catalan/7605685)的应用|~|[Java](./Java/96.java)
 98|[验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/solution/)|中根遍历|二叉搜索树的中根遍历结果是**递增**的|94, 98|[Java](./Java/98.java)
 101|[对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)|二叉树的遍历|二叉树遍历的主要方法：直接**递归**、用**队列**模拟递归|94, 98|[Java](./Java/101.java)
 102|[二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)|二叉树的层次遍历|层次遍历的本质是**BFS**|~|[Java](./Java/102.java)
 104|[二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)|递归，DFS，BFS|还是喜欢递归的思路|~|[Java](./Java/104.java)
 105|[从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|利用先根遍历和中根遍历|配上Hash可以省去查找的时间|~|[Java](./Java/105.java)
+113|[路径总和 II](https://leetcode-cn.com/problems/path-sum-ii/)|DFS|树的遍历，递归思路|~|[Java](./Java/113.java)
 114|[二叉树展开为链表](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/)|先根遍历|这道题的思路有很多，个人还是喜欢递归，毕竟树的问题，一般都用递归解决|~|[Java](./Java/114.java)
 118|[杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)|模拟|根据规律计算出来即可|~|[Java](./Java/118.java)
 121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)|~|思路和`53`题还挺像的|53|[Java](./Java/121.java)
@@ -115,6 +120,7 @@ Last Updated: 2022.04.16
 207|[课程表](https://leetcode-cn.com/problems/course-schedule/)|拓扑排序|图的相关知识，必须要会|网易笔试题考过|[Java](./Java/207.java)
 208|[实现 Trie (前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)|前缀树|学习前缀树这个模型，可能会对其他字符串类型的题提供解决思路|~|[Java](./Java/208.java)
 215|[数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)|选择排序|快速排序、堆排序|~|[Java](./Java/215.java)
+216|[组合总和 III](https://leetcode-cn.com/problems/combination-sum-iii/)|DFS|剪枝进一步优化时间|77|[Java](./Java/216.java)
 217|[存在重复元素](https://leetcode-cn.com/problems/contains-duplicate/)|哈希表|此题进一步优化，只要哈希表中存在当前值即可返回真|~|[Java](./Java/217.java)
 221|[最大正方形](https://leetcode-cn.com/problems/maximal-square/)|动态规划|重点还是找到状态以及建立状态转移方程|1277|[Java](./Java/221.java)
 226|[翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)|递归|遇到二叉树最先想到的就应该是递归|101|[Java](./Java/226.java) [Python](./Python/226.py)
