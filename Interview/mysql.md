@@ -565,7 +565,7 @@ mysql> SELECT * from test;
 3 rows in set (0.00 sec)
 ```
 
-# 缩表与解锁
+# 锁表与解锁
 1. 锁定: `LOCK TABLES tbl_name [AS alias];`
 2. 解锁: `UNLOCK TABLES;`
 
