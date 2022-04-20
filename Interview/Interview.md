@@ -3,5 +3,7 @@
 
 1. [数据结构与算法](../README.md)
 2. [Java](./Java.md)
-3. [MySQL](./MySQL.md)
-4. [计算机网络](./Network.md)
+3. [数据库](./数据库.md)
+4. [MySQL](./MySQL.md)
+5. [MySQL命令](./mysql.md)
+6. [计算机网络](./Network.md)
