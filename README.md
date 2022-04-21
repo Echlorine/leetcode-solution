@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.04.20
+Last Updated: 2022.04.21
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 [面试索引](./Interview/Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
@@ -90,16 +90,20 @@ Last Updated: 2022.04.20
 [95. 不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/)|递归|树的问题，优先选择递归|~|[Java](./Java/95.java)
 [96. 不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees/)|动态规划，卡塔兰数|题目本质为知道中根遍历的结果，一共有多少种可能的二叉树。[卡塔兰数](https://baike.baidu.com/item/catalan/7605685)的应用|~|[Java](./Java/96.java)
 [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/solution/)|中根遍历|二叉搜索树的中根遍历结果是**递增**的|94, 98|[Java](./Java/98.java)
+[100. 相同的树](https://leetcode-cn.com/problems/same-tree/)|递归|也可以遍历|~|[Java](./Java/100.java)
 [101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)|二叉树的遍历|二叉树遍历的主要方法：直接**递归**、用**队列**模拟递归|94, 98|[Java](./Java/101.java)
 [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)|二叉树的层次遍历|层次遍历的本质是**BFS**|~|[Java](./Java/102.java)
-[104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)|递归，DFS，BFS|还是喜欢递归的思路|~|[Java](./Java/104.java)
-[105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|利用先根遍历和中根遍历|配上Hash可以省去查找的时间|~|[Java](./Java/105.java)
+[104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)|递归，DFS，BFS|还是喜欢递归的思路|111, 257|[Java](./Java/104.java)
+[105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|利用先根遍历和中根遍历|配上Hash可以省去查找的时间|106, 1008|[Java](./Java/105.java)
+[106. 从中序与后序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)|掌握后根遍历和中根遍历|~|105, 1008|[Java](./Java/106.java)
+[111. 二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)|递归|可以采用DFS遍历并实时更新最短路径|104, 257|[Java](./Java/111.java)
 [113. 路径总和 II](https://leetcode-cn.com/problems/path-sum-ii/)|DFS|树的遍历，递归思路|~|[Java](./Java/113.java)
 [114. 二叉树展开为链表](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/)|先根遍历|这道题的思路有很多，个人还是喜欢递归，毕竟树的问题，一般都用递归解决|~|[Java](./Java/114.java)
 [118. 杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)|模拟|根据规律计算出来即可|~|[Java](./Java/118.java)
 [121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)|~|思路和`53`题还挺像的|53|[Java](./Java/121.java)
 [124. 二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)|递归|这道题比较巧妙的地方在于每次递归的返回值和我们最终的结果有联系，但是不是同一个东西|~|[Java](./Java/124.java)
 [128. 最长连续序列](https://leetcode-cn.com/problems/longest-consecutive-sequence/)|Hash，[并查集](https://zhuanlan.zhihu.com/p/468711675)|查找型问题，利用Hash可以降低时间复杂度|1|[Java](./Java/128.java)
+[129. 求根节点到叶节点数字之和](https://leetcode-cn.com/leetbook/read/dfs/e81805/)|树的遍历|DFS, BFS|~|[Java](./Java/129.java)
 [131. 分割回文串](https://leetcode-cn.com/problems/palindrome-partitioning/)|回溯|~|~|[Java](./Java/131.java)
 [136. 只出现一次的数字](https://leetcode-cn.com/problems/single-number/)|位运算|异或运算满足交换律和结合律，异或运算也是一种常见的哈希函数|49|[Java](./Java/136.java)
 [139. 单词拆分](https://leetcode-cn.com/problems/word-break/)|动态规划|看到题目就会想到用动态规划来实现，不过状态转移方程不太好想|~|[Java](./Java/139.java)
@@ -132,6 +136,7 @@ Last Updated: 2022.04.20
 [240. 搜索二维矩阵 II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii/)|二分查找、Z 字形查找|Z 字形查找比二分查找更充分的利用矩阵的特点|~|[Java](./Java/240.java)
 [252. 会议室](https://leetcode-cn.com/problems/meeting-rooms/)|快速优先排序|快排是时间复杂度较低的排序算法|253|[Java](./Java/252.java)
 [253. 会议室 II](https://leetcode-cn.com/problems/meeting-rooms-ii/)|优先队列|`Java`中`PriorityQueue`是利用二叉堆实现的[优先队列](https://blog.csdn.net/lcore/article/details/9100073)|~|[Java](./Java/253.java)
+[257. 二叉树的所有路径](https://leetcode-cn.com/problems/binary-tree-paths/)|回溯|树的深度优先遍历|104, 111|[Java](./Java/257.java)
 [278. 第一个错误的版本](https://leetcode-cn.com/problems/first-bad-version/)|二分查找|~|~|[Java](./Java/278.java)
 [279. 完全平方数](https://leetcode-cn.com/problems/perfect-squares/)|动态规划|这题属于完全背包问题|322,2212|[Java](./Java/279.java)
 [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)|双指针|此题有简易解法|~|[Java](./Java/283.java)
@@ -166,6 +171,7 @@ Last Updated: 2022.04.20
 [739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures/)|单调栈|如果需要找到左边或者右边第一个比当前位置的数大或者小，则可以考虑使用单调栈|84, 85|[Java](./Java/739.java)
 [804. 唯一摩尔斯密码词](https://leetcode-cn.com/problems/unique-morse-code-words/)|哈希表|`Java`中直接利用数组实现 hash 比`HashMap`速度快一点点|1|[Java](./Java/804.java)
 [806. 写字符串需要的行数](https://leetcode-cn.com/problems/number-of-lines-to-write-string/)|模拟|~|~|[Java](./Java/806.java)
+[1008. 前序遍历构造二叉搜索树](https://leetcode-cn.com/problems/construct-binary-search-tree-from-preorder-traversal/)|递归|构建二叉树的题目|105, 106|[Java](./Java/1008.java)
 [1230. 抛掷硬币](https://leetcode-cn.com/problems/toss-strange-coins/)|动态规划|0-1背包问题|416, 494|[Java](./Java/1230.java)
 [1603. 设计停车系统](https://leetcode-cn.com/problems/design-parking-system/)|模拟|很简单的一道题|~|[Java](./Java/1603.java)
 
