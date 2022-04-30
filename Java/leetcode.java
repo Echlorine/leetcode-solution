@@ -1,6 +1,11 @@
 public class leetcode { 
     public static void main(String[] args) {
-        
+        String str1 = "1023";
+        System.out.println(str1.substring(1,2) == "0");
+        System.out.println(str1.substring(1,2).equals("0"));
+        String str2 = "10";
+        str2 = str2 + "23";
+        System.out.println(str1.equals(str2));
     }
 }
 // 

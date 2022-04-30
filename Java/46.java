@@ -1,24 +1,24 @@
 import java.util.*;
 
 class Solution46 {
-    public static List<List<Integer>> permute(int[] nums) {
-        // 思路: dfs
-        List<List<Integer>> res = new ArrayList<>();
-        List<Integer> ans = new ArrayList<>();
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> res = new LinkedList<>();
+        List<Integer> ans = new LinkedList<>();
         boolean[] visited = new boolean[nums.length];
-        dfs(nums, res, ans, visited);
+        dfs(res, ans, visited, nums);
         return res;
     }
 
-    public static void dfs(int[] nums, List<List<Integer>> res, List<Integer> ans, boolean[] visited) {
-        if (ans.size() == nums.length) {res.add(new ArrayList<Integer>(ans)); return;}
-        for (int i = 0; i < nums.length; i++)
-            if (!visited[i]){
-                ans.add(nums[i]);
+    public void dfs(List<List<Integer>> res, List<Integer> ans, boolean[] visited, int[] nums) {
+        if (ans.size() == nums.length) {res.add(new LinkedList<Integer>(ans)); return;}
+        for (int i = 0; i < nums.length; i++) {
+            if (!visited[i]) {
                 visited[i] = true;
-                dfs(nums, res, ans, visited);
-                ans.remove(ans.size()-1);
+                ans.add(nums[i]);
+                dfs(res, ans, visited, nums);
                 visited[i] = false;
+                ans.remove(ans.size() - 1); // 回溯
             }
+        }
     }
 }
