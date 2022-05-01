@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.04.30
+Last Updated: 2022.05.01
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 [面试索引](./Interview/Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
@@ -10,6 +10,7 @@ Last Updated: 2022.04.30
 * [DFS](./Data%20Structure%20and%20Algorithm/DFS/DFS与回溯.md): 深度优先遍历，适用于找到所有可能的解。可能会遇到超时的问题，这时候可以考虑动态规划。
 * [DP](./Data%20Structure%20and%20Algorithm/Dynamic_programming.md): 重点在于状态的建模以及状态转移方程的建立
 * [Sort](./Data%20Structure%20and%20Algorithm/Sort/Sort.md): 总结了常见的排序算法
+* [Disjoint_set](./Data%20Structure%20and%20Algorithm/Disjoint_set.md): 并查集，用于处理一些不相交集合的合并及查询问题
   
 ## Shell  
 力扣上`Shell`编程题不算多，可以点击[这里](./Shell/Shell.md)查看。应对笔试/面试，更多还是要学习相应数据结构与算法的知识。 
