@@ -12,6 +12,23 @@
 [53. 最大子数组和](https://leetcode-cn.com/problems/maximum-subarray/submissions/)|~|[Java](../Java/53.java) [Python](../Python/53.py)
 [152. 乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/)|用了两个dp数组分类讨论来表示状态|[Java](../Java/152.java)
 [918. 环形子数组的最大和](https://leetcode-cn.com/problems/maximum-sum-circular-subarray/)|难在环形数组的处理|[Java](../Java/918.java)
+[面试题 17.24. 最大子矩阵](https://leetcode-cn.com/problems/max-submatrix-lcci/)|二维最大连续子序和|[Java](../Java/Interview1724.java)
+
+## 不相邻子序列的最大和
+题目名称|说明|答案
+:--|:-|:-:
+[198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/)|~|[Java](../Java/198.java)
+[213. 打家劫舍 II](https://leetcode-cn.com/problems/house-robber-ii/)|本质同[198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/)相同，分为两种情况讨论即可|[Java](../Java/213.java)
+[740. 删除并获得点数](https://leetcode-cn.com/problems/delete-and-earn/)|本质同[198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/)相同，需要进行问题转化|[Java](../Java/740.java)
+
+## 买卖股票的最佳时机
+题目名称|说明|答案
+:--|:-|:-:
+[121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)|~|[Java](../Java/121.java)
+[122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)|~|[Java](../Java/122.java)
+[123. 买卖股票的最佳时机 III](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/)|通解是利用多状态动态规划，也可以分为2部分，每部分都用[121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)的方法|[Java](../Java/123.java)
+[188. 买卖股票的最佳时机 IV](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/)|[123. 买卖股票的最佳时机 III](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/)的通解|[Java](../Java/188.java)
+[309. 最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)|本质与[122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)相同|[Java](../Java/309.java)
 
 ## 其它
 题目名称|说明|答案
@@ -24,7 +41,10 @@
 题目名称|说明|答案
 :--|:-|:-:
 [152. 乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/)|~|[Java](../Java/152.java)
-[309. 最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)|~|[Java](../Java/309.java)
+[122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)|~|[Java](../Java/122.java)
+[123. 买卖股票的最佳时机 III](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/)|分为了5种状态|[Java](../Java/123.java)
+[188. 买卖股票的最佳时机 IV](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/)|[123. 买卖股票的最佳时机 III](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/)的通解|[Java](../Java/188.java)
+[309. 最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)|本质与[122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)相同|[Java](../Java/309.java)
 [337. 打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii/)|~|[Java](../Java/337.java)
 [673. 最长递增子序列的个数](https://leetcode-cn.com/problems/number-of-longest-increasing-subsequence/)|本质和[300. 最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)相同，用了两个dp数组来维护状态|[Java](../Java/673.java)
 

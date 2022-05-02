@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.05.01
+Last Updated: 2022.05.02
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 [面试索引](./Interview/Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
@@ -102,7 +102,9 @@ Last Updated: 2022.05.01
 [113. 路径总和 II](https://leetcode-cn.com/problems/path-sum-ii/)|DFS|树的遍历，递归思路|~|[Java](./Java/113.java)
 [114. 二叉树展开为链表](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/)|先根遍历|这道题的思路有很多，个人还是喜欢递归，毕竟树的问题，一般都用递归解决|~|[Java](./Java/114.java)
 [118. 杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)|模拟|根据规律计算出来即可|~|[Java](./Java/118.java)
-[121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)|~|思路和`53`题还挺像的|53|[Java](./Java/121.java)
+[121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)|~|本质是动态规划|53, 122, 309|[Java](./Java/121.java)
+[122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)|动态规划，贪心|多状态动态规划|309|[Java](./Java/122.java)
+[123. 买卖股票的最佳时机 III](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/)|动态规划|通解是利用多状态动态规划，也可以分为2部分，每部分都用121的方法|121, 122, 309|[Java](./Java/123.java)
 [124. 二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)|递归|这道题比较巧妙的地方在于每次递归的返回值和我们最终的结果有联系，但是不是同一个东西|~|[Java](./Java/124.java)
 [128. 最长连续序列](https://leetcode-cn.com/problems/longest-consecutive-sequence/)|Hash，[并查集](https://zhuanlan.zhihu.com/p/468711675)|查找型问题，利用Hash可以降低时间复杂度|1|[Java](./Java/128.java)
 [129. 求根节点到叶节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/)|树的遍历|DFS, BFS|~|[Java](./Java/129.java)
@@ -125,6 +127,7 @@ Last Updated: 2022.05.01
 [168. Excel表列名称](https://leetcode-cn.com/problems/excel-sheet-column-title/)|模拟|10进制与26进制的转换，注意细节就好|~|[Java](./Java/168.java)
 [169. 多数元素](https://leetcode-cn.com/problems/majority-element/)|哈希表，**Boyer-Moore 投票算法**|~|~|[Java](./Java/169.java)
 [170. 两数之和 III - 数据结构设计](https://leetcode-cn.com/problems/two-sum-iii-data-structure-design/)|Hash|~|1|[Java](./Java/170.java)
+[188. 买卖股票的最佳时机 IV](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/)|动态规划|~|123|[Java](../Java/188.java)
 [198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/)|动态规划|利用**滚动数组**可以降低空间复杂度|~|[Java](./Java/198.java)
 [200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)|DFS，BFS，并查集|岛屿类问题|130, 695|[Java](./Java/200.java)
 [202. 快乐数](https://leetcode-cn.com/problems/happy-number/)|Hash，(快慢)双指针|掌握Hash和快慢双指针的思想。找规律也能很快做出来，甚至可以直接利用计算10次之后看结果是否为1进行判断|~|[Java](./Java/202.java)
@@ -132,6 +135,7 @@ Last Updated: 2022.05.01
 [207. 课程表](https://leetcode-cn.com/problems/course-schedule/)|拓扑排序|图的相关知识，必须要会|210, 802|[Java](./Java/207.java)
 [210. 课程表 II](https://leetcode-cn.com/problems/course-schedule-ii/)|拓扑排序|掌握正向的拓扑排序和逆向的拓扑排序|207, 802|[Java](./Java/210.java)
 [208. 实现 Trie (前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)|前缀树|学习前缀树这个模型，可能会对其他字符串类型的题提供解决思路|~|[Java](./Java/208.java)
+[213. 打家劫舍 II](https://leetcode-cn.com/problems/house-robber-ii/)|动态规划|分为两种情况讨论|198|[Java](./Java/213.java)
 [215. 数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)|选择排序|快速排序、堆排序|~|[Java](./Java/215.java)
 [216. 组合总和 III](https://leetcode-cn.com/problems/combination-sum-iii/)|回溯|剪枝进一步优化时间|77|[Java](./Java/216.java)
 [217. 存在重复元素](https://leetcode-cn.com/problems/contains-duplicate/)|哈希表|此题进一步优化，只要哈希表中存在当前值即可返回真|~|[Java](./Java/217.java)
@@ -190,6 +194,7 @@ Last Updated: 2022.05.01
 [695. 岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)|回溯|本质是岛屿类问题，经典的DFS问题|130, 200|[Java](./Java/695.java)
 [698. 划分为k个相等的子集](https://leetcode-cn.com/problems/partition-to-k-equal-sum-subsets/)|回溯|~|473|[Java](./Java/698.java)
 [739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures/)|单调栈|如果需要找到左边或者右边第一个比当前位置的数大或者小，则可以考虑使用单调栈|84, 85|[Java](./Java/739.java)
+[740. 删除并获得点数](https://leetcode-cn.com/problems/delete-and-earn/)|动态规划|问题的转化|198|[Java](./Java/740.java)
 [784. 字母大小写全排列](https://leetcode-cn.com/problems/letter-case-permutation/)|回溯|~|~|[Java](./Java/784.java)
 [785. 判断二分图](https://leetcode-cn.com/problems/is-graph-bipartite/)|DFS，并查集|~|802, 886|[Java](./Java/785.java)
 [802. 找到最终的安全状态](https://leetcode-cn.com/problems/find-eventual-safe-states/)|DFS，拓扑排序|标准的深度优先遍历|207, 210, 785|[Java](./Java/802.java)
@@ -214,3 +219,8 @@ Last Updated: 2022.05.01
 :------|:--------|:---|:-------|:-:
 [剑指 Offer 09. 用两个栈实现队列](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)|~|面试高频题|~|[Java](./Java/offer09.java)
 [剑指 Offer 13. 机器人的运动范围](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)|回溯|迷宫类问题，需要根据题意在遍历时判断|~|[Java](./Java/offer13.java)
+
+## 程序员面试金典（第 6 版）题库及其考察的知识点(持续更新):  
+题目名称|考察知识点|说明|关联题型|答案
+:------|:--------|:---|:-------|:-:
+[面试题 17.24. 最大子矩阵](https://leetcode-cn.com/problems/max-submatrix-lcci/)|动态规划|最大连续子序和|~|[Java](./Java/Interview1724.java)
