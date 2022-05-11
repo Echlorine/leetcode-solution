@@ -10,7 +10,7 @@
  */
 class Solution206 {
     // 迭代解法
-    public ListNode reverseList1(ListNode head) {
+    public ListNode reverseList(ListNode head) {
         if (head == null) return head;
         ListNode res = head; // 新链表的头结点
         ListNode p = res.next;
@@ -25,10 +25,10 @@ class Solution206 {
         return res;
     }
     // 递归解法
-    public ListNode reverseList2(ListNode head) {
+    public ListNode rereverseList(ListNode head) {
         if (head == null) return head; // 特例
         if (head.next == null) return head; // 递归出口，该结点是链表的尾结点
-        ListNode res = reverseList2(head.next);
+        ListNode res = rereverseList(head.next);
         head.next.next = head;
         head.next = null;
         return res;
