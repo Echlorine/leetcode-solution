@@ -65,7 +65,7 @@ Last Updated: 2022.05.11
 [49. 字母异位词分组](https://leetcode-cn.com/problems/group-anagrams/)|计数，Hash|手动编写 Hash 函数的难点在于解决哈希冲突|1, 438|[Java](./Java/49.java)
 [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)|快速幂算法|分治思想，同时了解迭代思想背后的数学原理|~|[Java](./Java/50.java)
 [51. N 皇后](https://leetcode-cn.com/problems/n-queens/)|回溯|学会使用位运算剪枝|52|[Java](./Java/51.java)
-[52. N皇后 II](https://leetcode-cn.com/problems/n-queens-ii/)|回溯|~学会使用位运算剪|51|[Java](./Java/52.java)
+[52. N皇后 II](https://leetcode-cn.com/problems/n-queens-ii/)|回溯|学会使用位运算剪枝|51|[Java](./Java/52.java)
 [53. 最大子数组和](https://leetcode-cn.com/problems/maximum-subarray/)|动态规划|这道题也可以利用线段树来做|~|[Java](./Java/53.java) [Python](./Python/53.py)
 [54. 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/)|模拟|本质是遍历|~|[Java](./Java/54.java)
 [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)|贪心，动态规划|~|~|[Python](./Java/55.java)
