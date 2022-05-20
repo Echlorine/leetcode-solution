@@ -7,10 +7,10 @@
 进阶题型: (不仅仅记录了某一结点是否访问过，还需要记录其它信息)  
 题目名称|说明
 :------|:---
-[133. 克隆图](https://leetcode-cn.com/problems/clone-graph/)|涉及图的遍历与表示
-[785. 判断二分图](https://leetcode-cn.com/problems/is-graph-bipartite/)|需要标记当前结点的颜色状态，需要保证当前结点的颜色与相邻结点不同
-[802. 找到最终的安全状态](https://leetcode-cn.com/problems/find-eventual-safe-states/)|需要设置一个新的状态判断某一结点是否在环中
-[886. 可能的二分法](https://leetcode-cn.com/problems/possible-bipartition/)|题目本质与785相同，记录的时候需要比较相邻结点的颜色信息
+[133. 克隆图](https://leetcode.cn/problems/clone-graph/)|涉及图的遍历与表示
+[785. 判断二分图](https://leetcode.cn/problems/is-graph-bipartite/)|需要标记当前结点的颜色状态，需要保证当前结点的颜色与相邻结点不同
+[802. 找到最终的安全状态](https://leetcode.cn/problems/find-eventual-safe-states/)|需要设置一个新的状态判断某一结点是否在环中
+[886. 可能的二分法](https://leetcode.cn/problems/possible-bipartition/)|题目本质与785相同，记录的时候需要比较相邻结点的颜色信息
 
 ### 广度优先遍历
 
@@ -18,9 +18,9 @@
 在图论中，一个有向无环图必然存在至少一个拓扑序与之对应，反之亦然。  
 题目名称|说明
 :------|:---
-[207. 课程表](https://leetcode-cn.com/problems/course-schedule/)|图的表示，拓扑排序
-[210. 课程表 II](https://leetcode-cn.com/problems/course-schedule-ii/)|图的表示，拓扑排序
-[802. 找到最终的安全状态](https://leetcode-cn.com/problems/find-eventual-safe-states/)|反向拓扑排序
+[207. 课程表](https://leetcode.cn/problems/course-schedule/)|图的表示，拓扑排序
+[210. 课程表 II](https://leetcode.cn/problems/course-schedule-ii/)|图的表示，拓扑排序
+[802. 找到最终的安全状态](https://leetcode.cn/problems/find-eventual-safe-states/)|反向拓扑排序
 
 ## 关键路径
 ### AOE网
@@ -39,4 +39,4 @@
 
 题目名称|说明
 :------|:---
-[1136. 平行课程](https://leetcode-cn.com/problems/parallel-courses/)
+[1136. 平行课程](https://leetcode.cn/problems/parallel-courses/)

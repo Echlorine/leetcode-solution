@@ -37,24 +37,23 @@ public class QuickSort {
         }
     }
 
-    public static int partion(int[] nums, int begin, int end) {
-        // 分划操作算法
-        int s = begin, e = end + 1;
-        int k = nums[s], temp = 0;
-        while (s < e){
-            s++;
-            while (nums[s] < k && s < end) s++;
-            e--;
-            while (nums[e] > k) e--;
-            if (s < e) {
-                temp = nums[s];
-                nums[s] = nums[e];
-                nums[e] = temp;
+    public static int partion(int[] nums, int l, int r) {
+        // 分划操作算法，左右交换
+        int pivot = l; // 待确定位置的元素
+        while (l < r) {
+            while (l < r && nums[r] >= nums[pivot])
+                r--;
+            while (l < r && nums[l] <= nums[pivot])
+                l++;
+            if (l < r) {
+                int temp = nums[l];
+                nums[l] = nums[r];
+                nums[r] = temp;
             }
         }
-        temp = nums[e];
-        nums[e] = nums[begin];
-        nums[begin] = temp;
-        return e;
+        int temp = nums[r];
+        nums[r] = nums[pivot];
+        nums[pivot] = temp;
+        return r;
     }
 }

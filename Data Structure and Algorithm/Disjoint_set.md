@@ -44,17 +44,17 @@ public void union(int x, int y) {
 基础级例题:
 题目名称|说明
 :------|:---
-[323. 无向图中连通分量的数目](https://leetcode-cn.com/problems/number-of-connected-components-in-an-undirected-graph/)|
-[547. 省份数量](https://leetcode-cn.com/problems/number-of-provinces/)|
+[323. 无向图中连通分量的数目](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/)|
+[547. 省份数量](https://leetcode.cn/problems/number-of-provinces/)|
 
 进阶级例题:
 题目名称|说明
 :------|:---
-[684. 冗余连接](https://leetcode-cn.com/problems/redundant-connection/)|
-[130. 被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/)|
-[1020. 飞地的数量](https://leetcode-cn.com/problems/number-of-enclaves/)|
+[684. 冗余连接](https://leetcode.cn/problems/redundant-connection/)|
+[130. 被围绕的区域](https://leetcode.cn/problems/surrounded-regions/)|
+[1020. 飞地的数量](https://leetcode.cn/problems/number-of-enclaves/)|
 
 BOSS级例题:
 题目名称|说明
 :------|:---
-[399. 除法求值](https://leetcode-cn.com/problems/evaluate-division/)|带权并查集
+[399. 除法求值](https://leetcode.cn/problems/evaluate-division/)|带权并查集
