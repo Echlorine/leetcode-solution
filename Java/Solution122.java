@@ -11,4 +11,16 @@ class Solution122 {
         }
         return Math.max(dp[prices.length - 1][0], dp[prices.length - 1][1]);
     }
+
+    public int greedymaxProfit(int[] prices) {
+        /**
+         * 贪心，只要下一天价格比上一天高，那就是利润
+         */
+        int res = 0;
+        for (int i = 0; i < prices.length - 1; i++) {
+            int temp = prices[i + 1] - prices[i];
+            if (temp > 0) res += temp;
+        }
+        return res;
+    }
 }
