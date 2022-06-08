@@ -11,4 +11,19 @@ class Solution283 {
         for (int i = 0; i < n; i++)
             nums[nums.length - n + i] = 0;
     }
+
+    public void two_pointers_moveZeroes(int[] nums) {
+        int slow = 0, fast = 0;
+        while (fast < nums.length) {
+            if (nums[fast] != 0) {
+                nums[slow] = nums[fast];
+                slow++;
+            }
+            fast++;
+        }
+        while (slow < nums.length) {
+            nums[slow] = 0;
+            slow++;
+        }
+    }
 }
