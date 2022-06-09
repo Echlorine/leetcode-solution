@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.05.29
+Last Updated: 2022.06.09
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 [面试索引](./Interview/Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
@@ -101,6 +101,7 @@ Last Updated: 2022.05.29
 [83. 删除排序链表中的重复元素](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)|模拟|~|82|[Java](Java/Solution83.java)
 [84. 柱状图中最大的矩形](https://leetcode.cn/problems/largest-rectangle-in-histogram/)|单调栈|思路比较容易想，但是**单调栈**这种数据结构不一定会应用|85|[Java](Java/Solution84.java)
 [85. 最大矩形](https://leetcode.cn/problems/maximal-rectangle/)|单调栈|本质和84题居然相同，思路不太容易想|84|[Java](Java/Solution85.java)
+[86. 分隔链表](https://leetcode.cn/problems/partition-list/)|链表|链表题利用虚结点可以简化问题|~|[Java](Java/Solution86.java)
 [88. 合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array/)|双指针|~|26, 27|[Python](./Python/88.py)
 [89. 格雷编码](https://leetcode.cn/problems/gray-code/)|回溯，位运算|根据生成[公式](https://baike.baidu.com/item/%E6%A0%BC%E9%9B%B7%E7%A0%81#5)也可以直接生成|~|[Java](Java/Solution89.java)
 [90. 子集 II](https://leetcode.cn/problems/subsets-ii/)|回溯|掌握二进制枚举这种思路|77, 78|[Java](Java/Solution90.java)
@@ -123,7 +124,8 @@ Last Updated: 2022.05.29
 [111. 二叉树的最小深度](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)|递归|可以采用DFS遍历并实时更新最短路径|104, 257|[Java](Java/Solution111.java)
 [113. 路径总和 II](https://leetcode.cn/problems/path-sum-ii/)|DFS|树的遍历，递归思路|~|[Java](Java/Solution113.java)
 [114. 二叉树展开为链表](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/)|先根遍历|这道题的思路有很多，个人还是喜欢递归，毕竟树的问题，一般都用递归解决|~|[Java](Java/Solution114.java)
-[118. 杨辉三角](https://leetcode.cn/problems/pascals-triangle/)|模拟|根据规律计算出来即可|~|[Java](Java/Solution118.java)
+[118. 杨辉三角](https://leetcode.cn/problems/pascals-triangle/)|模拟|根据规律计算出来即可|119|[Java](Java/Solution118.java)
+[119. 杨辉三角 II](https://leetcode.cn/problems/pascals-triangle-ii/)|模拟|倒着计算更新时不影响值的计算|118|[Java](Java/Solution119.java)
 [120. 三角形最小路径和](https://leetcode.cn/problems/triangle/)|动态规划|经典的动态规划题，可以从上往下，也可以从下往上|~|[Java](Java/Solution120.java)
 [121. 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)|~|本质是动态规划|53, 122, 309|[Java](Java/Solution121.java)
 [122. 买卖股票的最佳时机 II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)|动态规划，贪心|多状态动态规划|309, 714|[Java](Java/Solution122.java)
@@ -184,6 +186,7 @@ Last Updated: 2022.05.29
 [232. 用栈实现队列](https://leetcode.cn/problems/implement-queue-using-stacks/)|队列，栈|~|225|[Java](Java/Solution232.java)
 [234. 回文链表](https://leetcode.cn/problems/palindrome-linked-list/)|递归、快慢指针|这道题的递归方法可以更好的了解递归的作用机理|206|[Java](Java/Solution234.java)
 [236. 二叉树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/)|递归、哈希|对于有一一对应关系的数据存在，就应该想到哈希表|~|[Java](Java/Solution236.java)
+[237. 删除链表中的节点](https://leetcode.cn/problems/delete-node-in-a-linked-list/)|链表|理解题意，根据基本的链表操作即可|~|[Java](Java/Solution237.java)
 [238. 除自身以外数组的乘积](https://leetcode.cn/problems/product-of-array-except-self/)|左右乘积列表|学习一下这个思想|~|[Java](Java/Solution238.java)
 [239. 滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/)|优先队列|~|253|[Java](Java/Solution239.java)
 [240. 搜索二维矩阵 II](https://leetcode.cn/problems/search-a-2d-matrix-ii/)|二分查找、Z 字形查找|Z 字形查找比二分查找更充分的利用矩阵的特点|~|[Java](Java/Solution240.java)
@@ -214,6 +217,8 @@ Last Updated: 2022.05.29
 [344. 反转字符串](https://leetcode.cn/problems/reverse-string/)|双指针|双指针的简单应用|917|[Java](Java/Solution344.java)
 [345. 反转字符串中的元音字母](https://leetcode.cn/problems/reverse-vowels-of-a-string/)|双指针|结合哈希表判断|~|[Java](Java/Sloution345.java)
 [347. 前 K 个高频元素](https://leetcode.cn/problems/top-k-frequent-elements/)|优先队列|要求时间复杂度优于$O({n\log_2n})$，不能简单进行`sort()`|253|[Java](Java/Solution347.java)
+[349. 两个数组的交集](https://leetcode.cn/problems/intersection-of-two-arrays/)|哈希，双指针|利用哈希表进行空间换时间|350|[Java](Java/Solution349.java)
+[350. 两个数组的交集 II](https://leetcode.cn/problems/intersection-of-two-arrays-ii/)|哈希，双指针|~|349|[Java](Java/Solution350.java)
 [354. 俄罗斯套娃信封问题](https://leetcode.cn/problems/russian-doll-envelopes/)|动态规划|本质是LIS问题|300, 673, 406|[Java](Java/Solution354.java)
 [357. 统计各位数字都不同的数字个数](https://leetcode.cn/problems/count-numbers-with-unique-digits/)|排列组合|这是一道数学问题|~|[Java](Java/Solution357.java)
 [368. 最大整除子集](https://leetcode.cn/problems/largest-divisible-subset/)|动态规划|先排序，简化问题|~|[Java](Java/Solution368.java)
