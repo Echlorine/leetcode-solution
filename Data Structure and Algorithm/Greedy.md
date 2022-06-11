@@ -22,6 +22,8 @@
 :------|:---|:--:
 [45. 跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/)|跳跃问题，每一步选择将来跳的远的格子|[Java](../Java/Solution45.java)
 [55. 跳跃游戏](https://leetcode.cn/problems/jump-game/)|跳跃问题，此题贪心的是所能到达的最远距离|[Java](../Java/Solution55.java)
+[68. 文本左右对齐](https://leetcode.cn/problems/text-justification/)|贪心体现在每一行的单词尽可能的多|[Java](../Java/Solution68.java)
+[134. 加油站](https://leetcode.cn/problems/gas-station/)|贪心体现在每一次让车走的尽量远|[Java](../Java/Solution134.java)
 [135. 分发糖果](https://leetcode.cn/problems/candy/)|在满足要求的情况下，每个孩子分到的糖果尽可能少|[Java](../Java/Solution135.java)
 [300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/)|区域选择问题|[Java](../Java/Solution300.java)
 [402. 移掉 K 位数字](https://leetcode.cn/problems/remove-k-digits/)|每次删除较大的数|[Java](../Java/Solution402.java)
@@ -30,3 +32,11 @@
 [738. 单调递增的数字](https://leetcode.cn/problems/monotone-increasing-digits/)|贪心体现在满足要求时让每一位的数字尽可能大|[Java](../Java/Solution738.java)
 [763. 划分字母区间](https://leetcode.cn/problems/partition-labels/)|贪心每次所能到达的最远距离|[Java](../Java/Solution763.java)
 [861. 翻转矩阵后的得分](https://leetcode.cn/problems/score-after-flipping-matrix/)|就行而言，1的位置尽可能靠左；就列而言，1的数量尽可能多|[Java](../Java/Solution861.java)
+
+3. BOSS级例题:  
+
+题目名称|说明|答案
+:------|:---|:--:
+[376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/)|~|[Java](../Java/Solution376.java)
+[673. 最长递增子序列的个数](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/)
+[354. 俄罗斯套娃信封问题](https://leetcode.cn/problems/russian-doll-envelopes/)
