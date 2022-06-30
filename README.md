@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.06.15
+Last Updated: 2022.06.30
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 [面试索引](./Interview/Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
@@ -16,7 +16,10 @@ Last Updated: 2022.06.15
   
 ## Shell  
 力扣上`Shell`编程题不算多，可以点击[这里](./Shell/Shell.md)查看。应对笔试/面试，更多还是要学习相应数据结构与算法的知识。 
-  
+
+## MySQL
+`MySQL`的题目直接学习[专项突破「SQL」](https://leetcode.cn/study-plan/sql/)，可以点击[这里](./MySQL/MySQL.md)查看。
+
 ## 力扣题库及其考察的知识点(持续更新):  
 题目名称|考察知识点|说明|关联题型|答案
 :------|:--------|:---|:-------|:-:
