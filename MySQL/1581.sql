@@ -15,3 +15,4 @@ from Visits left outer join Transactions
 on Visits.visit_id  = Transactions.visit_id 
 where Transactions.amount is null
 group by Visits.customer_id
+;
