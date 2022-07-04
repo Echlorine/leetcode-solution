@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.07.03
+Last Updated: 2022.07.04
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 [面试索引](./Interview/Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
@@ -239,6 +239,7 @@ Last Updated: 2022.07.03
 [383. 赎金信](https://leetcode.cn/problems/ransom-note/)|计数|哈希|~|[Java](Java/Solution383.java)
 [392. 判断子序列](https://leetcode.cn/problems/is-subsequence/)|贪心，双指针|贪心的思想体现在每次选择左边匹配的字符|~|[Java](Java/Solution392.java)
 [394. 字符串解码](https://leetcode.cn/problems/decode-string/)|栈|括号匹配的问题|20, 224|[Java](Java/Solution394.java)
+[399. 除法求值](https://leetcode.cn/problems/evaluate-division/)|带权并查集|带权并查集需要在查找及合并时更新权值|~|[Java](/Java/Solution399.java)
 [400. 第 N 位数字](https://leetcode.cn/problems/nth-digit/)|数学模拟，二分查找|本利用先验知识确定边界解决溢出|~|[Java](Java/Solution400.java)
 [402. 移掉 K 位数字](https://leetcode.cn/problems/remove-k-digits/)|贪心|每次删除较大的数|~|[Java](Java/Solution402.java)
 [403. 青蛙过河](https://leetcode.cn/problems/frog-jump/)|动态规划|~|~|[Java](Java/Solution403.java)
@@ -303,6 +304,7 @@ Last Updated: 2022.07.03
 [740. 删除并获得点数](https://leetcode.cn/problems/delete-and-earn/)|动态规划|问题的转化|198|[Java](Java/Solution740.java)
 [746. 使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/)|动态规划|~|~|[Java](Java/Solution746.java)
 [763. 划分字母区间](https://leetcode.cn/problems/partition-labels/)|贪心，哈希表|贪心每次所能到达的最远距离|~|[Java](Java/Solution763.java)
+[765. 情侣牵手](https://leetcode.cn/problems/couples-holding-hands/)|并查集|确定并查集的连通分量数量比确定并查集内每一个连通分量的大小更容易|547|[Java](Java/Solution765.java)
 [772. 基本计算器 III](https://leetcode.cn/problems/basic-calculator-iii/)|栈|逆波兰表达式|224, 227|[Java](Java/Solution772.java)
 [780. 到达终点](https://leetcode.cn/problems/reaching-points/)|模拟|数学分析优化时间复杂度|~|[Java](Java/Solution780.java)
 [784. 字母大小写全排列](https://leetcode.cn/problems/letter-case-permutation/)|回溯|~|~|[Java](Java/Solution784.java)
@@ -325,6 +327,7 @@ Last Updated: 2022.07.03
 [975. 奇偶跳](https://leetcode.cn/problems/odd-even-jump/)|动态规划，单调栈|就状态转移而言，这道题不难，难点在于利用单调栈简化表示|84, 85|[Java](Java/Solution975.java)
 [977. 有序数组的平方](https://leetcode.cn/problems/squares-of-a-sorted-array/)|双指针|练习双指针的一道不错的题目|~|[Java](Java/Solution977.java)
 [978. 最长湍流子数组](https://leetcode.cn/problems/longest-turbulent-subarray/)|滑动窗口|注意相等的时候左右边界同时移动|~|[Java](Java/Solution978.java)
+[990. 等式方程的可满足性](https://leetcode.cn/problems/satisfiability-of-equality-equations/)|并查集|本质是确定图的连通分量|547|[Java](Java/Solution990.java)
 [995. K 连续位的最小翻转次数](https://leetcode.cn/problems/minimum-number-of-k-consecutive-bit-flips/)|差分数组|~|155|[Java](Java/Solution995.java)
 [1004. 最大连续1的个数 III](https://leetcode.cn/problems/max-consecutive-ones-iii/)|滑动窗口|~|487|[Java](Java/Solution1004.java)
 [1008. 前序遍历构造二叉搜索树](https://leetcode.cn/problems/construct-binary-search-tree-from-preorder-traversal/)|递归|构建二叉树的题目|105, 106, 1028|[Java](Java/Solution1008.java)
@@ -344,6 +347,7 @@ Last Updated: 2022.07.03
 [1247. 交换字符使得字符串相同](https://leetcode.cn/problems/minimum-swaps-to-make-strings-equal/)|贪心|此题需要确定3类基本的字符串形式，贪心在于尽量让一次交换是的两个位置由不同变为相同|~|[Java](Java/Solution1247.java)
 [1254. 统计封闭岛屿的数目](https://leetcode.cn/problems/number-of-closed-islands/)|回溯|岛屿问题的进阶，需要一些判断条件|200, 1020|[Java](Java/Solution1254.java)
 [1306. 跳跃游戏 III](https://leetcode.cn/problems/jump-game-iii/)|BFS|一道简单的广度优先搜索题|~|[Java](Java/Solution1306.java)
+[1319. 连通网络的操作次数](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/)|并查集|实质还是确定连通分量的数量|547|[Java](Java/Solution1319.java)
 [1332. 删除回文子序列](https://leetcode.cn/problems/remove-palindromic-subsequences/)|双指针|~|125|[Java](Java/Solution1332.java)
 [1372. 二叉树中的最长交错路径](https://leetcode.cn/problems/longest-zigzag-path-in-a-binary-tree/)|动态规划，DFS|树形的动态规划|~|[Java](Java/Solution1372.java)
 [1388. 3n 块披萨](https://leetcode.cn/problems/pizza-with-3n-slices/)|动态规划|~|213|[Java](Java/Solution1388.java)
