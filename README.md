@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.07.04
+Last Updated: 2022.07.05
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 [面试索引](./Interview/Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
@@ -12,7 +12,7 @@ Last Updated: 2022.07.04
 * [DFS](./Data%20Structure%20and%20Algorithm/DFS/DFS与回溯.md): 深度优先遍历，适用于找到所有可能的解。可能会遇到超时的问题，这时候可以考虑动态规划。
 * [DP](./Data%20Structure%20and%20Algorithm/Dynamic_programming.md): 重点在于状态的建模以及状态转移方程的建立
 * [Greedy](./Data%20Structure%20and%20Algorithm/Greedy.md): 重点在于知道如何贪心，需要一定的经验
-* [Disjoint_set](./Data%20Structure%20and%20Algorithm/Disjoint_set.md): 并查集，用于处理一些不相交集合的合并及查询问题
+* [Disjoint_Set](./Data%20Structure%20and%20Algorithm/Disjoint_Set.md): 并查集，用于处理一些不相交集合的合并及查询问题
   
 ## Shell  
 力扣上`Shell`编程题不算多，可以点击[这里](./Shell/Shell.md)查看。应对笔试/面试，更多还是要学习相应数据结构与算法的知识。 
@@ -213,6 +213,7 @@ Last Updated: 2022.07.04
 [298. 二叉树最长连续序列](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/)|动态规划，DFS|树形的动态规划|337, 549|[Java](Java/Solution298.java)
 [300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/)|动态规划，贪心|~|435|[Java](Java/Solution300.java)
 [301. 删除无效的括号](https://leetcode.cn/problems/remove-invalid-parentheses/)|DFS, BFS|此题使用DFS难在问题的建模|20, 22|[Java](Java/Solution301.java)
+[305. 岛屿数量 II](https://leetcode.cn/problems/number-of-islands-ii/)|并查集|确定连通分量的数量是并查集的典型应用|547|[Java](Java/Solution305.java)
 [306. 累加数](https://leetcode.cn/problems/additive-number/)|回溯|难在问题的转化以及处理数据溢出|2|[Java](Java/Solution306.java)
 [309. 最佳买卖股票时机含冷冻期](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/)|动态规划|这道题的状态也需要好好构思一下|121, 122, 123, 188, 714|[Java](Java/Solution309.java)
 [312. 戳气球](https://leetcode.cn/problems/burst-balloons/)|动态规划|题目难点在于状态的建立和转移|~|[Java](Java/Solution312.java) [Python](./Python/312.py)
@@ -338,6 +339,7 @@ Last Updated: 2022.07.04
 [1034. 边界着色](https://leetcode.cn/problems/coloring-a-border/)|回溯|本质是岛屿类问题|130, 200, 1020|[Java](Java/Solution1034.java)
 [1052. 爱生气的书店老板](https://leetcode.cn/problems/grumpy-bookstore-owner/)|滑动窗口|~|643|[Java](Java/Solution1052.java)
 [1079. 活字印刷](https://leetcode.cn/problems/letter-tile-possibilities/)|回溯|本质是树结构|~|[Java](Java/Solution1079.java)
+[1102. 得分最高的路径](https://leetcode.cn/problems/path-with-maximum-minimum-value/)|并查集|并查集的巧妙运用|[Java](../Java/Solution1102.java)
 [1136. 平行课程](https://leetcode.cn/problems/parallel-courses/)|拓扑排序|运用了关键活动算法中求每一个事件的最早开始时间|207, 210, 802|[Java](Java/Solution1136.java)
 [1143. 最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/)|动态规划|经典的双串动态规划|~|[Java](Java/Solution1143.java)
 [1208. 尽可能使字符串相等](https://leetcode.cn/problems/get-equal-substrings-within-budget/)|滑动窗口|~|~|[Java](Java/Solution1208.java)
