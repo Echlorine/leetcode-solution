@@ -46,17 +46,35 @@
 [180. 连续出现的数字](https://leetcode.cn/problems/consecutive-numbers/)|[sql](180.sql)|sql多表连接
 [184. 部门工资最高的员工](https://leetcode.cn/problems/department-highest-salary/)|[sql](184.sql)|sql表连接，sql子查询，sql in 操作符
 [185. 部门工资前三高的所有员工](https://leetcode.cn/problems/department-top-three-salaries/)|[sql](185.sql)|sql表连接，sql子查询
+[570. 至少有5名直接下属的经理](https://leetcode.cn/problems/managers-with-at-least-5-direct-reports/)|[sql](570.sql)|sql 表连接，sql计数
+[619. 只出现一次的最大数字](https://leetcode.cn/problems/biggest-single-number/)|[sql](619.sql)|sql子查询，max()函数，group by 语句，having 子句
+[1112. 每位学生的最高成绩](https://leetcode.cn/problems/highest-grade-for-each-student/)|[sql](1112.sql)|sql窗口函数
 [1173. 即时食物配送 I](https://leetcode.cn/problems/immediate-food-delivery-i/)|[sql](1173.sql)|sql保留小数位数，sql计数
 [1193. 每月交易 I](https://leetcode.cn/problems/monthly-transactions-i/)|[sql](1193.sql)|sql日期格式化函数DATE_FORMAT(date,format)，in 操作符，sql计数，sql求和，if表达式
 [1211. 查询结果的质量和占比](https://leetcode.cn/problems/queries-quality-and-percentage/)|[sql](1211.sql)|sql求和，sql保留小数位数，AVG() 函数
 [1251. 平均售价](https://leetcode.cn/problems/average-selling-price/)|[sql](1251.sql)|sql计数，sql求和，sql保留小数位数
+[1264. 页面推荐](https://leetcode.cn/problems/page-recommendations/)|[sql](1264.sql)|sql union 操作符，in 操作符
+[1303. 求团队人数](https://leetcode.cn/problems/find-the-team-size/)|[sql](1303.sql)|sql 窗口函数，sql 表连接， sql计数
+[1398. 购买了产品 A 和产品 B 却没有购买产品 C 的顾客](https://leetcode.cn/problems/customers-who-bought-products-a-and-b-but-not-c/)|[sql](1398.sql)|sql表连接，sql计数
+[1440. 计算布尔表达式的值](https://leetcode.cn/problems/evaluate-boolean-expression/)|[sql](1440.sql)|sql表连接，case when表达式
 [1445. 苹果和桔子](https://leetcode.cn/problems/apples-oranges/)|[sql](1445.sql)|sql表连接
 [1571. 仓库经理](https://leetcode.cn/problems/warehouse-manager/)|[sql](1571.sql)|sql求和，sql表连接
+[1607. 没有卖出的卖家](https://leetcode.cn/problems/sellers-with-no-sales/)|[sql](1607.sql)|sql表连接，null值判断
 [1633. 各赛事的用户注册率](https://leetcode.cn/problems/percentage-of-users-attended-a-contest/)|[sql](1633.sql)|sql保留小数位数
 [1699. 两人之间的通话次数](https://leetcode.cn/problems/number-of-calls-between-two-persons/)|[sql](1699.sql)|sql计数，sql求和，sql 函数 least(), greatest()
 
 # MySQL函数
-## MySQL四大排序函数
+## MySQL窗口函数
+<窗口函数>的位置，可以放以下两种函数：
+1. 专用窗口函数，包括排序函数、分区最大/最小值等专用窗口函数。
+2. 聚合函数，如sum. avg, count, max, min等。  
+
+窗口函数语法：
+```
+<窗口函数> over (partition by <用于分组的列名>
+                order by <用于排序的列名>)
+```
+### MySQL四大排序函数
 0. 初始表内容
 ```shell
 mysql> SELECT * FROM study;
@@ -146,3 +164,12 @@ mysql> SELECT id, scores, NTILE(2) OVER(order by scores desc) as `rank` from stu
 |  1 |     68 |    2 |
 +----+--------+------+
 ```
+
+## SQL Aggregate 函数
+AVG() - 返回平均值
+COUNT() - 返回行数
+FIRST() - 返回第一个记录的值
+LAST() - 返回最后一个记录的值
+MAX() - 返回最大值
+MIN() - 返回最小值
+SUM() - 返回总和
