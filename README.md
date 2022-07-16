@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.07.09
+Last Updated: 2022.07.16
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 [面试索引](./Interview/Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
@@ -313,6 +313,7 @@ Last Updated: 2022.07.09
 [785. 判断二分图](https://leetcode.cn/problems/is-graph-bipartite/)|DFS，并查集|~|802, 886|[Java](Java/Solution785.java)
 [796. 旋转字符串](https://leetcode.cn/problems/rotate-string/)|~|本质是查找子串的题|28|[Java](Java/Solution796.java)
 [802. 找到最终的安全状态](https://leetcode.cn/problems/find-eventual-safe-states/)|DFS，拓扑排序|标准的深度优先遍历|207, 210, 785|[Java](Java/Solution802.java)
+[803. 打砖块](https://leetcode.cn/problems/bricks-falling-when-hit/)|并查集|并查集只能合并，不能拆分，此题是并查集的反向应用|~|[Java](Java/Solution803.java)
 [804. 唯一摩尔斯密码词](https://leetcode.cn/problems/unique-morse-code-words/)|哈希表|`Java`中直接利用数组实现 hash 比`HashMap`速度快一点点|1|[Java](Java/Solution804.java)
 [806. 写字符串需要的行数](https://leetcode.cn/problems/number-of-lines-to-write-string/)|模拟|~|~|[Java](Java/Solution806.java)
 [813. 最大平均值和的分组](https://leetcode.cn/problems/largest-sum-of-averages/)|动态规划|理解状态如何转移|410|[Java](Java/Solution813.java)
@@ -326,6 +327,8 @@ Last Updated: 2022.07.09
 [917. 仅仅反转字母](https://leetcode.cn/problems/reverse-only-letters/)|双指针|~|344|[Java](Java/Solution917.java)
 [918. 环形子数组的最大和](https://leetcode.cn/problems/maximum-sum-circular-subarray/)|动态规划|难在环形数组的处理，将环形数组分为两部分处理|53|[Java](Java/Solution918.java)
 [921. 使括号有效的最少添加](https://leetcode.cn/problems/minimum-add-to-make-parentheses-valid/)|贪心|贪心体现在对于每一个出现的右括号，前面必须保证有左括号与其匹配|~|[Java](Java/Solution921.java)
+[947. 移除最多的同行或同列石头](https://leetcode.cn/problems/most-stones-removed-with-same-row-or-column/)|并查集|合并次数即为最终结果|~|[Java](Java/Solution947.java)
+[959. 由斜杠划分区域](https://leetcode.cn/problems/regions-cut-by-slashes/)|并查集|难在如何将问题建模|~|[Java](Java/Solution959.java)
 [975. 奇偶跳](https://leetcode.cn/problems/odd-even-jump/)|动态规划，单调栈|就状态转移而言，这道题不难，难点在于利用单调栈简化表示|84, 85|[Java](Java/Solution975.java)
 [977. 有序数组的平方](https://leetcode.cn/problems/squares-of-a-sorted-array/)|双指针|练习双指针的一道不错的题目|~|[Java](Java/Solution977.java)
 [978. 最长湍流子数组](https://leetcode.cn/problems/longest-turbulent-subarray/)|滑动窗口|注意相等的时候左右边界同时移动|~|[Java](Java/Solution978.java)
@@ -343,6 +346,7 @@ Last Updated: 2022.07.09
 [1102. 得分最高的路径](https://leetcode.cn/problems/path-with-maximum-minimum-value/)|并查集|并查集的巧妙运用|778|[Java](../Java/Solution1102.java)
 [1136. 平行课程](https://leetcode.cn/problems/parallel-courses/)|拓扑排序|运用了关键活动算法中求每一个事件的最早开始时间|207, 210, 802|[Java](Java/Solution1136.java)
 [1143. 最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/)|动态规划|经典的双串动态规划|~|[Java](Java/Solution1143.java)
+[1202. 交换字符串中的元素](https://leetcode.cn/problems/smallest-string-with-swaps/)|并查集|此题可以学习如何利用哈希表保存并查集内不同的连通分量|765|[Java](Java/Solution1202.java)
 [1208. 尽可能使字符串相等](https://leetcode.cn/problems/get-equal-substrings-within-budget/)|滑动窗口|~|~|[Java](Java/Solution1208.java)
 [1217. 玩筹码](https://leetcode.cn/problems/minimum-cost-to-move-chips-to-the-same-position/)|贪心|贪心的思想体现在尽可能多的移动偶数次|~|[Java](Java/Solution1217.java)
 [1229. 安排会议日程](https://leetcode.cn/problems/meeting-scheduler/)|双指针|对不同情况进行讨论确定指针如何移动|~|[Java](Java/Solution1229.java)
@@ -364,6 +368,7 @@ Last Updated: 2022.07.09
 [1593. 拆分字符串使唯一子字符串的数目最大](https://leetcode.cn/problems/split-a-string-into-the-max-number-of-unique-substrings/)|回溯|~|~|[Java](Java/Solution1593.java)
 [1603. 设计停车系统](https://leetcode.cn/problems/design-parking-system/)|模拟|很简单的一道题|~|[Java](Java/Solution1603.java)
 [1605. 给定行和列的和求可行矩阵](https://leetcode.cn/problems/find-valid-matrix-given-row-and-column-sums/)|贪心|贪心体现在生成矩阵某一个位置的值的时候，让这个值尽可能大|~|[Java](Java/Solution1605.java)
+[1631. 最小体力消耗路径](https://leetcode.cn/problems/path-with-minimum-effort/)|并查集|连通性问题就可以考虑使用并查集|1102|[Java](Java/Solution1631.java)
 [1658. 将 x 减到 0 的最小操作数](https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/)|滑动窗口|同时处理前缀和及后缀和会降低时间复杂度|~|[Java](Java/Solution1658.java)
 [1695. 删除子数组的最大得分](https://leetcode.cn/problems/maximum-erasure-value/)|滑动窗口|配合哈希表处理右滑边界|~|[Java](Java/Solution1695.java)
 [1710. 卡车上的最大单元数](https://leetcode.cn/problems/maximum-units-on-a-truck/)|贪心，排序|贪心体现在优先选择大箱子|~|[Java](Java/Solution1710.java)

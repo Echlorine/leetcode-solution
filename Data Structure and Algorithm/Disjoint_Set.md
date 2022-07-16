@@ -250,9 +250,15 @@ private int[] parent;
 [1020. 飞地的数量](https://leetcode.cn/problems/number-of-enclaves/)|二维平面问题的并查集解法，利用并查集建模问题|[Java](../Java/Solution1020.java)
 [765. 情侣牵手](https://leetcode.cn/problems/couples-holding-hands/)|确定并查集的连通分量数量比确定并查集内每一个连通分量的大小更容易|[Java](../Java/Solution765.java)
 [305. 岛屿数量 II](https://leetcode.cn/problems/number-of-islands-ii/)|确定连通分量的数量是并查集的典型应用|[Java](../Java/Solution305.java)
+[778. 水位上升的泳池中游泳](https://leetcode.cn/problems/swim-in-rising-water/)|本质是单源最短路径问题|[Java](../Java/Solution778.java)
 [1102. 得分最高的路径](https://leetcode.cn/problems/path-with-maximum-minimum-value/)|巧妙运用并查集|[Java](../Java/Solution1102.java)
+[1202. 交换字符串中的元素](https://leetcode.cn/problems/smallest-string-with-swaps/)|学习如何利用哈希表保存并查集内不同的连通分量|[Java](../Java/Solution1202.java)
+[947. 移除最多的同行或同列石头](https://leetcode.cn/problems/most-stones-removed-with-same-row-or-column/)|合并次数即为最终结果|[Java](../Java/Solution947.java)
+[959. 由斜杠划分区域](https://leetcode.cn/problems/regions-cut-by-slashes/)|难在如何将问题建模|[Java](../Java/Solution959.java)
+[1631. 最小体力消耗路径](https://leetcode.cn/problems/path-with-minimum-effort/)|连通性问题就可以考虑使用并查集|[Java](../Java/Solution1631.java)
 
 BOSS级例题:
 题目名称|说明|答案
 :------|:---|:--:
 [399. 除法求值](https://leetcode.cn/problems/evaluate-division/)|带权并查集|[Java](../Java/Solution399.java)
+[803. 打砖块](https://leetcode.cn/problems/bricks-falling-when-hit/)|并查集的反向应用|[Java](../Java/Solution803.java)
