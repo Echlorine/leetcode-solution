@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.07.16
+Last Updated: 2022.07.17
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 [面试索引](./Interview/Interview.md)根据面试考察的不同模块的知识进行了索引，让你准备更有针对性。  
@@ -261,6 +261,7 @@ Last Updated: 2022.07.16
 [473. 火柴拼正方形](https://leetcode.cn/problems/matchsticks-to-square/)|回溯|~|~|[Java](Java/Solution473.java)
 [485. 最大连续 1 的个数](https://leetcode.cn/problems/max-consecutive-ones/)|模拟|一次遍历即可|~|[Java](Java/Solution485.java)
 [487. 最大连续1的个数 II](https://leetcode.cn/problems/max-consecutive-ones-ii/)|滑动窗口|~|424, 1004|[Java](Java/Solution487.java)
+[491. 递增子序列](https://leetcode.cn/problems/increasing-subsequences/)|回溯|难点在于剪枝的处理|40|[Java](Java/Solution491.java)
 [494. 目标和](https://leetcode.cn/problems/target-sum/)|动态规划|0-1背包问题|416, 1230|[Java](Java/Solution494.java)
 [509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/)|动态规划，递归|记忆化递归解决了递归重复计算的问题|70|[Java](Java/Solution509.java)
 [518. 零钱兑换 II](https://leetcode.cn/problems/coin-change-2/)|动态规划|完全背包问题|~|[Java](Java/Solution518.java)
@@ -320,6 +321,7 @@ Last Updated: 2022.07.16
 [852. 山脉数组的峰顶索引](https://leetcode.cn/problems/peak-index-in-a-mountain-array/)|二分查找|二分查找的简单应用|~|[Java](Java/Solution852.java)
 [860. 柠檬水找零](https://leetcode.cn/problems/lemonade-change/)|贪心|本题贪心的是让5元的纸币数量尽可能多|~|[Java](Java/Solution860.java)
 [861. 翻转矩阵后的得分](https://leetcode.cn/problems/score-after-flipping-matrix/)|贪心|就行而言，1的位置尽可能靠左；就列而言，1的数量尽可能多|~|[Java](Java/Solution861.java)
+[865. 具有所有最深节点的最小子树](https://leetcode.cn/problems/smallest-subtree-with-all-the-deepest-nodes/)|递归|树的前序遍历、后序遍历|~|[Java](Java/Solution865.java)
 [873. 最长的斐波那契子序列的长度](https://leetcode.cn/problems/length-of-longest-fibonacci-subsequence/)|动态规划，哈希|~|300|[Java](Java/Solution873.java)
 [876. 链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/)|(快慢)双指针|~|26, 27, 141, 142, 287|[Java](Java/Solution876.java)
 [886. 可能的二分法](https://leetcode.cn/problems/possible-bipartition/)|DFS，并查集|深度优先遍历，但遍历时需要记录其它信息|785|[Java](Java/Solution886.java)
@@ -342,6 +344,7 @@ Last Updated: 2022.07.16
 [1029. 两地调度](https://leetcode.cn/problems/two-city-scheduling/)|贪心|贪心体现在尽可能让*去B市费用与去A市费用*相差越大的人去A市，剩下的去B市|~|[Java](Java/Solution1029.java)
 [1034. 边界着色](https://leetcode.cn/problems/coloring-a-border/)|回溯|本质是岛屿类问题|130, 200, 1020|[Java](Java/Solution1034.java)
 [1052. 爱生气的书店老板](https://leetcode.cn/problems/grumpy-bookstore-owner/)|滑动窗口|~|643|[Java](Java/Solution1052.java)
+[1055. 形成字符串的最短路径](https://leetcode.cn/problems/shortest-way-to-form-string/)|贪心，动态规划|贪心模拟简单且快捷|~|[Java](Java/Solution1055.java)
 [1079. 活字印刷](https://leetcode.cn/problems/letter-tile-possibilities/)|回溯|本质是树结构|~|[Java](Java/Solution1079.java)
 [1102. 得分最高的路径](https://leetcode.cn/problems/path-with-maximum-minimum-value/)|并查集|并查集的巧妙运用|778|[Java](../Java/Solution1102.java)
 [1136. 平行课程](https://leetcode.cn/problems/parallel-courses/)|拓扑排序|运用了关键活动算法中求每一个事件的最早开始时间|207, 210, 802|[Java](Java/Solution1136.java)
