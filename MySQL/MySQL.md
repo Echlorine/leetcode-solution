@@ -35,33 +35,57 @@
 [1050. 合作过至少三次的演员和导演](https://leetcode.cn/problems/actors-and-directors-who-cooperated-at-least-three-times/)|[sql](1050.sql)|sql分组，sql计数|select语句，group by 语句，having 子句，count()函数
 [1587. 银行账户概要 II](https://leetcode.cn/problems/bank-account-summary-ii/)|[sql](1587.sql)|sql表的连接，sql求和，sql分组及筛选|select语句，sum()函数，join 关键字，group by 语句，having 子句
 [1084. 销售分析III](https://leetcode.cn/problems/sales-analysis-iii/)|[sql](1084.sql)|sql表的连接，sql日期比较，sql分组及筛选|select语句，max()函数，min()函数，Date函数 datediff()，join 关键字，group by 语句，having 子句
-[181. 超过经理收入的员工](https://leetcode.cn/problems/employees-earning-more-than-their-managers/)|[sql](181.sql)|sql表的连接|select语句，where子句，join 关键字
+
+# 基础级例题
+
+题目名称|答案|考察知识点
+:-------|:-:|:---------
+[178. 分数排名](https://leetcode.cn/problems/rank-scores/)|[sql](178.sql)|sql排序函数
+[180. 连续出现的数字](https://leetcode.cn/problems/consecutive-numbers/)|[sql](180.sql)|sql多表连接
+[181. 超过经理收入的员工](https://leetcode.cn/problems/employees-earning-more-than-their-managers/)|[sql](181.sql)|sql表连接
+[184. 部门工资最高的员工](https://leetcode.cn/problems/department-highest-salary/)|[sql](184.sql)|sql表连接，sql子查询，sql in 操作符
+[185. 部门工资前三高的所有员工](https://leetcode.cn/problems/department-top-three-salaries/)|[sql](185.sql)|sql表连接，sql子查询
+[262. 行程和用户](https://leetcode.cn/problems/trips-and-users/)|[sql](262.sql)|sql表连接，sql计数，sql in 操作符
+[550. 游戏玩法分析 IV](https://leetcode.cn/problems/game-play-analysis-iv/)|[sql](550.sql)|sql表连接，sql计数
+[570. 至少有5名直接下属的经理](https://leetcode.cn/problems/managers-with-at-least-5-direct-reports/)|[sql](570.sql)|sql 表连接，sql计数
+[580. 统计各专业学生人数](https://leetcode.cn/problems/count-student-number-in-departments/)|[sql](580.sql)|sql表连接，sql计数
+[603. 连续空余座位](https://leetcode.cn/problems/consecutive-available-seats/)|[sql](603.sql)|sql表连接
+[619. 只出现一次的最大数字](https://leetcode.cn/problems/biggest-single-number/)|[sql](619.sql)|sql子查询，max()函数，group by 语句，having 子句
+[626. 换座位](https://leetcode.cn/problems/exchange-seats/)|[sql](626.sql)|sql 查询结果合并，sql 聚合函数
+[1045. 买下所有产品的客户](https://leetcode.cn/problems/customers-who-bought-all-products/)|[sql](1045.sql)|sql 外键
+[1112. 每位学生的最高成绩](https://leetcode.cn/problems/highest-grade-for-each-student/)|[sql](1112.sql)|sql窗口函数
+[1164. 指定日期的产品价格](https://leetcode.cn/problems/product-price-at-a-given-date/)|[sql](1164.sql)|sql 查询结果合并
+[1173. 即时食物配送 I](https://leetcode.cn/problems/immediate-food-delivery-i/)|[sql](1173.sql)|sql保留小数位数，sql计数
+[1193. 每月交易 I](https://leetcode.cn/problems/monthly-transactions-i/)|[sql](1193.sql)|sql日期格式化函数DATE_FORMAT(date,format)，in 操作符，sql计数，sql求和，if表达式
+[1211. 查询结果的质量和占比](https://leetcode.cn/problems/queries-quality-and-percentage/)|[sql](1211.sql)|sql求和，sql保留小数位数，AVG() 函数
+[1251. 平均售价](https://leetcode.cn/problems/average-selling-price/)|[sql](1251.sql)|sql计数，sql求和，sql保留小数位数
+[1264. 页面推荐](https://leetcode.cn/problems/page-recommendations/)|[sql](1264.sql)|sql union 操作符，in 操作符
+[1280. 学生们参加各科测试的次数](https://leetcode.cn/problems/students-and-examinations/)|[sql](1280.sql)|sql笛卡尔积，sql表连接
+[1294. 不同国家的天气类型](https://leetcode.cn/problems/weather-type-in-each-country/)|[sql](1294.sql)|case when 表达式，avg() 函数
+[1303. 求团队人数](https://leetcode.cn/problems/find-the-team-size/)|[sql](1303.sql)|sql 窗口函数，sql 表连接， sql计数
+[1321. 餐馆营业额变化增长](https://leetcode.cn/problems/restaurant-growth/)|[sql](1321.sql)|sql表连接，sql日期处理，sql求和
+[1341. 电影评分](https://leetcode.cn/problems/movie-rating/)|[sql](1341.sql)|sql 查询结果合并`union`，sql 限制返回指定的记录数`limit`
+[1398. 购买了产品 A 和产品 B 却没有购买产品 C 的顾客](https://leetcode.cn/problems/customers-who-bought-products-a-and-b-but-not-c/)|[sql](1398.sql)|sql表连接，sql计数
+[1440. 计算布尔表达式的值](https://leetcode.cn/problems/evaluate-boolean-expression/)|[sql](1440.sql)|sql表连接，case when表达式
+[1445. 苹果和桔子](https://leetcode.cn/problems/apples-oranges/)|[sql](1445.sql)|sql表连接
+[1459. 矩形面积](https://leetcode.cn/problems/rectangles-area/)|[sql](1459.sql)|sql自连接
+[1549. 每件商品的最新订单](https://leetcode.cn/problems/the-most-recent-orders-for-each-product/)|[sql](1549.sql)|sql窗口函数，sql表连接
+[1571. 仓库经理](https://leetcode.cn/problems/warehouse-manager/)|[sql](1571.sql)|sql求和，sql表连接
+[1607. 没有卖出的卖家](https://leetcode.cn/problems/sellers-with-no-sales/)|[sql](1607.sql)|sql表连接，null值判断
+[1633. 各赛事的用户注册率](https://leetcode.cn/problems/percentage-of-users-attended-a-contest/)|[sql](1633.sql)|sql保留小数位数
+[1699. 两人之间的通话次数](https://leetcode.cn/problems/number-of-calls-between-two-persons/)|[sql](1699.sql)|sql计数，sql求和，sql 函数 least(), greatest()
+[1731. 每位经理的下属员工数量](https://leetcode.cn/problems/the-number-of-employees-which-report-to-each-employee/)|[sql](1731.sql)|sql表连接，sql分组，sql四舍五入
+[1747. 应该被禁止的 Leetflex 账户](https://leetcode.cn/problems/leetflex-banned-accounts/)|[sql](1747.sql)|sql表连接，sql日期比较
+[1783. 大满贯数量](https://leetcode.cn/problems/grand-slam-titles/)|[sql](1783.sql)|sql 笛卡尔积
+[1867. 最大数量高于平均水平的订单](https://leetcode.cn/problems/orders-with-maximum-quantity-above-average/)|[sql](1867.sql)|sql 窗口函数
+[1988. 找出每所学校的最低分数要求](https://leetcode.cn/problems/find-cutoff-score-for-each-school/)|[sql](1988.sql)|sql 表连接，sql聚合函数
 
 # 进阶级例题
 
 题目名称|答案|考察知识点
 :-------|:-:|:---------
 [177. 第N高的薪水](https://leetcode.cn/problems/nth-highest-salary/)|[sql](177.sql)|sql排序，sql查询结果筛选
-[178. 分数排名](https://leetcode.cn/problems/rank-scores/)|[sql](178.sql)|sql排序函数
-[180. 连续出现的数字](https://leetcode.cn/problems/consecutive-numbers/)|[sql](180.sql)|sql多表连接
-[184. 部门工资最高的员工](https://leetcode.cn/problems/department-highest-salary/)|[sql](184.sql)|sql表连接，sql子查询，sql in 操作符
-[185. 部门工资前三高的所有员工](https://leetcode.cn/problems/department-top-three-salaries/)|[sql](185.sql)|sql表连接，sql子查询
-[570. 至少有5名直接下属的经理](https://leetcode.cn/problems/managers-with-at-least-5-direct-reports/)|[sql](570.sql)|sql 表连接，sql计数
-[619. 只出现一次的最大数字](https://leetcode.cn/problems/biggest-single-number/)|[sql](619.sql)|sql子查询，max()函数，group by 语句，having 子句
-[1112. 每位学生的最高成绩](https://leetcode.cn/problems/highest-grade-for-each-student/)|[sql](1112.sql)|sql窗口函数
-[1173. 即时食物配送 I](https://leetcode.cn/problems/immediate-food-delivery-i/)|[sql](1173.sql)|sql保留小数位数，sql计数
-[1193. 每月交易 I](https://leetcode.cn/problems/monthly-transactions-i/)|[sql](1193.sql)|sql日期格式化函数DATE_FORMAT(date,format)，in 操作符，sql计数，sql求和，if表达式
-[1211. 查询结果的质量和占比](https://leetcode.cn/problems/queries-quality-and-percentage/)|[sql](1211.sql)|sql求和，sql保留小数位数，AVG() 函数
-[1251. 平均售价](https://leetcode.cn/problems/average-selling-price/)|[sql](1251.sql)|sql计数，sql求和，sql保留小数位数
-[1264. 页面推荐](https://leetcode.cn/problems/page-recommendations/)|[sql](1264.sql)|sql union 操作符，in 操作符
-[1303. 求团队人数](https://leetcode.cn/problems/find-the-team-size/)|[sql](1303.sql)|sql 窗口函数，sql 表连接， sql计数
-[1398. 购买了产品 A 和产品 B 却没有购买产品 C 的顾客](https://leetcode.cn/problems/customers-who-bought-products-a-and-b-but-not-c/)|[sql](1398.sql)|sql表连接，sql计数
-[1440. 计算布尔表达式的值](https://leetcode.cn/problems/evaluate-boolean-expression/)|[sql](1440.sql)|sql表连接，case when表达式
-[1445. 苹果和桔子](https://leetcode.cn/problems/apples-oranges/)|[sql](1445.sql)|sql表连接
-[1571. 仓库经理](https://leetcode.cn/problems/warehouse-manager/)|[sql](1571.sql)|sql求和，sql表连接
-[1607. 没有卖出的卖家](https://leetcode.cn/problems/sellers-with-no-sales/)|[sql](1607.sql)|sql表连接，null值判断
-[1633. 各赛事的用户注册率](https://leetcode.cn/problems/percentage-of-users-attended-a-contest/)|[sql](1633.sql)|sql保留小数位数
-[1699. 两人之间的通话次数](https://leetcode.cn/problems/number-of-calls-between-two-persons/)|[sql](1699.sql)|sql计数，sql求和，sql 函数 least(), greatest()
+[1501. 可以放心投资的国家](https://leetcode.cn/problems/countries-you-can-safely-invest-in/)|[sql](1501.sql)|sql多表连接，sql聚合函数
 
 # MySQL函数
 ## MySQL窗口函数
@@ -69,10 +93,23 @@
 1. 专用窗口函数，包括排序函数、分区最大/最小值等专用窗口函数。
 2. 聚合函数，如sum. avg, count, max, min等。  
 
-窗口函数语法：
+窗口函数语法:
 ```
 <窗口函数> over (partition by <用于分组的列名>
-                order by <用于排序的列名>)
+                order by <用于排序的列名>
+                rows <窗口滑动的数据范围>)
+```
+窗口滑动的数据范围用法:
+```
+当前行 - current row
+之前的行 - preceding
+之后的行 - following
+无界限 - unbounded
+表示从前面的起点 - unbounded preceding
+表示到后面的终点 - unbounded following
+取当前行和前五行：ROWS between 5 preceding and current row --共6行
+取当前行和后五行：ROWS between current row and 5 following --共6行
+取前五行和后五行：ROWS between 5 preceding and 5 folowing --共11行
 ```
 ### MySQL四大排序函数
 0. 初始表内容
@@ -92,7 +129,7 @@ mysql> SELECT * FROM study;
 ```
 1. ROW_NUMBER(): 序号**连续、不重复**，即使遇到表中的两个一样的数值亦是如此，同时需要注意：在使用`row_number()`实现分页时`over`子句中的`order by`要与SQL排序记录中的`order by`保持一致，否则得到的序号可能不是连续的
 ```shell
-mysql> SELECT id, scores, ROW_NUMBER() OVER(order by scores desc) as `rank` from study;
+mysql> SELECT id, scores, ROW_NUMBER() OVER (order by scores desc) as `rank` from study;
 +----+--------+------+
 | id | scores | rank |
 +----+--------+------+
@@ -105,7 +142,7 @@ mysql> SELECT id, scores, ROW_NUMBER() OVER(order by scores desc) as `rank` from
 |  1 |     68 |    7 |
 +----+--------+------+
 
-mysql> SELECT id, scores, ROW_NUMBER() OVER(order by scores desc) as `rank` from study order by id;
+mysql> SELECT id, scores, ROW_NUMBER() OVER (order by scores desc) as `rank` from study order by id;
 +----+--------+------+
 | id | scores | rank |
 +----+--------+------+
@@ -121,7 +158,7 @@ mysql> SELECT id, scores, ROW_NUMBER() OVER(order by scores desc) as `rank` from
 
 2. RANK(): 值相同的归为一组且**每组序号一样**，排序**不会连续执行**
 ```shell
-mysql> SELECT id, scores, RANK() OVER(order by scores desc) as `rank` from study;
+mysql> SELECT id, scores, RANK() OVER (order by scores desc) as `rank` from study;
 +----+--------+------+
 | id | scores | rank |
 +----+--------+------+
@@ -136,7 +173,7 @@ mysql> SELECT id, scores, RANK() OVER(order by scores desc) as `rank` from study
 ```
 3. DENSE_RANK(): 排序是**连续的**，也会把相同的值分为一组且**每组排序号一样**
 ```shell
-mysql> SELECT id, scores, DENSE_RANK() OVER(order by scores desc) as `rank` from study;
+mysql> SELECT id, scores, DENSE_RANK() OVER (order by scores desc) as `rank` from study;
 +----+--------+------+
 | id | scores | rank |
 +----+--------+------+
@@ -151,7 +188,7 @@ mysql> SELECT id, scores, DENSE_RANK() OVER(order by scores desc) as `rank` from
 ```
 4. NTILE(group_num): 将所有记录分成`group_num`个组，**每组序号一样**
 ```shell
-mysql> SELECT id, scores, NTILE(2) OVER(order by scores desc) as `rank` from study;
+mysql> SELECT id, scores, NTILE(2) OVER (order by scores desc) as `rank` from study;
 +----+--------+------+
 | id | scores | rank |
 +----+--------+------+
@@ -166,10 +203,10 @@ mysql> SELECT id, scores, NTILE(2) OVER(order by scores desc) as `rank` from stu
 ```
 
 ## SQL Aggregate 函数
-AVG() - 返回平均值
-COUNT() - 返回行数
-FIRST() - 返回第一个记录的值
-LAST() - 返回最后一个记录的值
-MAX() - 返回最大值
-MIN() - 返回最小值
+AVG() - 返回平均值  
+COUNT() - 返回行数  
+FIRST() - 返回第一个记录的值  
+LAST() - 返回最后一个记录的值  
+MAX() - 返回最大值  
+MIN() - 返回最小值  
 SUM() - 返回总和
