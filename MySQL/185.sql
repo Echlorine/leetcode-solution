@@ -10,3 +10,12 @@ where 3 >
 )
 order by d1.name, e1.salary desc
 ;
+
+# Write your MySQL query statement below
+select d.name Department, t.name Employee, salary Salary
+from (
+    select name, salary, departmentId, dense_rank() over (partition by departmentId order by salary desc) as rk from Employee
+) t join Department d
+on t.departmentId=d.id
+where t.rk<4
+;

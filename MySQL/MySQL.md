@@ -44,7 +44,6 @@
 [180. 连续出现的数字](https://leetcode.cn/problems/consecutive-numbers/)|[sql](180.sql)|sql多表连接
 [181. 超过经理收入的员工](https://leetcode.cn/problems/employees-earning-more-than-their-managers/)|[sql](181.sql)|sql表连接
 [184. 部门工资最高的员工](https://leetcode.cn/problems/department-highest-salary/)|[sql](184.sql)|sql表连接，sql子查询，sql in 操作符
-[185. 部门工资前三高的所有员工](https://leetcode.cn/problems/department-top-three-salaries/)|[sql](185.sql)|sql表连接，sql子查询
 [262. 行程和用户](https://leetcode.cn/problems/trips-and-users/)|[sql](262.sql)|sql表连接，sql计数，sql in 操作符
 [550. 游戏玩法分析 IV](https://leetcode.cn/problems/game-play-analysis-iv/)|[sql](550.sql)|sql表连接，sql计数
 [570. 至少有5名直接下属的经理](https://leetcode.cn/problems/managers-with-at-least-5-direct-reports/)|[sql](570.sql)|sql 表连接，sql计数
@@ -62,14 +61,12 @@
 [1264. 页面推荐](https://leetcode.cn/problems/page-recommendations/)|[sql](1264.sql)|sql union 操作符，in 操作符
 [1280. 学生们参加各科测试的次数](https://leetcode.cn/problems/students-and-examinations/)|[sql](1280.sql)|sql笛卡尔积，sql表连接
 [1294. 不同国家的天气类型](https://leetcode.cn/problems/weather-type-in-each-country/)|[sql](1294.sql)|case when 表达式，avg() 函数
-[1303. 求团队人数](https://leetcode.cn/problems/find-the-team-size/)|[sql](1303.sql)|sql 窗口函数，sql 表连接， sql计数
 [1321. 餐馆营业额变化增长](https://leetcode.cn/problems/restaurant-growth/)|[sql](1321.sql)|sql表连接，sql日期处理，sql求和
 [1341. 电影评分](https://leetcode.cn/problems/movie-rating/)|[sql](1341.sql)|sql 查询结果合并`union`，sql 限制返回指定的记录数`limit`
 [1398. 购买了产品 A 和产品 B 却没有购买产品 C 的顾客](https://leetcode.cn/problems/customers-who-bought-products-a-and-b-but-not-c/)|[sql](1398.sql)|sql表连接，sql计数
 [1440. 计算布尔表达式的值](https://leetcode.cn/problems/evaluate-boolean-expression/)|[sql](1440.sql)|sql表连接，case when表达式
 [1445. 苹果和桔子](https://leetcode.cn/problems/apples-oranges/)|[sql](1445.sql)|sql表连接
 [1459. 矩形面积](https://leetcode.cn/problems/rectangles-area/)|[sql](1459.sql)|sql自连接
-[1549. 每件商品的最新订单](https://leetcode.cn/problems/the-most-recent-orders-for-each-product/)|[sql](1549.sql)|sql窗口函数，sql表连接
 [1571. 仓库经理](https://leetcode.cn/problems/warehouse-manager/)|[sql](1571.sql)|sql求和，sql表连接
 [1607. 没有卖出的卖家](https://leetcode.cn/problems/sellers-with-no-sales/)|[sql](1607.sql)|sql表连接，null值判断
 [1633. 各赛事的用户注册率](https://leetcode.cn/problems/percentage-of-users-attended-a-contest/)|[sql](1633.sql)|sql保留小数位数
@@ -85,7 +82,33 @@
 题目名称|答案|考察知识点
 :-------|:-:|:---------
 [177. 第N高的薪水](https://leetcode.cn/problems/nth-highest-salary/)|[sql](177.sql)|sql排序，sql查询结果筛选
+[185. 部门工资前三高的所有员工](https://leetcode.cn/problems/department-top-three-salaries/)|[sql](185.sql)|sql表连接，sql子查询，sql窗口函数
+[569. 员工薪水中位数](https://leetcode.cn/problems/median-employee-salary/)|[sql](569.sql)|sql 窗口函数，sql中位数处理
+[571. 给定数字的频率查询中位数](https://leetcode.cn/problems/find-median-given-frequency-of-numbers/)|[sql](571.sql)|sql 窗口函数，sql中位数处理
+[618. 学生地理信息报告](https://leetcode.cn/problems/students-report-by-geography/)|[sql](618.sql)|sql 窗口函数，sql 表连接
+[1077. 项目员工 III](https://leetcode.cn/problems/project-employees-iii/)|[sql](1077.sql)|sql 窗口函数，sql排序函数
+[1126. 查询活跃业务](https://leetcode.cn/problems/active-businesses/)|[sql](1126.sql)|sql 窗口函数
+[1225. 报告系统状态的连续日期](https://leetcode.cn/problems/report-contiguous-dates/)|[sql](1225.sql)|sql 窗口函数，sql处理连续区间
+[1270. 向公司CEO汇报工作的所有人](https://leetcode.cn/problems/all-people-report-to-the-given-manager/)|[sql](1270.sql)|sql 递归
+[1285. 找到连续区间的开始和结束数字](https://leetcode.cn/problems/find-the-start-and-end-number-of-continuous-ranges/)|[sql](1285.sql)|sql 窗口函数，sql处理连续区间
+[1303. 求团队人数](https://leetcode.cn/problems/find-the-team-size/)|[sql](1303.sql)|sql 窗口函数，sql 表连接， sql计数
+[1308. 不同性别每日分数总计](https://leetcode.cn/problems/running-total-for-different-genders/)|[sql](1308.sql)|sql 窗口函数
+[1369. 获取最近第二次的活动](https://leetcode.cn/problems/get-the-second-most-recent-activity/)|[sql](1369.sql)|sql 窗口函数，sql排名函数
+[1384. 按年度列出销售总额](https://leetcode.cn/problems/total-sales-amount-by-year/)|[sql](1384.sql)|sql 递归，sql日期处理
+[1412. 查找成绩处于中游的学生](https://leetcode.cn/problems/find-the-quiet-students-in-all-exams/)|[sql](1412.sql)|sql 窗口函数
+[1454. 活跃用户](https://leetcode.cn/problems/active-users/)|[sql](1454.sql)|sql 窗口函数，sql处理连续区间
 [1501. 可以放心投资的国家](https://leetcode.cn/problems/countries-you-can-safely-invest-in/)|[sql](1501.sql)|sql多表连接，sql聚合函数
+[1532. 最近的三笔订单](https://leetcode.cn/problems/the-most-recent-three-orders/)|[sql](1532.sql)|
+[1549. 每件商品的最新订单](https://leetcode.cn/problems/the-most-recent-orders-for-each-product/)|[sql](1549.sql)|sql窗口函数，sql表连接
+[1596. 每位顾客最经常订购的商品](https://leetcode.cn/problems/the-most-frequently-ordered-products-for-each-customer/)|[sql](1596.sql)|sql 窗口函数
+[1613. 找到遗失的ID](https://leetcode.cn/problems/find-the-missing-ids/)|[sql](1613.sql)|sql 递归
+[1709. 访问日期之间最大的空档期](https://leetcode.cn/problems/biggest-window-between-visits/)|[sql](1709.sql)|sql 窗口函数，sql `lead()`函数
+[1767. 寻找没有被执行的任务对](https://leetcode.cn/problems/find-the-subtasks-that-did-not-execute/)|[sql](1767.sql)|sql 递归
+[1831. 每天的最大交易](https://leetcode.cn/problems/maximum-transaction-each-day/)|[sql](1831.sql)|sql 窗口函数
+[1949. 坚定的友谊](https://leetcode.cn/problems/strong-friendship/)|[sql](1949.sql)|sql 表连接，sql查询结果合并
+[1951. 查询具有最多共同关注者的所有两两结对组](https://leetcode.cn/problems/all-the-pairs-with-the-maximum-number-of-common-followers/)|[sql](1951.sql)|sql 窗口函数，sql 表连接
+[1972. 同一天的第一个电话和最后一个电话](https://leetcode.cn/problems/first-and-last-call-on-the-same-day/)|[sql](1972.sql)|sql 窗口函数，sql 表连接
+[2010. 职员招聘人数 II](https://leetcode.cn/problems/the-number-of-seniors-and-juniors-to-join-the-company-ii/)|[sql](2010.sql)|sql 窗口函数，sql 查询结果合并
 
 # MySQL函数
 ## MySQL窗口函数
@@ -111,6 +134,7 @@
 取当前行和后五行：ROWS between current row and 5 following --共6行
 取前五行和后五行：ROWS between 5 preceding and 5 folowing --共11行
 ```
+
 ### MySQL四大排序函数
 0. 初始表内容
 ```shell
