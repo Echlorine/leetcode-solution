@@ -26,14 +26,14 @@ with recursive temp as (
             str_to_date(concat(year(period_start),'-12-31'), '%Y-%m-%d'), period_end) as end
     from Sales
     UNION ALL
-        select
-            t.product_id, t.average_daily_sales,
-            DATE_ADD(t.end, INTERVAL 1 DAY) as start,
-            if (DATE_ADD(t.end, INTERVAL 1 YEAR) < period_end,
-                DATE_ADD(t.end, INTERVAL 1 YEAR), period_end) as end
-        from temp t join Sales s
-        on t.product_id=s.product_id
-        where end < s.period_end
+    select
+        t.product_id, t.average_daily_sales,
+        DATE_ADD(t.end, INTERVAL 1 DAY) as start,
+        if (DATE_ADD(t.end, INTERVAL 1 YEAR) < period_end,
+            DATE_ADD(t.end, INTERVAL 1 YEAR), period_end) as end
+    from temp t join Sales s
+    on t.product_id=s.product_id
+    where end < s.period_end
 )
 select temp.product_id, p.product_name, date_format(start, "%Y") as report_year,
 average_daily_sales*(datediff(end, start) +1) as total_amount

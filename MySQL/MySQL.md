@@ -108,7 +108,38 @@
 [1949. 坚定的友谊](https://leetcode.cn/problems/strong-friendship/)|[sql](1949.sql)|sql 表连接，sql查询结果合并
 [1951. 查询具有最多共同关注者的所有两两结对组](https://leetcode.cn/problems/all-the-pairs-with-the-maximum-number-of-common-followers/)|[sql](1951.sql)|sql 窗口函数，sql 表连接
 [1972. 同一天的第一个电话和最后一个电话](https://leetcode.cn/problems/first-and-last-call-on-the-same-day/)|[sql](1972.sql)|sql 窗口函数，sql 表连接
+[2004. 职员招聘人数](https://leetcode.cn/problems/the-number-of-seniors-and-juniors-to-join-the-company/)|[sql](2004.sql)|sql 窗口函数，sql 查询结果合并
 [2010. 职员招聘人数 II](https://leetcode.cn/problems/the-number-of-seniors-and-juniors-to-join-the-company-ii/)|[sql](2010.sql)|sql 窗口函数，sql 查询结果合并
+
+# 简单题
+题目名称|答案|考察知识点
+:-------|:-:|:---------
+[512. 游戏玩法分析 II](https://leetcode.cn/problems/game-play-analysis-ii/)|[sql](512.sql)|group by 语句配合聚合函数
+[534. 游戏玩法分析 III](https://leetcode.cn/problems/game-play-analysis-iii/)|[sql](534.sql)|窗口函数
+[596. 超过5名学生的课](https://leetcode.cn/problems/classes-more-than-5-students/)|[sql](596.sql)|
+[620. 有趣的电影](https://leetcode.cn/problems/not-boring-movies/)|[sql](620.sql)
+[1107. 每日新用户统计](https://leetcode.cn/problems/new-users-daily-count/)|[sql](1107.sql)
+[1179. 重新格式化部门表](https://leetcode.cn/problems/reformat-department-table/)|[sql](1179.sql)|group by语句，这道题考察了对 group by 语句和聚合函数的理解
+[1435. 制作会话柱状图](https://leetcode.cn/problems/create-a-session-bar-chart/)|[sql](1435.sql)|
+[1623. 三人国家代表队](https://leetcode.cn/problems/all-valid-triplets-that-can-represent-a-country/)|[sql](1623.sql)
+[1777. 每家商店的产品价格](https://leetcode.cn/problems/products-price-for-each-store/)|[sql](1777.sql)|行转列
+[1821. 寻找今年具有正收入的客户](https://leetcode.cn/problems/find-customers-with-positive-revenue-this-year/)|[sql](1821.sql)|MySQL查询过滤
+
+# 中等题
+题目名称|答案|考察知识点
+:-------|:-:|:---------
+[602. 好友申请 II ：谁有最多的好友](https://leetcode.cn/problems/friend-requests-ii-who-has-the-most-friends/)|[sql](602.sql)|如何确定最大值所在行
+[1097. 游戏玩法分析 V](https://leetcode.cn/problems/game-play-analysis-v/)|[sql](1097.sql)
+[1098. 小众书籍](https://leetcode.cn/problems/unpopular-books/)|[sql](1098.sql)|in 关键字
+[1204. 最后一个能进入电梯的人](https://leetcode.cn/problems/last-person-to-fit-in-the-bus/)|[sql](1204.sql)|窗口函数、limit 子句
+[1212. 查询球队积分](https://leetcode.cn/problems/team-scores-in-football-tournament/)|[sql](1212.sql)|结合[1972. 同一天的第一个电话和最后一个电话](https://leetcode.cn/problems/first-and-last-call-on-the-same-day/)一起看, case when表达式
+
+# 困难题
+题目名称|答案|考察知识点
+:-------|:-:|:---------
+[579. 查询员工的累计薪水](https://leetcode.cn/problems/find-cumulative-salary-of-an-employee/)|[sql](579.sql)|窗口函数的详细用法
+[1127. 用户购买平台](https://leetcode.cn/problems/user-purchase-platform/)|[sql](1127.sql)|表连接在内的综合应用
+[1336. 每次访问的交易次数](https://leetcode.cn/problems/number-of-transactions-per-visit/)|[sql](1336.sql)|这道题更好的了解了 with as 的用法
 
 # MySQL函数
 ## MySQL窗口函数
@@ -120,8 +151,12 @@
 ```
 <窗口函数> over (partition by <用于分组的列名>
                 order by <用于排序的列名>
-                rows <窗口滑动的数据范围>)
+                rows/range <窗口滑动的数据范围>)
 ```
+rows和range区别
+* RANGE是逻辑上的排序，如果有缺失值，也会被考虑进去
+* ROW是实际表格的排序，也就是只根据列的位置来决定
+
 窗口滑动的数据范围用法:
 ```
 当前行 - current row
@@ -132,7 +167,7 @@
 表示到后面的终点 - unbounded following
 取当前行和前五行：ROWS between 5 preceding and current row --共6行
 取当前行和后五行：ROWS between current row and 5 following --共6行
-取前五行和后五行：ROWS between 5 preceding and 5 folowing --共11行
+取前五行和后五行：ROWS between 5 preceding and 5 following --共11行
 ```
 
 ### MySQL四大排序函数
@@ -234,3 +269,33 @@ LAST() - 返回最后一个记录的值
 MAX() - 返回最大值  
 MIN() - 返回最小值  
 SUM() - 返回总和
+
+# MySQL常见题型
+## 找到最大值所在行
+解题思路：`limit`子句，等值匹配
+题目名称|答案
+:-------|:-:
+[602. 好友申请 II ：谁有最多的好友](https://leetcode.cn/problems/friend-requests-ii-who-has-the-most-friends/)|[sql](602.sql)
+
+## 连续区间问题，等差数列问题
+
+## 窗口函数应用
+题目名称|答案
+:-------|:-:
+[579. 查询员工的累计薪水](https://leetcode.cn/problems/find-cumulative-salary-of-an-employee/)|[sql](579.sql)
+
+## 表格转换问题
+https://leetcode.cn/problems/students-report-by-geography/solution/zong-jie-ge-lei-biao-ge-ge-shi-hua-wen-t-tl4e/
+### 行转列
+解题思路：`union all`合并
+题目名称|答案
+:-------|:-:
+[1435. 制作会话柱状图](https://leetcode.cn/problems/create-a-session-bar-chart/)|[sql](1435.sql)
+[1795. 每个产品在不同商店的价格](https://leetcode.cn/problems/rearrange-products-table/)|[sql](1795.sql)
+
+### 列转行
+思路：先if/case判断构成多列，然后group by 结合聚合函数
+题目名称|答案
+:-------|:-:
+[1777. 每家商店的产品价格](https://leetcode.cn/problems/products-price-for-each-store/)|[sql](1777.sql)
+[1179. 重新格式化部门表](https://leetcode.cn/problems/reformat-department-table/)|[sql](1179.sql)
