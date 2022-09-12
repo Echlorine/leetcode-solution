@@ -116,21 +116,45 @@
 :-------|:-:|:---------
 [512. 游戏玩法分析 II](https://leetcode.cn/problems/game-play-analysis-ii/)|[sql](512.sql)|group by 语句配合聚合函数
 [534. 游戏玩法分析 III](https://leetcode.cn/problems/game-play-analysis-iii/)|[sql](534.sql)|窗口函数
+[574. 当选者](https://leetcode.cn/problems/winning-candidate/)|[sql](574.sql)|limit 子句
+[577. 员工奖金](https://leetcode.cn/problems/employee-bonus/)|[sql](577.sql)|左连接
 [596. 超过5名学生的课](https://leetcode.cn/problems/classes-more-than-5-students/)|[sql](596.sql)|
-[620. 有趣的电影](https://leetcode.cn/problems/not-boring-movies/)|[sql](620.sql)
-[1107. 每日新用户统计](https://leetcode.cn/problems/new-users-daily-count/)|[sql](1107.sql)
+[597. 好友申请 I：总体通过率](https://leetcode.cn/problems/friend-requests-i-overall-acceptance-rate/)|[sql](597.sql)|null 处理
+[610. 判断三角形](https://leetcode.cn/problems/triangle-judgement/)|[sql](610.sql)|条件判断
+[613. 直线上的最近距离](https://leetcode.cn/problems/shortest-distance-in-a-line/)|[sql](613.sql)|自连接
+[614. 二级关注者](https://leetcode.cn/problems/second-degree-follower/)|[sql](614.sql)|表连接
+[620. 有趣的电影](https://leetcode.cn/problems/not-boring-movies/)|[sql](620.sql)|
+[1068. 产品销售分析 I](https://leetcode.cn/problems/product-sales-analysis-i/)|[sql](1068.sql)|表连接
+[1069. 产品销售分析 II](https://leetcode.cn/problems/product-sales-analysis-ii/)|[sql](1069.sql)|聚合函数
+[1070. 产品销售分析 III](https://leetcode.cn/problems/product-sales-analysis-iii/)|[sql](1070.sql)|表连接
+[1075. 项目员工 I](https://leetcode.cn/problems/project-employees-i/)|[sql](1075.sql)|表连接，聚合函数
+[1076. 项目员工II](https://leetcode.cn/problems/project-employees-ii/)|[sql](1076.sql)|聚合函数，聚合过滤
+[1082. 销售分析 I ](https://leetcode.cn/problems/sales-analysis-i/)|[sql](1082.sql)|聚合函数，子查询
+[1107. 每日新用户统计](https://leetcode.cn/problems/new-users-daily-count/)|[sql](1107.sql)|
+[1113. 报告的记录](https://leetcode.cn/problems/reported-posts/)|[sql](1113.sql)|group by语句，having子句，聚合函数
 [1179. 重新格式化部门表](https://leetcode.cn/problems/reformat-department-table/)|[sql](1179.sql)|group by语句，这道题考察了对 group by 语句和聚合函数的理解
 [1435. 制作会话柱状图](https://leetcode.cn/problems/create-a-session-bar-chart/)|[sql](1435.sql)|
-[1623. 三人国家代表队](https://leetcode.cn/problems/all-valid-triplets-that-can-represent-a-country/)|[sql](1623.sql)
+[1149. 文章浏览 II](https://leetcode.cn/problems/article-views-ii/)|[sql](1149.sql)|聚合函数，group by语句，having子句
+[1623. 三人国家代表队](https://leetcode.cn/problems/all-valid-triplets-that-can-represent-a-country/)|[sql](1623.sql)|
+[1661. 每台机器的进程平均运行时间](https://leetcode.cn/problems/average-time-of-process-per-machine/)|[sql](1661.sql)|聚合函数，条件判断
+[1715. 苹果和橘子的个数](https://leetcode.cn/problems/count-apples-and-oranges/)|[sql](1715.sql)|表连接，聚合函数
 [1777. 每家商店的产品价格](https://leetcode.cn/problems/products-price-for-each-store/)|[sql](1777.sql)|行转列
+[1809. 没有广告的剧集](https://leetcode.cn/problems/ad-free-sessions/)|[sql](1809.sql)|in 关键字
 [1821. 寻找今年具有正收入的客户](https://leetcode.cn/problems/find-customers-with-positive-revenue-this-year/)|[sql](1821.sql)|MySQL查询过滤
 
 # 中等题
 题目名称|答案|考察知识点
 :-------|:-:|:---------
+[578. 查询回答率最高的问题](https://leetcode.cn/problems/get-highest-answer-rate-question/)|[sql](578.sql)|子查询，order by 子句，limit 子句
+[585. 2016年的投资](https://leetcode.cn/problems/investments-in-2016/)|[sql](585.sql)|窗口函数，聚合函数
 [602. 好友申请 II ：谁有最多的好友](https://leetcode.cn/problems/friend-requests-ii-who-has-the-most-friends/)|[sql](602.sql)|如何确定最大值所在行
-[1097. 游戏玩法分析 V](https://leetcode.cn/problems/game-play-analysis-v/)|[sql](1097.sql)
+[612. 平面上的最近距离](https://leetcode.cn/problems/shortest-distance-in-a-plane/)|[sql](612.sql)|平方函数与平方根函数
+[615. 平均工资：部门与公司比较](https://leetcode.cn/problems/average-salary-departments-vs-company/)|[sql](615.sql)|case when 表达式，聚合函数
+[1083. 销售分析 II](https://leetcode.cn/problems/sales-analysis-ii/)|[sql](1083.sql)|in 关键字
+[1097. 游戏玩法分析 V](https://leetcode.cn/problems/game-play-analysis-v/)|[sql](1097.sql)|
 [1098. 小众书籍](https://leetcode.cn/problems/unpopular-books/)|[sql](1098.sql)|in 关键字
+[1132. 报告的记录 II](https://leetcode.cn/problems/reported-posts-ii/)|[sql](1132.sql)|表连接，聚合函数
+[1174. 即时食物配送 II](https://leetcode.cn/problems/immediate-food-delivery-ii/)|[sql](1174.sql)|窗口函数，聚合函数
 [1204. 最后一个能进入电梯的人](https://leetcode.cn/problems/last-person-to-fit-in-the-bus/)|[sql](1204.sql)|窗口函数、limit 子句
 [1212. 查询球队积分](https://leetcode.cn/problems/team-scores-in-football-tournament/)|[sql](1212.sql)|结合[1972. 同一天的第一个电话和最后一个电话](https://leetcode.cn/problems/first-and-last-call-on-the-same-day/)一起看, case when表达式
 
@@ -139,6 +163,8 @@
 :-------|:-:|:---------
 [579. 查询员工的累计薪水](https://leetcode.cn/problems/find-cumulative-salary-of-an-employee/)|[sql](579.sql)|窗口函数的详细用法
 [1127. 用户购买平台](https://leetcode.cn/problems/user-purchase-platform/)|[sql](1127.sql)|表连接在内的综合应用
+[1159. 市场分析 II](https://leetcode.cn/problems/market-analysis-ii/)|[sql](1159.sql)|窗口函数，in 子句
+[1194. 锦标赛优胜者](https://leetcode.cn/problems/tournament-winners/)|[sql](1194.sql)|group 一组数据，如果没有选择取数规则，则取的是这组的第一数
 [1336. 每次访问的交易次数](https://leetcode.cn/problems/number-of-transactions-per-visit/)|[sql](1336.sql)|这道题更好的了解了 with as 的用法
 
 # MySQL函数
