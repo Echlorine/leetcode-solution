@@ -239,6 +239,7 @@ private int[] parent;
 :------|:---|:--:
 [323. 无向图中连通分量的数目](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/)|题目名称就暗示了使用并查集|[Java](../Java/Solution323.java)
 [547. 省份数量](https://leetcode.cn/problems/number-of-provinces/)|确定图的连通分量数量|[Java](../Java/Solution547.java)
+[684. 冗余连接](https://leetcode.cn/problems/redundant-connection/)|利用并查集检查两节点是否已经连通，DFS也可以做|[Java](../Java/Solution684.java)
 [990. 等式方程的可满足性](https://leetcode.cn/problems/satisfiability-of-equality-equations/)|确定图的连通分量|[Java](../Java/Solution990.java)
 [1319. 连通网络的操作次数](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/)|确定连通分量的数量|[Java](../Java/Solution1319.java)
 
@@ -252,6 +253,7 @@ private int[] parent;
 [305. 岛屿数量 II](https://leetcode.cn/problems/number-of-islands-ii/)|确定连通分量的数量是并查集的典型应用|[Java](../Java/Solution305.java)
 [778. 水位上升的泳池中游泳](https://leetcode.cn/problems/swim-in-rising-water/)|本质是单源最短路径问题|[Java](../Java/Solution778.java)
 [1102. 得分最高的路径](https://leetcode.cn/problems/path-with-maximum-minimum-value/)|巧妙运用并查集|[Java](../Java/Solution1102.java)
+[1135. 最低成本联通所有城市](https://leetcode.cn/problems/connecting-cities-with-minimum-cost/)|并查集的应用|[Java](../Java/Solution1135.java)
 [1202. 交换字符串中的元素](https://leetcode.cn/problems/smallest-string-with-swaps/)|学习如何利用哈希表保存并查集内不同的连通分量|[Java](../Java/Solution1202.java)
 [947. 移除最多的同行或同列石头](https://leetcode.cn/problems/most-stones-removed-with-same-row-or-column/)|合并次数即为最终结果|[Java](../Java/Solution947.java)
 [959. 由斜杠划分区域](https://leetcode.cn/problems/regions-cut-by-slashes/)|难在如何将问题建模|[Java](../Java/Solution959.java)
@@ -261,4 +263,6 @@ BOSS级例题:
 题目名称|说明|答案
 :------|:---|:--:
 [399. 除法求值](https://leetcode.cn/problems/evaluate-division/)|带权并查集|[Java](../Java/Solution399.java)
+[685. 冗余连接 II](https://leetcode.cn/problems/redundant-connection-ii/)|灵活的运用并查集，体会并查集的作用是连接同一类型的节点|[Java](../Java/Solution685.java)
 [803. 打砖块](https://leetcode.cn/problems/bricks-falling-when-hit/)|并查集的反向应用|[Java](../Java/Solution803.java)
+[827. 最大人工岛](https://leetcode.cn/problems/making-a-large-island/)|这道题更考查了对并查集的理解|[Java](../Java/Solution827.java)

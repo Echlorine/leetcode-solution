@@ -1,4 +1,4 @@
-# 深度优先遍历
+z# 深度优先遍历
 深度优先遍历的主要思想可以这样概括：
 1. 从起点出发，一直向下走，走到终点停止。
 2. 往前回退一步，看看该节点周围有没有其他结点没有访问，如果有，则访问此结点，之后再从此结点出发，进行与前述类似的访问；如果没有，就再退回一步进行搜索。
@@ -74,10 +74,14 @@ Algorithm DFS(head, v, visited){
 [60. 排列序列](https://leetcode.cn/problems/permutation-sequence/)|全排列的题目，找到符合条件的即可，也是剪枝条件
 [77. 组合](https://leetcode.cn/problems/combinations/)|利用按照顺序搜索分析出剪枝条件
 [90. 子集 II](https://leetcode.cn/problems/subsets-ii/)|[78. 子集](https://leetcode.cn/problems/subsets/)的进阶，本质也是二叉树型的结构，需要剪枝
+[267. 回文排列 II](https://leetcode.cn/problems/palindrome-permutation-ii/)|本质与[47. 全排列 II](https://leetcode.cn/problems/permutations-ii/)相同
 [473. 火柴拼正方形](https://leetcode.cn/problems/matchsticks-to-square/)|本质是一种树形结构，同时利用剪枝优化时间
+[491. 递增子序列](https://leetcode.cn/problems/increasing-subsequences/)|难点在于剪枝的处理
 [698. 划分为k个相等的子集](https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/)|本质和[473. 火柴拼正方形](https://leetcode.cn/problems/matchsticks-to-square/)相同
 [1079. 活字印刷](https://leetcode.cn/problems/letter-tile-possibilities/)|本质是树结构
 [1593. 拆分字符串使唯一子字符串的数目最大](https://leetcode.cn/problems/split-a-string-into-the-max-number-of-unique-substrings/)|剪枝条件很容易想，难在问题的转化
+[1601. 最多可达成的换楼请求数目](https://leetcode.cn/problems/maximum-number-of-achievable-transfer-requests/)|本质是二进制枚举
+[2044. 统计按位或能得到最大值的子集数目](https://leetcode.cn/problems/count-number-of-maximum-bitwise-or-subsets/)|二进制枚举，而且这道题只需要求结果，不需要保留所有可能的排列
 
 1. BOSS级例题:  
 
@@ -92,6 +96,7 @@ Algorithm DFS(head, v, visited){
 [130. 被围绕的区域](https://leetcode.cn/problems/surrounded-regions/)|岛屿类问题
 [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/)|岛屿类问题
 [417. 太平洋大西洋水流问题](https://leetcode.cn/problems/pacific-atlantic-water-flow/)|迷宫类问题，通过**反向搜索**降低时间复杂度
+[489. 扫地机器人](https://leetcode.cn/problems/robot-room-cleaner/)|难点在于确定回溯时机，易错点在于需要自己实现回溯动作
 [529. 扫雷游戏](https://leetcode.cn/problems/minesweeper/)|岛屿类问题，一次有8个方向可以遍历，同时遍历时候需要判断
 [694. 不同岛屿的数量](https://leetcode.cn/problems/number-of-distinct-islands/)|岛屿类问题，本质与[200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/)相同
 [695. 岛屿的最大面积](https://leetcode.cn/problems/max-area-of-island/)|岛屿类问题
@@ -100,3 +105,8 @@ Algorithm DFS(head, v, visited){
 [1034. 边界着色](https://leetcode.cn/problems/coloring-a-border/)|岛屿类问题，遍历时候需要根据所给条件判断
 [2061. 扫地机器人清扫过的空间个数](https://leetcode.cn/problems/number-of-spaces-cleaning-robot-cleaned/)|本题难点在于确定遍历终止
 [剑指 Offer 13. 机器人的运动范围](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)|迷宫类问题，需要根据题意在遍历时判断
+
+## 二进制枚举类回溯
+题目名称|说明
+:------|:---
+[1601. 最多可达成的换楼请求数目](https://leetcode.cn/problems/maximum-number-of-achievable-transfer-requests/)|~

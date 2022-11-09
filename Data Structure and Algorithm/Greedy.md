@@ -15,6 +15,8 @@
 [1400. 构造 K 个回文字符串](https://leetcode.cn/problems/construct-k-palindrome-strings/)|贪心体现在让奇数个字符分配到不同的回文串中|[Java](../Java/Solution1400.java)
 [1605. 给定行和列的和求可行矩阵](https://leetcode.cn/problems/find-valid-matrix-given-row-and-column-sums/)|贪心体现在生成矩阵某一个位置的值的时候，让这个值尽可能大|[Java](../Java/Solution1605.java)
 [1710. 卡车上的最大单元数](https://leetcode.cn/problems/maximum-units-on-a-truck/)|贪心体现在优先选择大箱子|[Java](../Java/Solution1710.java)
+[2383. 赢得比赛需要的最少训练时长](https://leetcode.cn/problems/minimum-hours-of-training-to-win-a-competition/)|注意特殊情况|[Java](../Java/Solution2383.java)
+[2384. 最大回文数字](https://leetcode.cn/problems/largest-palindromic-number/)|注意特殊情况的判断|[Java](../Java/Solution2384.java)
 
 2. 进阶级例题:  
 

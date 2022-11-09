@@ -132,15 +132,27 @@
 [1082. 销售分析 I ](https://leetcode.cn/problems/sales-analysis-i/)|[sql](1082.sql)|聚合函数，子查询
 [1107. 每日新用户统计](https://leetcode.cn/problems/new-users-daily-count/)|[sql](1107.sql)|
 [1113. 报告的记录](https://leetcode.cn/problems/reported-posts/)|[sql](1113.sql)|group by语句，having子句，聚合函数
-[1179. 重新格式化部门表](https://leetcode.cn/problems/reformat-department-table/)|[sql](1179.sql)|group by语句，这道题考察了对 group by 语句和聚合函数的理解
-[1435. 制作会话柱状图](https://leetcode.cn/problems/create-a-session-bar-chart/)|[sql](1435.sql)|
 [1149. 文章浏览 II](https://leetcode.cn/problems/article-views-ii/)|[sql](1149.sql)|聚合函数，group by语句，having子句
+[1179. 重新格式化部门表](https://leetcode.cn/problems/reformat-department-table/)|[sql](1179.sql)|group by语句，这道题考察了对 group by 语句和聚合函数的理解
+[1241. 每个帖子的评论数](https://leetcode.cn/problems/number-of-comments-per-post/)|[sql](1241.sql)|表连接，聚合函数
+[1322. 广告效果](https://leetcode.cn/problems/ads-performance/)|[sql](1322.sql)|聚合函数
+[1327. 列出指定时间段内所有的下单产品](https://leetcode.cn/problems/list-the-products-ordered-in-a-period/)|[sql](1327.sql)|表连接，聚合函数
+[1350. 院系无效的学生](https://leetcode.cn/problems/students-with-invalid-departments/)|[sql](1350.sql)|in 关键字
+[1355. 活动参与者](https://leetcode.cn/problems/activity-participants/)|[sql](1355.sql)|窗口函数
+[1378. 使用唯一标识码替换员工ID](https://leetcode.cn/problems/replace-employee-id-with-the-unique-identifier/)|[sql](1378.sql)|表连接
+[1421. 净现值查询](https://leetcode.cn/problems/npv-queries/)|[sql](1421.sql)|表连接
+[1435. 制作会话柱状图](https://leetcode.cn/problems/create-a-session-bar-chart/)|[sql](1435.sql)|
+[1565. 按月统计订单数与顾客数](https://leetcode.cn/problems/unique-orders-and-customers-per-month/)|[sql](1565.sql)|group by 语句
 [1623. 三人国家代表队](https://leetcode.cn/problems/all-valid-triplets-that-can-represent-a-country/)|[sql](1623.sql)|
 [1661. 每台机器的进程平均运行时间](https://leetcode.cn/problems/average-time-of-process-per-machine/)|[sql](1661.sql)|聚合函数，条件判断
+[1677. 发票中的产品金额](https://leetcode.cn/problems/products-worth-over-invoices/)|[sql](1677.sql)|表连接，聚合函数
+[1683. 无效的推文](https://leetcode.cn/problems/invalid-tweets/)|[sql](1683.sql)|sql字符串函数
 [1715. 苹果和橘子的个数](https://leetcode.cn/problems/count-apples-and-oranges/)|[sql](1715.sql)|表连接，聚合函数
 [1777. 每家商店的产品价格](https://leetcode.cn/problems/products-price-for-each-store/)|[sql](1777.sql)|行转列
 [1809. 没有广告的剧集](https://leetcode.cn/problems/ad-free-sessions/)|[sql](1809.sql)|in 关键字
 [1821. 寻找今年具有正收入的客户](https://leetcode.cn/problems/find-customers-with-positive-revenue-this-year/)|[sql](1821.sql)|MySQL查询过滤
+[1978. 上级经理已离职的公司员工](https://leetcode.cn/problems/employees-whose-manager-left-the-company/)|[sql](1978.sql)|where 子句
+[1990. 统计实验的数量](https://leetcode.cn/problems/count-the-number-of-experiments/)|[sql](1990.sql)|表连接，聚合函数
 
 # 中等题
 题目名称|答案|考察知识点
@@ -157,6 +169,15 @@
 [1174. 即时食物配送 II](https://leetcode.cn/problems/immediate-food-delivery-ii/)|[sql](1174.sql)|窗口函数，聚合函数
 [1204. 最后一个能进入电梯的人](https://leetcode.cn/problems/last-person-to-fit-in-the-bus/)|[sql](1204.sql)|窗口函数、limit 子句
 [1212. 查询球队积分](https://leetcode.cn/problems/team-scores-in-football-tournament/)|[sql](1212.sql)|结合[1972. 同一天的第一个电话和最后一个电话](https://leetcode.cn/problems/first-and-last-call-on-the-same-day/)一起看, case when表达式
+[1364. 顾客的可信联系人数量](https://leetcode.cn/problems/number-of-trusted-contacts-of-a-customer/)|[sql](1364.sql)|表连接，聚合函数
+[1468. 计算税后工资](https://leetcode.cn/problems/calculate-salaries/)|[sql](1468.sql)|case 条件判断
+[1479. 周内每天的销售情况](https://leetcode.cn/problems/sales-by-day-of-the-week/)|[sql](1479.sql)|列转行，`dayofweek()`函数
+[1495. 上月播放的儿童适宜电影](https://leetcode.cn/problems/friendly-movies-streamed-last-month/)|[sql](1495.sql)|表连接，日期格式转换
+[1511. 消费者下单频率](https://leetcode.cn/problems/customer-order-frequency/)|[sql](1511.sql)|表连接，聚合函数
+[1517. 查找拥有有效邮箱的用户](https://leetcode.cn/problems/find-users-with-valid-e-mails/)|[sql](1517.sql)|正则表达式，`REGEXP`
+[1543. 产品名称格式修复](https://leetcode.cn/problems/fix-product-name-format/)|[sql](1543.sql)|group by 语句，order by 子句，常用字符串函数
+[1555. 银行账户概要](https://leetcode.cn/problems/bank-account-summary/)|[sql](1555.sql)|多表连接
+[1811. 寻找面试候选人](https://leetcode.cn/problems/find-interview-candidates/)|[sql](1811.sql)|多表连接，聚合函数，连续数的处理
 
 # 困难题
 题目名称|答案|考察知识点
@@ -165,7 +186,11 @@
 [1127. 用户购买平台](https://leetcode.cn/problems/user-purchase-platform/)|[sql](1127.sql)|表连接在内的综合应用
 [1159. 市场分析 II](https://leetcode.cn/problems/market-analysis-ii/)|[sql](1159.sql)|窗口函数，in 子句
 [1194. 锦标赛优胜者](https://leetcode.cn/problems/tournament-winners/)|[sql](1194.sql)|group 一组数据，如果没有选择取数规则，则取的是这组的第一数
+[1205. 每月交易II](https://leetcode.cn/problems/monthly-transactions-ii/)|[sql](1205.sql)|表格的列转行利用聚合函数
 [1336. 每次访问的交易次数](https://leetcode.cn/problems/number-of-transactions-per-visit/)|[sql](1336.sql)|这道题更好的了解了 with as 的用法
+[1635. Hopper 公司查询 I](https://leetcode.cn/problems/hopper-company-queries-i/)|[sql](1635.sql)|窗口函数，表连接
+[1645.Hopper 公司查询 II](https://leetcode.cn/problems/hopper-company-queries-ii/)|[sql](1645.sql)|聚合函数，表连接
+[1651. Hopper 公司查询 III](https://leetcode.cn/problems/hopper-company-queries-iii/)|[sql](1651.sql)|表连接，窗口函数
 
 # MySQL函数
 ## MySQL窗口函数
@@ -320,8 +345,9 @@ https://leetcode.cn/problems/students-report-by-geography/solution/zong-jie-ge-l
 [1795. 每个产品在不同商店的价格](https://leetcode.cn/problems/rearrange-products-table/)|[sql](1795.sql)
 
 ### 列转行
-思路：先if/case判断构成多列，然后group by 结合聚合函数
+思路：先if/case判断构成多列，然后 **`group by` 结合聚合函数**
 题目名称|答案
 :-------|:-:
-[1777. 每家商店的产品价格](https://leetcode.cn/problems/products-price-for-each-store/)|[sql](1777.sql)
 [1179. 重新格式化部门表](https://leetcode.cn/problems/reformat-department-table/)|[sql](1179.sql)
+[1205. 每月交易II](https://leetcode.cn/problems/monthly-transactions-ii/)|[sql](1205.sql)
+[1777. 每家商店的产品价格](https://leetcode.cn/problems/products-price-for-each-store/)|[sql](1777.sql)
