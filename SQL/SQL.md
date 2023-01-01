@@ -123,7 +123,7 @@
 [610. 判断三角形](https://leetcode.cn/problems/triangle-judgement/)|[sql](610.sql)|条件判断
 [613. 直线上的最近距离](https://leetcode.cn/problems/shortest-distance-in-a-line/)|[sql](613.sql)|自连接
 [614. 二级关注者](https://leetcode.cn/problems/second-degree-follower/)|[sql](614.sql)|表连接
-[620. 有趣的电影](https://leetcode.cn/problems/not-boring-movies/)|[sql](620.sql)|
+[620. 有趣的电影](https://leetcode.cn/problems/not-boring-movies/)|[sql](620.sql)|where子句，order by 关键字
 [1068. 产品销售分析 I](https://leetcode.cn/problems/product-sales-analysis-i/)|[sql](1068.sql)|表连接
 [1069. 产品销售分析 II](https://leetcode.cn/problems/product-sales-analysis-ii/)|[sql](1069.sql)|聚合函数
 [1070. 产品销售分析 III](https://leetcode.cn/problems/product-sales-analysis-iii/)|[sql](1070.sql)|表连接
@@ -153,6 +153,10 @@
 [1821. 寻找今年具有正收入的客户](https://leetcode.cn/problems/find-customers-with-positive-revenue-this-year/)|[sql](1821.sql)|MySQL查询过滤
 [1978. 上级经理已离职的公司员工](https://leetcode.cn/problems/employees-whose-manager-left-the-company/)|[sql](1978.sql)|where 子句
 [1990. 统计实验的数量](https://leetcode.cn/problems/count-the-number-of-experiments/)|[sql](1990.sql)|表连接，聚合函数
+[2026. 低质量的问题](https://leetcode.cn/problems/low-quality-problems/)|[sql](2026.sql)|where 子句
+[2041. 面试中被录取的候选人](https://leetcode.cn/problems/accepted-candidates-from-the-interviews/)|[sql](2041.sql)|表连接，where 子句，group by 语句
+[2072. 赢得比赛的大学](https://leetcode.cn/problems/the-winner-university/)|[sql](2072.sql)|表连接，case when 表达式
+[2082. 富有客户的数量](https://leetcode.cn/problems/the-number-of-rich-customers/)|[sql](2082.sql)|where子句，distinct关键字
 
 # 中等题
 题目名称|答案|考察知识点
@@ -178,6 +182,17 @@
 [1543. 产品名称格式修复](https://leetcode.cn/problems/fix-product-name-format/)|[sql](1543.sql)|group by 语句，order by 子句，常用字符串函数
 [1555. 银行账户概要](https://leetcode.cn/problems/bank-account-summary/)|[sql](1555.sql)|多表连接
 [1811. 寻找面试候选人](https://leetcode.cn/problems/find-interview-candidates/)|[sql](1811.sql)|多表连接，聚合函数，连续数的处理
+[1841. 联赛信息统计](https://leetcode.cn/problems/league-statistics/)|[sql](1841.sql)|表连接，聚合函数
+[1853. 转换日期格式](https://leetcode.cn/problems/convert-date-format/)|[sql](1853.sql)|DATE_FORMAT 函数
+[1875. 将工资相同的雇员分组](https://leetcode.cn/problems/group-employees-of-the-same-salary/)|[sql](1875.sql)|表连接，窗口函数
+[1907. 按分类统计薪水](https://leetcode.cn/problems/count-salary-categories/)|[sql](1907.sql)|union 操作符，聚合函数
+[1934. 确认率](https://leetcode.cn/problems/confirmation-rate/)|[sql](1934.sql)|表连接
+[1939. 主动请求确认消息的用户](https://leetcode.cn/problems/users-that-actively-request-confirmation-messages/)|[sql](1939.sql)|表连接，timestampdiff 函数
+[2020. 无流量的帐户数](https://leetcode.cn/problems/number-of-accounts-that-did-not-stream/)|exists 运算符
+[2051. The Category of Each Member in the Store](https://leetcode.cn/problems/the-category-of-each-member-in-the-store/)|[sql](2051.sql)|sql 多表连接
+[2066. 账户余额](https://leetcode.cn/problems/account-balance/)|[sql](2066.sql)|窗口函数
+[2084. 为订单类型为 0 的客户删除类型为 1 的订单](https://leetcode.cn/problems/drop-type-1-orders-for-customers-with-type-0-orders/)|[sql](2084.sql)|表连接
+[2230. 查找可享受优惠的用户](https://leetcode.cn/problems/the-users-that-are-eligible-for-discount/)|[sql](2230.sql)|sql 时间处理
 
 # 困难题
 题目名称|答案|考察知识点
@@ -191,6 +206,7 @@
 [1635. Hopper 公司查询 I](https://leetcode.cn/problems/hopper-company-queries-i/)|[sql](1635.sql)|窗口函数，表连接
 [1645.Hopper 公司查询 II](https://leetcode.cn/problems/hopper-company-queries-ii/)|[sql](1645.sql)|聚合函数，表连接
 [1651. Hopper 公司查询 III](https://leetcode.cn/problems/hopper-company-queries-iii/)|[sql](1651.sql)|表连接，窗口函数
+[1892. 页面推荐Ⅱ](https://leetcode.cn/problems/page-recommendations-ii/)|[sql](1892.sql)|表连接，聚合函数，mysql查询优化
 
 # MySQL函数
 ## MySQL窗口函数

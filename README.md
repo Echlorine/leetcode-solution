@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2022.11.09
+Last Updated: 2023.01.01
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 
@@ -414,11 +414,14 @@ Last Updated: 2022.11.09
 [1768. 交替合并字符串](https://leetcode.cn/problems/merge-strings-alternately/)|模拟|双指针|~|[Java](Java/Solution1768.java)
 [1784. 检查二进制字符串字段](https://leetcode.cn/problems/check-if-binary-string-has-at-most-one-segment-of-ones/)|模拟|理清思路，表示出所有的状态即可|~|[Java](Java/Solution1784.java)
 [1790. 仅执行一次字符串交换能否使两个字符串相等](https://leetcode.cn/problems/check-if-one-string-swap-can-make-strings-equal/)|哈希|字符统计|~|[Java](Java/Solution1790.java)
+[1796. 字符串中第二大的数字](https://leetcode.cn/problems/second-largest-digit-in-a-string/)|哈希|哈希表|~|[Java](Java/Solution1796.java)
 [1800. 最大升序子数组和](https://leetcode.cn/problems/maximum-ascending-subarray-sum/)|动态规划|经典的动态规划题|53|[Java](Java/Solution1800.java)
+[1805. 字符串中不同整数的数目](https://leetcode.cn/problems/number-of-different-integers-in-a-string/)|模拟|双指针|~|[Java](Java/Solution1805.java)
 [1984. 学生分数的最小差值](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/)|滑动窗口|本题将题目转化后就会好做很多|~|[Java](Java/Solution1984.java)
 [2044. 统计按位或能得到最大值的子集数目](https://leetcode.cn/problems/count-number-of-maximum-bitwise-or-subsets/)|回溯|二进制枚举，这道题只需要求结果，不需要保留所有可能的排列|~|[Java](Java/Solution2044.java)
 [2061. 扫地机器人清扫过的空间个数](https://leetcode.cn/problems/number-of-spaces-cleaning-robot-cleaned/)|模拟，DFS|本题难点在于确定遍历终止|54, 489|[Java](Java/Solution2061.java)
 [2204. 到无向图中环的距离](https://leetcode.cn/problems/distance-to-a-cycle-in-undirected-graph/)|拓扑排序，多源最短路径|图论题目的综合应用|~|[Java](Java/Solution2204.java)
+[2351. 第一个出现两次的字母](https://leetcode.cn/problems/first-letter-to-appear-twice/)|哈希表，位运算|只有两种状态的时候就可以考虑位运算|~|[Java](Java/Solution2351.java)
 [2383. 赢得比赛需要的最少训练时长](https://leetcode.cn/problems/minimum-hours-of-training-to-win-a-competition/)|模拟，贪心|注意特殊情况|~|[Java](Java/Solution2383.java)
 [2384. 最大回文数字](https://leetcode.cn/problems/largest-palindromic-number/)|贪心|注意特殊情况的判断|~|[Java](Java/Solution2384.java)
 
