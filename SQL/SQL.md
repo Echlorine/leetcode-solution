@@ -157,6 +157,14 @@
 [2041. 面试中被录取的候选人](https://leetcode.cn/problems/accepted-candidates-from-the-interviews/)|[sql](2041.sql)|表连接，where 子句，group by 语句
 [2072. 赢得比赛的大学](https://leetcode.cn/problems/the-winner-university/)|[sql](2072.sql)|表连接，case when 表达式
 [2082. 富有客户的数量](https://leetcode.cn/problems/the-number-of-rich-customers/)|[sql](2082.sql)|where子句，distinct关键字
+[2118. 建立方程](https://leetcode.cn/problems/build-the-equation/)|[sql](2118.sql)|GROUP_CONCAT() 函数
+[2314. 每个城市最高气温的第一天](https://leetcode.cn/problems/the-first-day-of-the-maximum-recorded-degree-in-each-city/)|[sql](2314.sql)|窗口函数
+[2356. 每位教师所教授的科目种类的数量](https://leetcode.cn/problems/number-of-unique-subjects-taught-by-each-teacher/)|[sql](2356.sql)|表连接
+[2339. 联赛的所有比赛](https://leetcode.cn/problems/all-the-matches-of-the-league/)|[sql](2339.sql)|笛卡尔连接
+[2377. 整理奥运表](https://leetcode.cn/problems/sort-the-olympic-table/)|[sql](2377.sql)|order by 关键字
+[2388. 将表中的空值更改为前一个值](https://leetcode.cn/problems/change-null-values-in-a-table-to-the-previous-value/)|[sql](2388.sql)|MySQL 临时变量
+[2480. 形成化学键](https://leetcode.cn/problems/form-a-chemical-bond/)|[sql](2480.sql)|笛卡尔连接
+[2504. 把名字和职业联系起来](https://leetcode.cn/problems/concatenate-the-name-and-the-profession/)|[sql](2504.sql)|concat() 函数
 
 # 中等题
 题目名称|答案|考察知识点
@@ -183,16 +191,35 @@
 [1555. 银行账户概要](https://leetcode.cn/problems/bank-account-summary/)|[sql](1555.sql)|多表连接
 [1811. 寻找面试候选人](https://leetcode.cn/problems/find-interview-candidates/)|[sql](1811.sql)|多表连接，聚合函数，连续数的处理
 [1841. 联赛信息统计](https://leetcode.cn/problems/league-statistics/)|[sql](1841.sql)|表连接，聚合函数
+[1843. 可疑银行账户](https://leetcode.cn/problems/suspicious-bank-accounts/)|[sql](1843.sql)|表连接，聚合函数
 [1853. 转换日期格式](https://leetcode.cn/problems/convert-date-format/)|[sql](1853.sql)|DATE_FORMAT 函数
 [1875. 将工资相同的雇员分组](https://leetcode.cn/problems/group-employees-of-the-same-salary/)|[sql](1875.sql)|表连接，窗口函数
 [1907. 按分类统计薪水](https://leetcode.cn/problems/count-salary-categories/)|[sql](1907.sql)|union 操作符，聚合函数
 [1934. 确认率](https://leetcode.cn/problems/confirmation-rate/)|[sql](1934.sql)|表连接
 [1939. 主动请求确认消息的用户](https://leetcode.cn/problems/users-that-actively-request-confirmation-messages/)|[sql](1939.sql)|表连接，timestampdiff 函数
-[2020. 无流量的帐户数](https://leetcode.cn/problems/number-of-accounts-that-did-not-stream/)|exists 运算符
+[2020. 无流量的帐户数](https://leetcode.cn/problems/number-of-accounts-that-did-not-stream/)|[sql](2020.sql)|exists 运算符
 [2051. The Category of Each Member in the Store](https://leetcode.cn/problems/the-category-of-each-member-in-the-store/)|[sql](2051.sql)|sql 多表连接
 [2066. 账户余额](https://leetcode.cn/problems/account-balance/)|[sql](2066.sql)|窗口函数
 [2084. 为订单类型为 0 的客户删除类型为 1 的订单](https://leetcode.cn/problems/drop-type-1-orders-for-customers-with-type-0-orders/)|[sql](2084.sql)|表连接
+[2112. 最繁忙的机场](https://leetcode.cn/problems/the-airport-with-the-most-traffic/)|[sql](2112.sql)|窗口函数
+[2142. 每辆车的乘客人数 I](https://leetcode.cn/problems/the-number-of-passengers-in-each-bus-i/)|[sql](2142.sql)|LAG()函数
+[2159. 分别排序两列](https://leetcode.cn/problems/order-two-columns-independently/)|[sql](2159.sql)|窗口函数排序，表连接
+[2175. 世界排名的变化](https://leetcode.cn/problems/the-change-in-global-rankings/)|[sql](2175.sql)|窗口函数，CAST()函数
+[2199. 找到每篇文章的主题](https://leetcode.cn/problems/finding-the-topic-of-each-post/)|[sql](2199.sql)|MySQL字符串处理
+[2205. 有资格享受折扣的用户数量](https://leetcode.cn/problems/the-number-of-users-that-are-eligible-for-discount/)|[sql](2205.sql)|聚合函数
+[2228. 7 天内两次购买的用户](https://leetcode.cn/problems/users-with-two-purchases-within-seven-days/)|[sql](2228.sql)|窗口函数
 [2230. 查找可享受优惠的用户](https://leetcode.cn/problems/the-users-that-are-eligible-for-discount/)|[sql](2230.sql)|sql 时间处理
+[2238. 司机成为乘客的次数](https://leetcode.cn/problems/number-of-times-a-driver-was-a-passenger/)|[sql](2238.sql)|表连接，聚合函数
+[2292. 连续两年有 3 个及以上订单的产品](https://leetcode.cn/problems/products-with-three-or-more-orders-in-two-consecutive-years/)|[sql](2292.sql)|表连接，聚合函数
+[2298. 周末任务计数](https://leetcode.cn/problems/tasks-count-in-the-weekend/)|[sql](2298.sql)|dayofweek()函数，SUM()聚合函数
+[2308. 按性别排列表格](https://leetcode.cn/problems/arrange-table-by-gender/)|[sql](2308.sql)|窗口函数，order by 子句
+[2324. 产品销售分析 IV](https://leetcode.cn/problems/product-sales-analysis-iv/)|[sql](2324.sql)|窗口函数，表连接
+[2329. 产品销售分析Ⅴ](https://leetcode.cn/problems/product-sales-analysis-v/)|[sql](2329.sql)|聚合函数，表连接
+[2346. 以百分比计算排名](https://leetcode.cn/problems/compute-the-rank-as-a-percentage/)|[sql](2346.sql)|窗口函数，聚合函数
+[2362. 生成发票](https://leetcode.cn/problems/generate-the-invoice/)|[sql](2362.sql)|表连接，窗口函数，聚合函数
+[2372. 计算每个销售人员的影响力](https://leetcode.cn/problems/calculate-the-influence-of-each-salesperson/)|[sql](2372.sql)|多表连接
+[2394. 开除员工](https://leetcode.cn/problems/employees-with-deductions/)|[sql](2394.sql)|表连接MySQL数据处理
+[2474. 购买量严格增加的客户](https://leetcode.cn/problems/customers-with-strictly-increasing-purchases/)|[sql](2474.sql)|窗口函数，in 操作符
 
 # 困难题
 题目名称|答案|考察知识点
@@ -207,20 +234,51 @@
 [1645.Hopper 公司查询 II](https://leetcode.cn/problems/hopper-company-queries-ii/)|[sql](1645.sql)|聚合函数，表连接
 [1651. Hopper 公司查询 III](https://leetcode.cn/problems/hopper-company-queries-iii/)|[sql](1651.sql)|表连接，窗口函数
 [1892. 页面推荐Ⅱ](https://leetcode.cn/problems/page-recommendations-ii/)|[sql](1892.sql)|表连接，聚合函数，mysql查询优化
+[1917. Leetcodify 好友推荐](https://leetcode.cn/problems/leetcodify-friends-recommendations/)|[sql](1917.sql)|表连接，聚合函数
+[1919. 兴趣相同的朋友](https://leetcode.cn/problems/leetcodify-similar-friends/)|[sql](1919.sql)|多表连接
+[2153. 每辆车的乘客人数 II](https://leetcode.cn/problems/the-number-of-passengers-in-each-bus-ii/)|[sql](2153.sql)|临时变量，窗口函数
+[2173. 最多连胜的次数](https://leetcode.cn/problems/longest-winning-streak/)|[sql](2173.sql)|临时变量，窗口函数
+[2494. 合并在同一个大厅重叠的活动](https://leetcode.cn/problems/merge-overlapping-events-in-the-same-hall/)|[sql](2494.sql)|临时变量，窗口函数
 
-# MySQL函数
+# BOSS题
+题目名称|答案|考察知识点
+:-------|:-:|:---------
+[2252. 表的动态旋转](https://leetcode.cn/problems/dynamic-pivoting-of-a-table/)|[sql](2252.sql)|动态生成SQL语句并执行
+[2253. 动态取消表的旋转](https://leetcode.cn/problems/dynamic-unpivoting-of-a-table/)|[sql](2253.sql)|动态生成SQL语句并执行
+
+# MySQ函数
+## 常用函数
+### 数据处理函数
+函数名|作用|语法
+:-:|:-:|:-:
+CAST()|将任何类型的值转换为具有指定类型的值|CAST(expression AS TYPE)
+CEIL()/CEILING()|返回的值不小于X最小整数|CEIL(X)
+
+### 字符串函数
+函数名|作用|语法
+:-:|:-:|:-:
+GROUP_CONCAT()|将group by产生的同一个分组中的值连接起来，返回一个字符串结果|GROUP_CONCAT(DISTINCT expression ORDER BY expression SEPARATOR sep)
+INSTR()|返回字符串第一次出现的位置|INSTR(str,substr)
+
+### 日期/时间函数
+函数名|作用|语法
+:-:|:-:|:-:
+dayofweek()|确定某一天是周几|dayofweek(current_date)
+timestampdiff()|计算两个`DATE`或`DATETIME`值之间的差值|TIMESTAMPDIFF(unit,begin,end)，其中begin和end是DATE或DATETIME表达式
+
+
 ## MySQL窗口函数
-<窗口函数>的位置，可以放以下两种函数：
-1. 专用窗口函数，包括排序函数、分区最大/最小值等专用窗口函数。
-2. 聚合函数，如sum. avg, count, max, min等。  
-
 窗口函数语法:
 ```
 <窗口函数> over (partition by <用于分组的列名>
                 order by <用于排序的列名>
                 rows/range <窗口滑动的数据范围>)
 ```
-rows和range区别
+<窗口函数>的位置，可以放以下两种函数：
+1. 聚合函数，如sum. avg, count, max, min等。
+2. 专用窗口函数，包括排序函数、分区最大/最小值等专用窗口函数。
+
+rows和range区别：
 * RANGE是逻辑上的排序，如果有缺失值，也会被考虑进去
 * ROW是实际表格的排序，也就是只根据列的位置来决定
 
@@ -237,7 +295,17 @@ rows和range区别
 取前五行和后五行：ROWS between 5 preceding and 5 following --共11行
 ```
 
-### MySQL四大排序函数
+### SQL Aggregate 函数
+AVG() - 返回平均值  
+COUNT() - 返回行数  
+FIRST() - 返回第一个记录的值  
+LAST() - 返回最后一个记录的值  
+MAX() - 返回最大值  
+MIN() - 返回最小值  
+SUM() - 返回总和
+
+### MySQL 专用窗口函数
+MySQL 四大排序函数
 0. 初始表内容
 ```shell
 mysql> SELECT * FROM study;
@@ -328,14 +396,9 @@ mysql> SELECT id, scores, NTILE(2) OVER (order by scores desc) as `rank` from st
 +----+--------+------+
 ```
 
-## SQL Aggregate 函数
-AVG() - 返回平均值  
-COUNT() - 返回行数  
-FIRST() - 返回第一个记录的值  
-LAST() - 返回最后一个记录的值  
-MAX() - 返回最大值  
-MIN() - 返回最小值  
-SUM() - 返回总和
+函数名|作用|语法
+:-:|:-:|:-:
+LAG()|提供对当前行之前的指定物理偏移量的行的访问|LAG(return_value ,offset [,default]) 
 
 # MySQL常见题型
 ## 找到最大值所在行
@@ -352,7 +415,7 @@ SUM() - 返回总和
 [579. 查询员工的累计薪水](https://leetcode.cn/problems/find-cumulative-salary-of-an-employee/)|[sql](579.sql)
 
 ## 表格转换问题
-https://leetcode.cn/problems/students-report-by-geography/solution/zong-jie-ge-lei-biao-ge-ge-shi-hua-wen-t-tl4e/
+[总结帖](https://leetcode.cn/problems/students-report-by-geography/solution/zong-jie-ge-lei-biao-ge-ge-shi-hua-wen-t-tl4e/)
 ### 行转列
 解题思路：`union all`合并
 题目名称|答案
