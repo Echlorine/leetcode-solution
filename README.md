@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2023.01.18
+Last Updated: 2023.02.15
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 
@@ -377,6 +377,7 @@ Last Updated: 2023.01.18
 [1217. 玩筹码](https://leetcode.cn/problems/minimum-cost-to-move-chips-to-the-same-position/)|贪心|贪心的思想体现在尽可能多的移动偶数次|~|[Java](Java/Solution1217.java)
 [1229. 安排会议日程](https://leetcode.cn/problems/meeting-scheduler/)|双指针|对不同情况进行讨论确定指针如何移动|~|[Java](Java/Solution1229.java)
 [1230. 抛掷硬币](https://leetcode.cn/problems/toss-strange-coins/)|动态规划|0-1背包问题|416, 494|[Java](Java/Solution1230.java)
+[1234. 替换子串得到平衡字符串](https://leetcode.cn/problems/replace-the-substring-for-balanced-string/)|双指针|字符统计、滑动窗口|~|[Java](Java/Solution1234.java)
 [1247. 交换字符使得字符串相同](https://leetcode.cn/problems/minimum-swaps-to-make-strings-equal/)|贪心|此题需要确定3类基本的字符串形式，贪心在于尽量让一次交换是的两个位置由不同变为相同|~|[Java](Java/Solution1247.java)
 [1254. 统计封闭岛屿的数目](https://leetcode.cn/problems/number-of-closed-islands/)|回溯|岛屿问题的进阶，需要一些判断条件|200, 1020|[Java](Java/Solution1254.java)
 [1306. 跳跃游戏 III](https://leetcode.cn/problems/jump-game-iii/)|BFS|一道简单的广度优先搜索题|~|[Java](Java/Solution1306.java)
@@ -430,6 +431,7 @@ Last Updated: 2023.01.18
 :------|:--------|:---|:-------|:-:
 [剑指 Offer 09. 用两个栈实现队列](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)|队列，栈|面试高频题|~|[Java](Java/Offer09.java)
 [剑指 Offer 13. 机器人的运动范围](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)|回溯|迷宫类问题，需要根据题意在遍历时判断|~|[Java](Java/Offer13.java)
+[剑指 Offer 30. 包含min函数的栈](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/)|栈的应用|~|155|[Java](Java/Offer30.java)
 [剑指 Offer 10- I. 斐波那契数列](https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/)|递归，迭代|递归和迭代正好是相反的过程|~|[Java](Java/Offer10_I.java)
 
 ## 程序员面试金典（第 6 版）题库及其考察的知识点(持续更新):  

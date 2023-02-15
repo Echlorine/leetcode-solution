@@ -32,4 +32,8 @@
 ### 位运算习题
 题目名称|考察知识点|答案
 :------|:---------|:-:
+[136. 只出现一次的数字](https://leetcode.cn/problems/single-number/)|异或运算的性质|[Java](../Java/Solution136.java)
+[137. 只出现一次的数字 II](https://leetcode.cn/problems/single-number-ii/)|位运算确定每一位数值为0还是1|[Java](../Java/Solution137.java)
+[190. 颠倒二进制位](https://leetcode.cn/problems/reverse-bits/)|位运算分治|[Java](../Java/Solution190.java)
+[191. 位1的个数](https://leetcode.cn/problems/number-of-1-bits/)|位运算|[Java](../Java/Solution191.java)
 [672. 灯泡开关 Ⅱ](https://leetcode.cn/problems/bulb-switcher-ii/)|位运算，本质是穷举|[Java](../Java/Solution672.java)

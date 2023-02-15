@@ -1,28 +1,26 @@
 import java.util.*;
 
 class CQueue {
-    private Stack<Integer> s1;
-    private Stack<Integer> s2;
+    private Deque<Integer> s1;
+    private Deque<Integer> s2;
 
     public CQueue() {
-        s1 = new Stack<>();
-        s2 = new Stack<>();
+        s1 = new ArrayDeque<>();
+        s2 = new ArrayDeque<>();
     }
     
     public void appendTail(int value) {
-        s1.push(value);
+        s1.addLast(value);
     }
     
     public int deleteHead() {
-        if (!s2.isEmpty()) return s2.pop();
-        else {
-            if (s1.isEmpty()) return -1;
-            else {
-                while (!s1.isEmpty())
-                    s2.push(s1.pop());
-                return s2.pop();
+        if (s2.size() + s1.size() == 0) return -1;
+        if (s2.size() == 0) {
+            while(!s1.isEmpty()) {
+                s2.addLast(s1.removeLast());
             }
         }
+        return s2.removeLast();
     }
 }
 
@@ -31,4 +29,4 @@ class CQueue {
  * CQueue obj = new CQueue();
  * obj.appendTail(value);
  * int param_2 = obj.deleteHead();
-*/
+ */

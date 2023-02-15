@@ -63,6 +63,7 @@
 [978. 最长湍流子数组](https://leetcode.cn/problems/longest-turbulent-subarray/)|注意相等的时候左右边界同时移动|[Java](../Java/Solution978.java)
 [1004. 最大连续1的个数 III](https://leetcode.cn/problems/max-consecutive-ones-iii/)|~|[Java](../Java/Solution1004.java)
 [1208. 尽可能使字符串相等](https://leetcode.cn/problems/get-equal-substrings-within-budget/)|~|[Java](../Java/Solution1208.java)
+[1234. 替换子串得到平衡字符串](https://leetcode.cn/problems/replace-the-substring-for-balanced-string/)|字符统计、滑动窗口|[Java](../Java/Solution1234.java)
 [1493. 删掉一个元素以后全为 1 的最长子数组](https://leetcode.cn/problems/longest-subarray-of-1s-after-deleting-one-element/)|本质与[487. 最大连续1的个数 II](https://leetcode.cn/problems/max-consecutive-ones-ii/)相同|[Java](../Java/Solution1493.java)
 [1695. 删除子数组的最大得分](https://leetcode.cn/problems/maximum-erasure-value/)|配合哈希表处理右滑边界|[Java](../Java/Solution1695.java)
 
