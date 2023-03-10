@@ -1,4 +1,4 @@
-class Solution0102 {
+class Interview0102 {
     public boolean CheckPermutation(String s1, String s2) {
         if (s1.length() != s2.length()) return false;
         int[] hash = new int[128];

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Interview1724 {
+class Interview1724 {
     public int[] getMaxMatrix(int[][] matrix) {
         int r1 = 0, c1 = 0, r2 = 0, c2 = 0;
         int[] col = new int[matrix[0].length]; // 存储每一列的值
