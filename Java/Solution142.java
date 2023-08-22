@@ -24,3 +24,24 @@ class Solution142 {
         return p;
     }
 }
+
+public class Solution {
+    public ListNode detectCycle(ListNode head) {
+        ListNode fast = head, slow = head;
+        while (fast != null) {
+            fast = fast.next;
+            if (fast != null) fast = fast.next;
+            else return null;
+            if (slow != null) slow = slow.next;
+            if (slow == fast) {
+                ListNode res = head;
+                while (res != slow) {
+                    res = res.next;
+                    slow = slow.next;
+                }
+                return res;
+            }
+        }
+        return null;
+    }
+}

@@ -39,3 +39,21 @@ class Solution236 {
         }
     }
 }
+
+
+class Solution {
+    private TreeNode res;
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        dfs(root, p ,q);
+        return res;
+    }
+
+    public boolean dfs(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null) return false;
+        boolean left = dfs(root.left, p, q);
+        boolean right = dfs(root.right, p, q);
+        boolean flag = (left && right) || ((root == p || root == q) && (left || right));
+        if (flag) res = root;
+        return left || right || root == p || root == q;
+    }
+}
