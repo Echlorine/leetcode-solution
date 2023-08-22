@@ -1,4 +1,4 @@
-# 入门级例题
+# 入门级例题简单
 
 题目名称|答案|考察知识点|涉及的sql语句
 :-------|:-:|:---------|:-
@@ -165,6 +165,8 @@
 [2388. 将表中的空值更改为前一个值](https://leetcode.cn/problems/change-null-values-in-a-table-to-the-previous-value/)|[sql](2388.sql)|MySQL 临时变量
 [2480. 形成化学键](https://leetcode.cn/problems/form-a-chemical-bond/)|[sql](2480.sql)|笛卡尔连接
 [2504. 把名字和职业联系起来](https://leetcode.cn/problems/concatenate-the-name-and-the-profession/)|[sql](2504.sql)|concat() 函数
+[2686. 即时食物配送 III](https://leetcode.cn/problems/immediate-food-delivery-iii/)|[sql](2686.sql)|count()函数、if 表达式
+[2720. 受欢迎度百分比](https://leetcode.cn/problems/popularity-percentage)|[sql](2720.sql)|count()函数
 
 # 中等题
 题目名称|答案|考察知识点
@@ -220,6 +222,7 @@
 [2372. 计算每个销售人员的影响力](https://leetcode.cn/problems/calculate-the-influence-of-each-salesperson/)|[sql](2372.sql)|多表连接
 [2394. 开除员工](https://leetcode.cn/problems/employees-with-deductions/)|[sql](2394.sql)|表连接MySQL数据处理
 [2474. 购买量严格增加的客户](https://leetcode.cn/problems/customers-with-strictly-increasing-purchases/)|[sql](2474.sql)|窗口函数，in 操作符
+[2738. 统计文本中单词的出现次数](https://leetcode.cn/problems/count-occurrences-in-text/)|[sql](2738.sql)|REGEXP 正则表达式匹配
 
 # 困难题
 题目名称|答案|考察知识点
