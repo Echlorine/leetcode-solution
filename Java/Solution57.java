@@ -2,52 +2,35 @@ import java.util.*;
 
 class Solution57 {
     public int[][] insert(int[][] intervals, int[] newInterval) {
-        /**
-         * 直接遍历合并区间
-         */
-        if (intervals.length == 0) return new int[][] {newInterval}; // 原始区间长度为0
-        int left = 0, right = 0;
-        List<int[]> res = new LinkedList<>();
-        boolean leftflag = false, rightflag = false;
+        List<int[]> list = new ArrayList<>();
+        int index = -1;
         for (int i = 0; i < intervals.length; i++) {
-            if (!leftflag && !rightflag) { // 还没确定左区间
-                if (intervals[i][1] < newInterval[0]) {
-                    res.add(intervals[i]);
-                    if (i == intervals.length - 1) res.add(newInterval);
-                }
-                else {
-                    if (intervals[i][0] <= newInterval[0]) left = intervals[i][0];
-                    else left = newInterval[0];
-                    i--;
-                    leftflag = true;
-                }
-            }
-            else if (leftflag && !rightflag) { // 已经确定左区间但没确定右区间
-                if (i == 0 && newInterval[1] < intervals[i][0]) {
-                    right = newInterval[1];
-                    res.add(new int[] {left, right});
-                    i--;
-                    rightflag = true;
-                }
-                if (i > 0 && intervals[i][0] > newInterval[1] && intervals[i - 1][0] <= newInterval[1]) {
-                    if (intervals[i - 1][1] > newInterval[1]) right = intervals[i - 1][1];
-                    else right = newInterval[1];
-                    res.add(new int[] {left, right});
-                    i--;
-                    rightflag = true;
-                }
-                if (i == intervals.length - 1 && intervals[i][0] <= newInterval[1]) {
-                    if (intervals[i][1] > newInterval[1]) right = intervals[i][1];
-                    else right = newInterval[1];
-                    res.add(new int[] {left, right});
-                    rightflag = true;
-                }
-            }
-            else if (leftflag && rightflag) {
-                res.add(intervals[i]);
+            list.add(intervals[i]);
+            if (intervals[i][0] <= newInterval[0] && (i + 1 == intervals.length || newInterval[0] < intervals[i + 1][0])) {
+                index = i;
+                list.add(newInterval);
             }
         }
-        int[][] a = new int[res.size()][];
-        return res.toArray(a);
+        if (index == -1) {
+            list.add(0, newInterval);
+            index = 0;
+        }
+        int lLast = list.get(index)[0], rLast = list.get(index)[1];
+        List<int[]> res = new ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            if (i < index) res.add(list.get(i));
+            else {
+                if (rLast >= list.get(i)[0]) rLast = Math.max(rLast, list.get(i)[1]);
+                else {
+                    res.add(new int[] {lLast, rLast});
+                    lLast = list.get(i)[0];
+                    rLast = list.get(i)[1];
+                }
+            }
+        }
+        res.add(new int[] {lLast, rLast});
+        int[][] r = new int[res.size()][2];
+        res.toArray(r);
+        return r;
     }
 }

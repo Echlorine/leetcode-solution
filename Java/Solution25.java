@@ -38,3 +38,32 @@ class Solution25 {
         return res;
     }
 }
+
+class Solution {
+    private int k;
+
+    public ListNode reverseKGroup(ListNode head, int k) {
+        this.k = k;
+        // 递归出口
+        int t = 0;
+        ListNode res = head;
+        while (t < k) {
+            if (head == null) return res;
+            head = head.next;
+            t++;
+        }
+        // 处理
+        ListNode p = reverseKGroup(head, k);
+        ListNode q = reverse(res, 1);
+        res.next = p;
+        return q;
+    }
+
+    public ListNode reverse(ListNode root, int k) {
+        if (k >= this.k) return root;
+        ListNode p = reverse(root.next, k + 1);
+        root.next.next = root;
+        root.next = null;
+        return p;
+    }
+}

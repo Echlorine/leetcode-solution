@@ -49,3 +49,29 @@ class Solution56 {
         return e;
     }
 }
+
+class Solution {
+    public int[][] merge(int[][] intervals) {
+        Arrays.sort(intervals, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                if (o1[0] != o2[0]) return o1[0] - o2[0];
+                else return o1[1] - o2[1];
+            }
+        });
+        int lLast = intervals[0][0], rLast = intervals[0][1];
+        List<int[]> list = new LinkedList<>();
+        for (int i = 1; i < intervals.length; i++) {
+            if (intervals[i][0] == lLast || rLast >= intervals[i][0]) rLast = Math.max(rLast, intervals[i][1]);
+            else {
+                list.add(new int[] {lLast, rLast});
+                lLast = intervals[i][0];
+                rLast = intervals[i][1];
+            }
+        }
+        list.add(new int[] {lLast, rLast});
+        int[][] res = new int[list.size()][2];
+        list.toArray(res);
+        return res;
+    }
+}
