@@ -1,57 +1,37 @@
 class Solution490 {
-    private int m, n;
+    private int[][] dirs = new int[][] {
+        new int[] {0, 1},
+        new int[] {1, 0},
+        new int[] {0, -1},
+        new int[] {-1, 0},
+    };
 
     public boolean hasPath(int[][] maze, int[] start, int[] destination) {
-        m = maze.length;
-        n = maze[0].length;
-        return bfs(maze, start, destination);
-    }
-
-    public boolean bfs(int[][] maze, int[] start, int[] destination) {
+        int m = maze.length, n = maze[0].length;
         Queue<Integer> queue = new ArrayDeque<>();
         boolean[][] visited = new boolean[m][n];
         queue.offer(start[0] * n + start[1]);
         visited[start[0]][start[1]] = true;
-        while (!queue.isEmpty()) {
-            int point = queue.poll();
-            int x = point / n, y = point % n;
-            int t_x = x, t_y = y;
-            // 一直向上
-            while (x - 1 >= 0 && maze[x - 1][y] == 0) {
-                x--;
-            }
-            if (!visited[x][y]) {
-                queue.offer(x * n + y);
-                visited[x][y] = true;
-            }
-            x = t_x;
-            // 一直向下
-            while (x + 1 < m && maze[x + 1][y] == 0) {
-                x++;
-            }
-            if (!visited[x][y]) {
-                queue.offer(x * n + y);
-                visited[x][y] = true;
-            }
-            x = t_x;
-            // 一直向左
-            while (y - 1 >= 0 && maze[x][y - 1] == 0) {
-                y--;
-            }
-            if (!visited[x][y]) {
-                queue.offer(x * n + y);
-                visited[x][y] = true;
-            }
-            y = t_y;
-            // 一直向右
-            while (y + 1 < n && maze[x][y + 1] == 0) {
-                y++;
-            }
-            if (!visited[x][y]) {
-                queue.offer(x * n + y);
-                visited[x][y] = true;
+        while(!queue.isEmpty()) {
+            int t = queue.poll();
+            int x = t / n, y = t % n;
+            if (x == destination[0] && y == destination[1]) return true;
+            // 一直往四个方向走直到停下
+            for (int[] dir : dirs) {
+                int t_x = x + dir[0], t_y = y + dir[1];
+                // 直到遇到墙壁才会停下
+                while(t_x >= 0 && t_x < m && t_y >= 0 && t_y < n && maze[t_x][t_y] == 0) {
+                    t_x += dir[0];
+                    t_y += dir[1];
+                }
+                t_x -= dir[0];
+                t_y -= dir[1];
+                if (!visited[t_x][t_y]) {
+                    queue.offer(t_x * n + t_y);
+                    visited[t_x][t_y] = true;
+                }
             }
         }
-        return visited[destination[0]][destination[1]];
+        return false;
     }
 }
