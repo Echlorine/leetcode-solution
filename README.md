@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2023.08.30
+Last Updated: 2023.09.02
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 
@@ -554,6 +554,7 @@ Last Updated: 2023.08.30
 [2208. 将数组和减半的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-halve-array-sum/)|贪心|配合优先队列|~|[Java](Java/Solution2208.java)
 [2235. 两整数相加](https://leetcode.cn/problems/add-two-integers/)|模拟|数学|~|[Java](Java/Solution2235.java)
 [2236. 判断根结点是否等于子结点之和](https://leetcode.cn/problems/root-equals-sum-of-children/)|模拟|二叉树的基础概念|~|[Java](Java/Solution2236.java)
+[2240. 买钢笔和铅笔的方案数](https://leetcode.cn/problems/number-of-ways-to-buy-pens-and-pencils/)|枚举|数学|~|[Java](Java/Solution2240.java)
 [2283. 判断一个数的数字计数是否等于数位的值](https://leetcode.cn/problems/check-if-number-has-equal-digit-count-and-digit-value/)|数学模拟|~|~|[Java](Java/Solution2283.java)
 [2287. 重排字符形成目标字符串](https://leetcode.cn/problems/rearrange-characters-to-make-target-string/)|哈希表|模拟，字符串计数|~|[Java](Java/Solution2287.java)
 [2293. 极大极小游戏](https://leetcode.cn/problems/min-max-game/)|递归|理解题意，模拟|~|[Java](Java/Solution2293.java)
@@ -583,6 +584,7 @@ Last Updated: 2023.08.30
 [2446. 判断两个事件是否存在冲突](https://leetcode.cn/problems/determine-if-two-events-have-conflict/)|排序|字符串比较|~|[Java](Java/Solution2446.java)
 [2475. 数组中不等三元组的数目](https://leetcode.cn/problems/number-of-unequal-triplets-in-array/)|模拟|哈希表|~|[Java](Java/Solution2475.java)
 [2500. 删除每行中的最大值](https://leetcode.cn/problems/delete-greatest-value-in-each-row/)|模拟|排序|~|[Java](Java/Solution2500.java)
+[2511. 最多可以摧毁的敌人城堡数目](https://leetcode.cn/problems/maximum-enemy-forts-that-can-be-captured/)|模拟|遍历|~|[Java](Java/Solution2511.java)
 [2517. 礼盒的最大甜蜜度](https://leetcode.cn/problems/maximum-tastiness-of-candy-basket/)|二分查找|捋清二分查找的终止条件|~|[Java](Java/Solution2517.java)
 [2544. 交替数字和](https://leetcode.cn/problems/alternating-digit-sum/)|模拟|符号变量的使用|~|[Java](Java/Solution2544.java)
 [2559. 统计范围内的元音字符串数](https://leetcode.cn/problems/count-vowel-strings-in-ranges/)|字符串|哈希表，前缀和|~|[Java](Java/Solution2559.java)
