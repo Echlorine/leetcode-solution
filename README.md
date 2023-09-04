@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2023.09.02
+Last Updated: 2023.09.04
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 
@@ -284,6 +284,7 @@ Last Updated: 2023.09.02
 [439. 三元表达式解析器](https://leetcode.cn/problems/ternary-expression-parser/)|栈|确定出入栈时机|~|[Java](Java/Solution439.java)
 [445. 两数相加 II](https://leetcode.cn/problems/add-two-numbers-ii/)|链表，栈|逆序处理优先考虑栈|2|[Java](Java/Solution445.java)
 [448. 找到所有数组中消失的数字](https://leetcode.cn/problems/find-all-numbers-disappeared-in-an-array/)|~|~|155|[Java](Java/Solution448.java) 
+[449. 序列化和反序列化二叉搜索树](https://leetcode.cn/problems/serialize-and-deserialize-bst/)|递归|二叉搜索树的性质，先根遍历、后根遍历都可以|536|[Java](Java/Solution449.java)
 [452. 用最少数量的箭引爆气球](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/)|贪心|此题排序时候注意溢出|~|[Java](Java/Solution452.java)
 [455. 分发饼干](https://leetcode.cn/problems/assign-cookies/)|贪心|贪心的入门题|~|[Java](Java/Solution455.java)
 [460. LFU 缓存](https://leetcode.cn/problems/lfu-cache/)|双向链表|~|146|[Java](Java/Solution460.java)
@@ -540,6 +541,7 @@ Last Updated: 2023.09.02
 [1828. 统计一个圆中点的数目](https://leetcode.cn/problems/queries-on-number-of-points-inside-a-circle/)|数组遍历|模拟|~|[Java](Java/Solution1828.java)
 [1905. 统计子岛屿](https://leetcode.cn/problems/count-sub-islands/)|并查集|~|~|[Java](Java/Solution1905.java)
 [1911. 最大子序列交替和](https://leetcode.cn/problems/maximum-alternating-subsequence-sum/)|动态规划|~|122|[Java](Java/Solution1911.java)
+[1921. 消灭怪物的最大数量](https://leetcode.cn/problems/eliminate-maximum-number-of-monsters/)|贪心|排序|~|[Java](Java/Solution1921.java)
 [1971. 寻找图中是否存在路径](https://leetcode.cn/problems/find-if-path-exists-in-graph/)|图|图的表示，图的遍历|~|[Java](Java/Solution1971.java)
 [1984. 学生分数的最小差值](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/)|滑动窗口|本题将题目转化后就会好做很多|~|[Java](Java/Solution1984.java)
 [2042. 检查句子中的数字是否递增](https://leetcode.cn/problems/check-if-numbers-are-ascending-in-a-sentence/)|模拟|~|1805|[Java](Java/Solution2042.java)
@@ -591,6 +593,7 @@ Last Updated: 2023.09.02
 [2679. 矩阵中的和](https://leetcode.cn/problems/sum-in-a-matrix/)|模拟|堆排序、优先队列|~|[Java](Java/Solution2679.java)
 [2681. 英雄的力量](https://leetcode.cn/problems/power-of-heroes/)|动态规划|学习用动态规划来表示子集|~|[Java](Java/Solution2681.java)
 [2682. 找出转圈游戏输家](https://leetcode.cn/problems/find-the-losers-of-the-circular-game/)|模拟|数组处理|~|[Java](Java/Solution2682.java)
+[2842. 统计一个字符串的 k 子序列美丽值最大的数目](https://leetcode.cn/problems/count-k-subsequences-of-a-string-with-maximum-beauty/)|DFS|穷举所有可能出现的结果|~|[Java](Java/Solution2842.java)
 
 ## 剑指 Offer（第 2 版）题库及其考察的知识点(持续更新):  
 题目名称|考察知识点|说明|关联题型|答案
