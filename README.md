@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2023.09.04
+Last Updated: 2023.09.09
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 
@@ -590,6 +590,8 @@ Last Updated: 2023.09.04
 [2517. 礼盒的最大甜蜜度](https://leetcode.cn/problems/maximum-tastiness-of-candy-basket/)|二分查找|捋清二分查找的终止条件|~|[Java](Java/Solution2517.java)
 [2544. 交替数字和](https://leetcode.cn/problems/alternating-digit-sum/)|模拟|符号变量的使用|~|[Java](Java/Solution2544.java)
 [2559. 统计范围内的元音字符串数](https://leetcode.cn/problems/count-vowel-strings-in-ranges/)|字符串|哈希表，前缀和|~|[Java](Java/Solution2559.java)
+[2605. 从两个数字数组里生成最小数字](https://leetcode.cn/problems/form-smallest-number-from-two-digit-arrays/)|模拟|哈希表|~|[Java](Java/Solution2605.java)
+[2651. 计算列车到站时间](https://leetcode.cn/problems/calculate-delayed-arrival-time/)|模拟|数学|~|[Java](Java/Solution2651.java)
 [2679. 矩阵中的和](https://leetcode.cn/problems/sum-in-a-matrix/)|模拟|堆排序、优先队列|~|[Java](Java/Solution2679.java)
 [2681. 英雄的力量](https://leetcode.cn/problems/power-of-heroes/)|动态规划|学习用动态规划来表示子集|~|[Java](Java/Solution2681.java)
 [2682. 找出转圈游戏输家](https://leetcode.cn/problems/find-the-losers-of-the-circular-game/)|模拟|数组处理|~|[Java](Java/Solution2682.java)
