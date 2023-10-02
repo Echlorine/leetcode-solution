@@ -167,6 +167,7 @@
 [2504. 把名字和职业联系起来](https://leetcode.cn/problems/concatenate-the-name-and-the-profession/)|[sql](2504.sql)|concat() 函数
 [2686. 即时食物配送 III](https://leetcode.cn/problems/immediate-food-delivery-iii/)|[sql](2686.sql)|count()函数、if 表达式
 [2720. 受欢迎度百分比](https://leetcode.cn/problems/popularity-percentage)|[sql](2720.sql)|count()函数
+[2853. 最高薪水差异](https://leetcode.cn/problems/highest-salaries-difference/)|[sql](2853.sql)|max()函数
 
 # 中等题
 题目名称|答案|考察知识点
@@ -223,6 +224,7 @@
 [2394. 开除员工](https://leetcode.cn/problems/employees-with-deductions/)|[sql](2394.sql)|表连接MySQL数据处理
 [2474. 购买量严格增加的客户](https://leetcode.cn/problems/customers-with-strictly-increasing-purchases/)|[sql](2474.sql)|窗口函数，in 操作符
 [2738. 统计文本中单词的出现次数](https://leetcode.cn/problems/count-occurrences-in-text/)|[sql](2738.sql)|REGEXP 正则表达式匹配
+[2854. 滚动平均步数](https://leetcode.cn/problems/rolling-average-steps/)|[sql](2854.sql)|表连接，round()函数
 
 # 困难题
 题目名称|答案|考察知识点

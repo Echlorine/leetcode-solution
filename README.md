@@ -1,6 +1,6 @@
 # leetcode-solution
 A brief introduction to leetcode problems.  
-Last Updated: 2023.09.15
+Last Updated: 2023.10.02
 
 **谨以此repo献给我的女朋友**，以及为了拿到心仪的offer一直不断拼搏的小伙伴。  
 
@@ -321,6 +321,7 @@ Last Updated: 2023.09.15
 [583. 两个字符串的删除操作](https://leetcode.cn/problems/delete-operation-for-two-strings/)|动态规划|本质是最长公共子序列，也可以利用编辑距离来做|72, 1143|[Java](Java/Solution583.java)
 [589. N 叉树的前序遍历](https://leetcode.cn/problems/n-ary-tree-preorder-traversal/)|树的前序遍历|掌握利用栈实现的思想|144|[Java](Java/Solution589.java)
 [590. N 叉树的后序遍历](https://leetcode.cn/problems/n-ary-tree-postorder-traversal/)|树的后序遍历|掌握利用栈实现的思想|145|[Java](Java/Solution590.java)
+[605. 种花问题](https://leetcode.cn/problems/can-place-flowers/)|贪心|让两朵花之间的距离尽可能小|~|[Java](Java/Solution605.java)
 [611. 有效三角形的个数](https://leetcode.cn/problems/valid-triangle-number/)|二分查找|利用双指针可以优化时间复杂度|~|[Java](Java/Solution611.java)
 [617. 合并二叉树](https://leetcode.cn/problems/merge-two-binary-trees/)|递归|~|226|[Java](Java/Solution617.java)
 [621. 任务调度器](https://leetcode.cn/problems/task-scheduler/)|模拟|~|~|[Java](Java/Solution621.java)
@@ -476,6 +477,7 @@ Last Updated: 2023.09.15
 [1306. 跳跃游戏 III](https://leetcode.cn/problems/jump-game-iii/)|BFS|一道简单的广度优先搜索题|~|[Java](Java/Solution1306.java)
 [1319. 连通网络的操作次数](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/)|并查集|实质还是确定连通分量的数量|547|[Java](Java/Solution1319.java)
 [1332. 删除回文子序列](https://leetcode.cn/problems/remove-palindromic-subsequences/)|双指针|~|125|[Java](Java/Solution1332.java)
+[1333. 餐厅过滤器](https://leetcode.cn/problems/filter-restaurants-by-vegan-friendly-price-and-distance/)|模拟|排序|~|[Java](Java/Solution1333.java)
 [1372. 二叉树中的最长交错路径](https://leetcode.cn/problems/longest-zigzag-path-in-a-binary-tree/)|动态规划，DFS|树形的动态规划|~|[Java](Java/Solution1372.java)
 [1373. 二叉搜索子树的最大键值和](https://leetcode.cn/problems/maximum-sum-bst-in-binary-tree/)|树的遍历|后根遍历传递子树状态到当前节点|~|[Java](Java/Solution1373.java)
 [1376. 通知所有员工所需的时间](https://leetcode.cn/problems/time-needed-to-inform-all-employees/)|树|树的遍历与表示|~|[Java](Java/Solution1376.java)
@@ -547,6 +549,7 @@ Last Updated: 2023.09.15
 [1921. 消灭怪物的最大数量](https://leetcode.cn/problems/eliminate-maximum-number-of-monsters/)|贪心|排序|~|[Java](Java/Solution1921.java)
 [1971. 寻找图中是否存在路径](https://leetcode.cn/problems/find-if-path-exists-in-graph/)|图|图的表示，图的遍历|~|[Java](Java/Solution1971.java)
 [1984. 学生分数的最小差值](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/)|滑动窗口|本题将题目转化后就会好做很多|~|[Java](Java/Solution1984.java)
+[1993. 树上的操作](https://leetcode.cn/problems/operations-on-tree/)|树|树的表示，树的遍历|~|[Java](Java/Solution1993.java)
 [2042. 检查句子中的数字是否递增](https://leetcode.cn/problems/check-if-numbers-are-ascending-in-a-sentence/)|模拟|~|1805|[Java](Java/Solution2042.java)
 [2044. 统计按位或能得到最大值的子集数目](https://leetcode.cn/problems/count-number-of-maximum-bitwise-or-subsets/)|回溯|二进制枚举，这道题只需要求结果，不需要保留所有可能的排列|~|[Java](Java/Solution2044.java)
 [2061. 扫地机器人清扫过的空间个数](https://leetcode.cn/problems/number-of-spaces-cleaning-robot-cleaned/)|模拟，DFS|本题难点在于确定遍历终止|54, 489|[Java](Java/Solution2061.java)
@@ -593,7 +596,11 @@ Last Updated: 2023.09.15
 [2517. 礼盒的最大甜蜜度](https://leetcode.cn/problems/maximum-tastiness-of-candy-basket/)|二分查找|捋清二分查找的终止条件|~|[Java](Java/Solution2517.java)
 [2544. 交替数字和](https://leetcode.cn/problems/alternating-digit-sum/)|模拟|符号变量的使用|~|[Java](Java/Solution2544.java)
 [2559. 统计范围内的元音字符串数](https://leetcode.cn/problems/count-vowel-strings-in-ranges/)|字符串|哈希表，前缀和|~|[Java](Java/Solution2559.java)
+[2560. 打家劫舍 IV](https://leetcode.cn/problems/house-robber-iv/)|二分查找|有序数组问题就可以尝试二分查找|~|[Java](Java/Solution2560.java)
+[2582. 递枕头](https://leetcode.cn/problems/pass-the-pillow/)|数学|模拟|~|[Java](Java/Solution2582.java)
+[2591. 将钱分给最多的儿童](https://leetcode.cn/problems/distribute-money-to-maximum-children/)|贪心|每次让尽可能多的人分到8元钱|~|[Java](Java/Solution2591.java)
 [2596. 检查骑士巡视方案](https://leetcode.cn/problems/check-knight-tour-configuration/)|图的遍历|DFS|~|[Java](Java/Solution2596.java)
+[2603. 收集树中金币](https://leetcode.cn/problems/collect-coins-in-a-tree/)|图的应用|拓扑排序|~|[Java](Java/Solution2603.java)
 [2605. 从两个数字数组里生成最小数字](https://leetcode.cn/problems/form-smallest-number-from-two-digit-arrays/)|模拟|哈希表|~|[Java](Java/Solution2605.java)
 [2651. 计算列车到站时间](https://leetcode.cn/problems/calculate-delayed-arrival-time/)|模拟|数学|~|[Java](Java/Solution2651.java)
 [2679. 矩阵中的和](https://leetcode.cn/problems/sum-in-a-matrix/)|模拟|堆排序、优先队列|~|[Java](Java/Solution2679.java)
@@ -601,6 +608,7 @@ Last Updated: 2023.09.15
 [2682. 找出转圈游戏输家](https://leetcode.cn/problems/find-the-losers-of-the-circular-game/)|模拟|数组处理|~|[Java](Java/Solution2682.java)
 [2842. 统计一个字符串的 k 子序列美丽值最大的数目](https://leetcode.cn/problems/count-k-subsequences-of-a-string-with-maximum-beauty/)|DFS|穷举所有可能出现的结果|~|[Java](Java/Solution2842.java)
 [2849. 判断能否在给定时间到达单元格](https://leetcode.cn/problems/determine-if-a-cell-is-reachable-at-a-given-time/)|模拟|数学|~|[Java](Java/Solution2849.java)
+[2856. 删除数对后的最小数组长度](https://leetcode.cn/problems/minimum-array-length-after-pair-removals/)|贪心|堆，优先队列|~|[Java](Java/Solution2856.java)
 
 ## 剑指 Offer（第 2 版）题库及其考察的知识点(持续更新):  
 题目名称|考察知识点|说明|关联题型|答案
@@ -620,4 +628,11 @@ Last Updated: 2023.09.15
 [面试题 17.24. 最大子矩阵](https://leetcode.cn/problems/max-submatrix-lcci/)|动态规划|最大连续子序和|~|[Java](Java/Interview1724.java)
 
 ## 119 经典题变种挑战(持续更新):  
+题目名称|考察知识点|说明|关联题型|答案
+:------|:--------|:---|:-------|:-:
 [LCP 50. 宝石补给](https://leetcode.cn/problems/WHnhjV/)|模拟|数组遍历|~|[Java](Java/LCR50.java)
+
+## 经典题挑战(持续更新):  
+题目名称|考察知识点|说明|关联题型|答案
+:------|:--------|:---|:-------|:-:
+[LCP 06. 拿硬币](https://leetcode.cn/problems/na-ying-bi/)|模拟|数组遍历|~|[Java](Java/LCP06.java)
