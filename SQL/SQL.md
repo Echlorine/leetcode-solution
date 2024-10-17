@@ -251,7 +251,12 @@
 [2252. 表的动态旋转](https://leetcode.cn/problems/dynamic-pivoting-of-a-table/)|[sql](2252.sql)|动态生成SQL语句并执行
 [2253. 动态取消表的旋转](https://leetcode.cn/problems/dynamic-unpivoting-of-a-table/)|[sql](2253.sql)|动态生成SQL语句并执行
 
-# MySQ函数
+# MySQL 内外连接
+![表连接图示](../Data%20Structure%20and%20Algorithm/images/sql-join.png)  
+
+详情可以参考[文章](https://www.cnblogs.com/logon/p/3748020.html)
+
+# MySQL 函数
 ## 常用函数
 ### 数据处理函数
 函数名|作用|语法
