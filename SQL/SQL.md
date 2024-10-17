@@ -4,7 +4,7 @@
 :-------|:-:|:---------|:-
 [595. 大的国家](https://leetcode.cn/problems/big-countries/)|[sql](595.sql)|~|select语句，where子句
 [1757. 可回收且低脂的产品](https://leetcode.cn/problems/recyclable-and-low-fat-products/)|[sql](1757.sql)|~|select语句，where子句，and运算符
-[584. 寻找用户推荐人](https://leetcode.cn/problems/find-customer-referee/)|[sql](584.sql)|sql的null值判断|select语句，where子句，or运算符
+[584. 寻找用户推荐人](https://leetcode.cn/problems/find-customer-referee/)|[sql](584.sql)|sql的null值判断|select语句，where子句，or运算符, `<=>`安全等于运算符
 [183. 从不订购的客户](https://leetcode.cn/problems/customers-who-never-order/)|[sql](183.sql)|子查询|select语句，where子句，in操作符
 [1873. 计算特殊奖金](https://leetcode.cn/problems/calculate-special-bonus/)|[sql](1873.sql)|~|select语句，where子句，sql 通配符，if表达式，order by 关键字
 [627. 变更性别](https://leetcode.cn/problems/swap-salary/)|[sql](627.sql)|sql条件判断|update语句，if表达式，case when表达式
@@ -144,7 +144,7 @@
 [1435. 制作会话柱状图](https://leetcode.cn/problems/create-a-session-bar-chart/)|[sql](1435.sql)|
 [1565. 按月统计订单数与顾客数](https://leetcode.cn/problems/unique-orders-and-customers-per-month/)|[sql](1565.sql)|group by 语句
 [1623. 三人国家代表队](https://leetcode.cn/problems/all-valid-triplets-that-can-represent-a-country/)|[sql](1623.sql)|
-[1661. 每台机器的进程平均运行时间](https://leetcode.cn/problems/average-time-of-process-per-machine/)|[sql](1661.sql)|聚合函数，条件判断
+[1661. 每台机器的进程平均运行时间](https://leetcode.cn/problems/average-time-of-process-per-machine/)|[sql](1661.sql)|聚合函数，条件判断，**Oralce中没有 if 判断**
 [1677. 发票中的产品金额](https://leetcode.cn/problems/products-worth-over-invoices/)|[sql](1677.sql)|表连接，聚合函数
 [1683. 无效的推文](https://leetcode.cn/problems/invalid-tweets/)|[sql](1683.sql)|sql字符串函数
 [1715. 苹果和橘子的个数](https://leetcode.cn/problems/count-apples-and-oranges/)|[sql](1715.sql)|表连接，聚合函数
