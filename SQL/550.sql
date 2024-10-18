@@ -8,3 +8,11 @@ where (a1.player_id, a1.event_date) in (select player_id, min(event_date) as eve
 )
 as fraction
 ;
+
+/* Write your PL/SQL query statement below */
+with t as (
+    select player_id, min(event_date) start_date from Activity group by player_id
+)
+select round(count(a.player_id) / count(t.player_id), 2) fraction from Activity a right join t
+on a.player_id = t.player_id and a.event_date - t.start_date = 1
+;
