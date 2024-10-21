@@ -21,3 +21,16 @@ group by requester_id
 order by num desc
 limit 0,1
 ;
+
+/* Write your PL/SQL query statement below */
+with t as (
+    select requester_id, accepter_id from RequestAccepted
+    union all
+    select accepter_id, requester_id from RequestAccepted
+)
+select * from (
+    select requester_id id, count(*) num from t
+    group by requester_id
+    order by num desc
+) where rownum = 1
+;

@@ -19,3 +19,12 @@ from (
 on t.departmentId=d.id
 where t.rk<4
 ;
+
+/* Write your PL/SQL query statement below */
+select Department, Employee, salary from (
+    select d.name Department, e.name Employee, salary, dense_rank() over (partition by d.id order by salary desc) rk
+    from Employee e join Department d
+    on e.departmentId=d.id
+) t
+where rk <= 3
+;

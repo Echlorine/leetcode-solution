@@ -6,3 +6,11 @@ where e2.reports_to in (select distinct reports_to from Employees where reports_
 group by e2.reports_to
 order by e1.employee_id
 ;
+
+/* Write your PL/SQL query statement below */
+select e1.employee_id, e1.name, count(e2.employee_id) reports_count, round(avg(e2.age)) average_age
+from Employees e1 join Employees e2
+on e1.employee_id = e2.reports_to
+group by e1.employee_id, e1.name
+order by e1.employee_id
+;

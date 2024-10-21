@@ -19,3 +19,11 @@ select(
 )
 as SecondHighestSalary
 ;
+
+/* Write your PL/SQL query statement below */
+select nvl((
+    select salary from (
+        select salary, dense_rank() over (order by salary desc) rk from Employee
+    ) where rk = 2 group by salary),
+null) SecondHighestSalary from dual
+;
